@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>DSG REDUX</title>
+	<meta name="viewport" content="width=device-width">
+
+	<style>
+.troubleshoot *{ background-color: rgba(255,0,0,.2); }
+.troubleshoot * *{ background-color: rgba(0,255,0,.2); }
+.troubleshoot * * *{ background-color: rgba(0,0,255,.2); }
+.troubleshoot * * * *{ background-color: rgba(255,0,255,.2); }
+.troubleshoot * * * * *{ background-color: rgba(0,255,255,.2); }
+.troubleshoot * * * * * *{ background-color: rgba(255,255,0,.2); }
+
+		body { width: 100%; margin-right: auto; margin-left: auto; background: #ffffff; }
+		* { -webkit-text-size-adjust: none; }
+		.ExternalClass * { line-height: 100%; } /* reset Hotmails jankyness */
+		table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+		/* Outlook link fixes */
+		.lnheader a:link, .custserve a:link {color:#29a7dc;}
+		.navcol1 a:link, .topNav a:link {color:#022c5c;}
+		.salelink a:link {color:#ff0000;}
+		/* Outlook alignment fixes */
+		.navcol1 {text-align:left;}
+		.salelink {text-align:left;}
+    .hidelg{ width: 0 !important; display: none !important; }
+
+		/* Responsive styles - note max-width parameter will shift at 480px browser/screen width */
+		@media screen and (max-width : 480px) {
+			body { width: 100%; min-width: 100%; position: relative; top: 0; left: 0; right: 0; margin: 0; padding: 0;}
+			table[class=wrapper] { width: 100% !important; }
+			table[class=mobContent] { width: 92.5% !important; }
+      table[class=emailwrapto320] {width:320px !important; height:auto !important; padding:0;}
+			table[class=quad] { width: 100% !important; }
+			td[class=quad] { width: 46%; }
+			/*  CSS for hiding things in mobile  */
+			table[class=hide] { display: none; height: 0; }
+			img[class=hide], td[class=hide] { width: 0 !important; display: none !important; }
+			span[class=hideslash] { display: none !important; font-size: 1px !important; }
+      table[class=hidelg], td[class=hidelg], br[class=hidelg] {display: initial !important; width: initial !important;}
+			/*  change gutters to a narrower width on mobile  */
+			td[class=mobgutters] { padding: 6px 12px 6px 12px !important; }
+			table[class=navblock] { width: 100% !important; border-bottom: 1px dashed #cccccc; border-left: none !important; }
+			td[class=navcol1] { padding: 5px 0 5px 12px !important; width: 150px !important; }
+			td[class=salelink] { padding: 5px 0 5px 12px !important; width: 150px !important; }
+			img[class=lnheader] { margin: 12px 0 0 0 !important; }
+			td[class=stack] { width: 100% !important; display: block !important; }
+			td[class=topstack] { width: 100% !important; display:table-header-group !important; }
+			td[class=bottomstack] { width: 100% !important; display:table-footer-group !important; }
+			tr[class=table] {width:100% !important; display:table !important;}
+			/*  image shrinking / growing  */
+			img[class=shrinkfull] { width: 100% !important; height: auto !important; }
+			img[class=imgfull] { width:280px !important; height: auto !important; }
+			table[class=width280] { width:280px !important; height: auto !important; }
+			td[class=width280] { width:280px !important; height: auto !important; }
+			img[class=imgmed] { width: 92.5% !important; height: auto !important; }
+			img[class=navimg] { height: 12px !important; width: auto; }
+			img[class=quad] { width: 100% !important; height: auto !important; }
+			td[class=triptych] { width: 48% !important; }
+			table[class=triptych] { width: 100% !important; }
+			img[class=triptych] { width: 100% !important; height: auto !important; }
+			td[class=tripspace] { font-size: 12px !important; padding: 8px 0 14px 0 !important; }
+			/*  font size adjustments */
+			td[class=fs13] { font-size: 13px !important; }
+			td[class=fs12] { font-size: 12px !important; }
+			td[class=topNav] { font-size: 18px; !important; }
+			a[class=topNav] { font-size: 16px; !important; }
+			/*  dividers  */
+			table[class=divider] { width: 100% !important; margin: 20px 0 20px 0 !important; background-color: #cccccc !important; }
+			td[class=divider] { height: 2px !important; background-color: #cccccc !important; }
+			img[id=LHicon] { width: 42px !important; height: auto !important; }
+			td[class=divtable] { width: 42% !important; }
+			table[class=divtable] { width: 100% !important; }
+			/*  reverse-stack cells */
+      td[class=smcell] { display: table-cell !important; width: 280px !important; height: auto !important;
+        max-height: inherit !important; overflow: visible !important; float: none !important; padding-top: 12px;
+      }
+      td[class=smcell] img { width: 280px !important; height: auto !important; display:block !important; }
+      /*  lower nav stuff  */
+			td[class=noborder] { border: none !important; }
+			table[id=socialft] { width: 90%; margin: auto 18px auto 18px !important; }
+			table[id=socialblog] { width: 27.5%; margin: 0 36.25% 0 36.25% !important; }
+			td[id=navpad] { padding: 15px 8px 15px 8px !important;}
+			td[class=lnheader] { padding: 12px 0 0 12px !important; }
+      /*DSG*/
+      table[class=emailwrapto320] {width:320px !important; height:auto !important; padding:0;}
+      img[class=emailwrapto320] {width:320px !important; height:auto !important; padding:0;}
+      img[class=emailimageresize320]{width:320px !important; height: auto !important; padding:0;}
+      table[class=emailnomob],td[class=emailnomob],img[class=emailnomob], span[class=emailnomob] {display:none !important;}
+		}
+	</style>
+
+
+
+
+</head>
+<body bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+
+<!--DEFAULTS AND VARIABLES-->
+
+<!-- END DEFAULTS AND VARIABLES-->
+
+<!-- ALT COLOR -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#005644" border="0" width="100%">
+	<tbody>
+    <tr><td align="center">
+    		<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+				<tr><td align="center" style="color:#777777; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 12px 0px 12px;">
+					<!--PREHEADER BELOW-->
+                   <a href="LINK" target="_blank" style="color: #B0AFAF;">One more day to save 30% online</a> & <a href="LINK" target="_blank" style="color: #B0AFAF;">in stores.</a>
+
+					</td>
+				</tr>
+				<tr>
+          <td align="center" style="color:#fff; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 12px 5px 12px;">
+            <b>FREE SHIPPING EVERY DAY ON ORDERS $50+ <br class="hidelg" />$5&nbsp;MORE FOR UPS 2 DAY</b>
+          </td>
+				</tr>
+    		</table>
+    	</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#F1F1F1" border="0" width="100%">
+    <tbody>
+    <tr><td align="center">
+      <!-- ALT COLOR -->
+			<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#005644" border="0" width="690" class="wrapper" height="94"> -->
+			<table cellpadding="0" cellspacing="0" align="center" bgcolor="#F1F1F1" border="0" width="690" class="wrapper" height="94">
+    		<tbody>
+          <!-- <tr><td align="center">
+    					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+    						<tr>
+                  <td class"width280" align="left" style="font-family: arial, sans-serif; font-size: 14px; font-weight: bold; color: #005644; padding-top: 0;">
+                    <a href="LINK" style="text-decoration: none; color: #002b5c;">
+                      <img src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/01.gif" width="252" height="130" alt="ALT_TEXT" border="0" style="font-family: arial, sans-serif; font-size: 11px; font-weight: bold; color: #002b5c; display: block;" />
+                    </a>
+                  </td>
+                  <td class"width280" align="left" style="font-family: arial, sans-serif; font-size: 14px; font-weight: bold; color: white; display: inline-block;padding-top:25px;">FREE SHIPPING<br/><span style="font-family: arial, sans-serif; font-size: 11px; font-weight: normal;">No Minimum Purchase*</span><br/><small style="font-family: arial, sans-serif; font-size: 8px; font-weight: 100;">Online only. Excludes PING and YETI. Addtional exclusions may apply. See website for details.</small></td>
+                </tr>
+    					</table>
+    				</td>
+    			</tr> -->
+
+          <!-- ALT COLOR -->
+          <tr><td align="center">
+    					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+    						<tr>
+                  <td class"width280" align="center" style="font-family: arial, sans-serif; font-size: 14px; font-weight: bold; color: #005644; padding: 15px 0 15px 15px;">
+                    <a href="LINK" style="text-decoration: none; color: #002b5c; width:280px; display:inline-block;">
+                      <img src="http://www.dickssportinggoods.com/images/dicks-logo.png" width="132" height="70" alt="ALT_TEXT" border="0" style="font-family: arial, sans-serif; font-size: 11px; font-weight: bold; color: #002b5c; display: block;" />
+                    </a>
+                  </td>
+                  <!-- <td class"width280" align="left" style="font-family: arial, sans-serif; font-size: 14px; font-weight: bold; color: #005644; display: inline-block;padding-top:25px;">FREE SHIPPING<br/><span style="font-family: arial, sans-serif; font-size: 11px; font-weight: normal;">No Minimum Purchase*</span><br/><small style="font-family: arial, sans-serif; font-size: 8px; font-weight: 100;">Online only. Excludes PING and YETI. Addtional exclusions may apply. See website for details.</small></td> -->
+                </tr>
+    					</table>
+    				</td>
+    			</tr>
+
+
+
+          <!-- <tr>
+             <td class="hide"><table class="emailwrapto320" style="display: inline-table;" align="" left"="" border="0" cellpadding="0" cellspacing="0" width="690">
+          	  <tbody><tr>
+          	   <td><img class="emailnomob" style="display:block;" name="n04" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/04.jpg" width="17" height="40" id="n04" alt=""></td>
+          	   <td><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n05" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/05.jpg" width="106" height="40" id="n05" alt="TEAM SPORTS >>"></a></td>
+          	   <td><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n06" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/06.jpg" width="78" height="40" id="n06" alt="EXERCISE >>"></a></td>
+          	   <td><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n07" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/07.jpg" width="86" height="40" id="n07" alt="FOOTWEAR >>"></a></td>
+          	   <td><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n08" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/08.jpg" width="75" height="40" id="n08" alt="APPAREL >>"></a></td>
+          	   <td><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n09" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/09.jpg" width="52" height="40" id="n09" alt="GOLF >>"></a></td>
+          	   <td><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n10" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/10.jpg" width="85" height="40" id="n10" alt="OUTDOORS >>"></a></td>
+          	   <td><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n11" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/11.jpg" width="80" height="40" id="n11" alt="FAN SHOP >>"></a></td>
+          	   <td><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n12" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/12.jpg" width="94" height="40" id="n12" alt="CLEARANCE >>"></a></td>
+          	   <td><img class="emailnomob" style="display:block;" name="n13" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/13.jpg" width="17" height="40" id="n13" alt=""></td>
+          	  </tr>
+          	</tbody></table></td>
+            </tr> -->
+            <tr>
+               <td class="hide">
+                 <table class="emailwrapto320" style="display: inline-table;" align="left" border="0" cellpadding="0" cellspacing="0" width="690">
+                   <tbody><tr>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><img class="emailnomob" style="display:block;" name="n04" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/04.jpg" width="17" height="40" id="n04" alt=""></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n05" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/05.jpg" width="106" height="40" id="n05" alt="TEAM SPORTS >>"></a></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n06" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/06.jpg" width="78" height="40" id="n06" alt="EXERCISE >>"></a></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n07" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/07.jpg" width="86" height="40" id="n07" alt="FOOTWEAR >>"></a></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n08" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/08.jpg" width="75" height="40" id="n08" alt="APPAREL >>"></a></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n09" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/09.jpg" width="52" height="40" id="n09" alt="GOLF >>"></a></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n10" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/10.jpg" width="85" height="40" id="n10" alt="OUTDOORS >>"></a></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n11" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/11.jpg" width="80" height="40" id="n11" alt="FAN SHOP >>"></a></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="emailnomob" style="display:block;" name="n12" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/12.jpg" width="94" height="40" id="n12" alt="CLEARANCE >>"></a></td>
+                     <td style="height:30px; overflow:hidden; display:inline-block;"><img class="emailnomob" style="display:block;" name="n13" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/13.jpg" width="17" height="40" id="n13" alt=""></td>
+                   </tr>
+                 </tbody>
+               </table>
+             </td>
+             <!-- <td class="hidelg" align="center" valign="top" colspan="3">
+               <table style="display: inline-table;" align="center" border="0" cellpadding="0" cellspacing="0" width="320">
+                 <tbody><tr>
+                   <td align="center" valign="top" colspan="3">
+                     <table style="display:inline-table" align="left" border="0" cellpadding="0" cellspacing="0" width="320">
+                       <trbody>
+                         <tr>
+                           <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n05" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/05.jpg" width="106" height="40" id="n05" alt="TEAM SPORTS >>"></a></td>
+
+                           <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n07" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/07.jpg" width="86" height="40" id="n07" alt="FOOTWEAR >>"></a></td>
+                           <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n08" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/08.jpg" width="75" height="40" id="n08" alt="APPAREL >>"></a></td>
+                           <td style="height:30px; overflow:hidden; display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n10" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/10.jpg" width="85" height="40" id="n10" alt="OUTDOORS >>"></a></td>
+                         </tr>
+                       </trbody>
+                     </table>
+                   </td>
+                 </tr>
+               </tbody>
+             </table>
+           </td> -->
+           </tr>
+
+           <!-- MOBILE MENU -->
+           <table width="690" border="0" align="center" cellspacing="0" bgcolor="#f1f1f1" class="emailwrapto320">
+             <tbody>
+               <tr>
+                 <td align="center" valign="top" colspan="3">
+                   <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="320" align="center">
+                     <tbody>
+                       <tr>
+                         <td><img style="display:block;" name="n01" src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="320" height="1" border="0" id="n01" alt=""></td>
+                       </tr>
+                       <tr>
+                         <td>
+                           <table style="display: inline-table;" align="left" border="0" cellpadding="0" cellspacing="0" width="320">
+                             <tbody>
+                               <tr>
+                                 <td><a href="LINK" target="_blank"><img class="" style="display:block;" name="n05" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/05.jpg" width="106" height="40" id="n05" alt="TEAM SPORTS >"></a></td>
+
+                                 <td><a href="LINK" target="_blank"><img class="" style="display:block;" name="n07" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/07.jpg" width="86" height="40" id="n07" alt="FOOTWEAR >>"></a></td>
+
+                                 <td><a href="LINK" target="_blank"><img class="" style="display:block;" name="n08" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/08.jpg" width="75" height="40" id="n08" alt="APPAREL >"></a></td>
+
+                                 <td><a href="LINK" target="_blank"><img class="" style="display:block;" name="n10" src="http://img.ed4.net/dcsg/images/2014/DSG_NewHeader/img/10.jpg" width="85" height="40" id="n10" alt="OUTDOORS >>"></a></td>
+                               </tr>
+                             </tbody>
+                           </table>
+                         </td>
+                       </tr>
+                     </tbody>
+                   </table>
+                 </td>
+               </tr>
+             </tbody>
+           </table><!-- MOBILE MENU END-->
+    		</table>
+    	</td>
+    </tr>
+    </tbody>
+</table>
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+    <tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+					<tr>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://placehold.it/690x160?text=Top+Banner" width="690" height="160" alt="30% OFF Reg. priced styles + free shipping on your order" border="0" style="display: block;" /></a></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- spacer -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tr>
+		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="" border="0" style="display: block;" /><br/></td>
+	</tr>
+</table>
+<!-- /spacer -->
+
+
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+					<tr>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="hLINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://imagesle.postdirect.com/master/13/1083497/102615_wms_01.jpg" width="690" height="657" alt="Shop Sweaters" border="0" style="display: block;" /></a></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table> -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+					<tr>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="hLINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://placehold.it/690x650?text=Main+Message" width="690" height="650" alt="ALT_TEXT" border="0" style="display: block;" /></a></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+
+					<tr>
+						<td><table cellpadding="0" cellspacing="0" align="center" width="690" border="0" class="mobContent">
+								<tr>
+									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
+											<tr>
+												<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://imagesle.postdirect.com/master/13/1083497/102615_wms_02.jpg" width="345" height="562" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
+											</tr>
+										</table></td>
+									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
+											<tr>
+												<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"> <a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://imagesle.postdirect.com/master/13/1083497/102615_wms_03.jpg" width="345" height="562" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
+											</tr>
+										</table></td>
+								</tr>
+							</table></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+
+					<tr>
+						<td><table cellpadding="0" cellspacing="0" align="center" width="690" border="0" class="mobContent">
+								<tr>
+									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
+											<tr>
+												<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://imagesle.postdirect.com/master/13/1083497/102615_wms_04.jpg" width="345" height="381" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
+											</tr>
+										</table></td>
+									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
+											<tr>
+												<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"> <a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://imagesle.postdirect.com/master/13/1083497/102615_wms_05.jpg" width="345" height="381" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
+											</tr>
+										</table></td>
+								</tr>
+							</table></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center">
+				<table class="wrapper" cellpadding="0" cellspacing="0" align="center" bgcolor="#f1f1f1" border="0" width="690">
+					<tr bgcolor="#f1f1f1">
+						<td align="center" class="nav-button-bar" style="color:#ffffff; font-size: 14px; line-height: 130%; font-family: Arial, sans-serif; padding: 19px 0px 12px 0px;">
+              <a href="LINK" style="display: inline-block; text-decoration: none; color: #005644; border-style: solid; border-width: 2px; border-color: #005644; padding: 10px 20px;" target="_blank" class="nav-button"><b>SHOP NOW</b></a>&nbsp;
+              <a href="LINK" style="display: inline-block; text-decoration: none; color: #ffffff; border-style: solid; border-width: 2px; border-color: #ffffff; padding: 10px 20px;" target="_blank" class="nav-button"><b>SHOP NOW</b></a>&nbsp;
+              <a href="LINK" style="background-color:#005644; display: inline-block; text-decoration: none; color: #ffffff; border-style: solid; border-width: 2px; border-color: #005644; padding: 10px;" target="_blank" class="nav-button">SHOP NOW</a>&nbsp;
+              <a href="LINK" style="display: inline-block; text-decoration: none; color: #000000; border-style: solid; border-width: 2px; border-color: #000000; padding: 10px;" target="_blank" class="nav-button"><b>SHOP NOW</b></a>&nbsp;
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+<!-- spacer -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tr>
+		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="" border="0" style="display: block;" /></td>
+	</tr>
+</table>
+<!-- /spacer -->
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+					<tr>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://placehold.it/690x345?text=Secondary+Message" width="690" height="345" alt="Boots" border="0" style="display: block;" /></a></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+<!-- spacer -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tr>
+		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="" border="0" style="display: block;" /></td>
+	</tr>
+</table>
+<!-- /spacer -->
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+					<tr>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://placehold.it/690x160?text=Bottom+Banner" width="690" height="160" alt="Sale & Clearance" border="0" style="display: block;" /></a></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="690" class="divider">
+					<tr>
+						<td bgcolor="#cccccc" class="divider"><img class="hide" src="http://media.4at5.net/email_domains/lad/template/divider.png" width="690" height="80" alt="" border="0" style="display: block;" /></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table> -->
+
+
+
+
+
+<!-- spacer -->
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tr style="page-break-before: always">
+		<td style="font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="20" height="20" alt="" border="0" style="display:block;" /></td>
+	</tr>
+</table>
+
+
+
+
+
+
+<!-- spacer -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tr><td align="center"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="20" height="20" alt="" border="0" style="display: block;" /></td></tr>
+</table>
+
+
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%" class="custserve">
+	<tbody>
+    <tr><td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+    			<tr><td><img src="http://media.4at5.net/email_domains/lad/template/legen.png" width="690" height="26" alt="" border="0" style="display: block;" class="shrinkfull" /></td></tr>
+    			<tr><td bgcolor="#f6f6f6" style="padding: 10px 0 0 0;" class="mobgutters">
+    					<table cellpadding="0" cellspacing="0" border="0" width="100%">
+							<tr><td align="center" style="color:#000000; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold; padding: 0 0 12px 0;">
+									LEGENDARY CUSTOMER SERVICE
+							</td></tr>
+							<tr><td align="center" style="color:#29a7dc; font-size: 16px; line-height: 120%; font-family: Arial, sans-serif; padding: 16px 0 0 0;">
+									<a href="https://link.landsend.com/u.d?IYGt4devPhSbjpX1L=3&s=EXCITE&sourceCodeCNum=4110&redirect=/customerservice/services/personalization/%3fcm_2mmc=usnews-_2-usnews_2102615_2eonly-_2-footer-_2-footer_2mono%26emid=usnews_2102615_2eonly%26RRID=1510261321108349715691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2102615_2eonly|1083497" target="_blank" style="color: #29a7dc; text-decoration: none;"><b>MAKE IT PERSONAL &gt;</b></a>
+								</td>
+							</tr>
+							<tr><td align="center" style="color:#000000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 0 0 0;">
+									Adding a monogram makes it extra special.
+								</td>
+							</tr>
+							<tr><td align="center" style="color:#29a7dc; font-size: 16px; line-height: 120%; font-family: Arial, sans-serif; padding: 16px 0 0 0;">
+									<a href="https://link.landsend.com/u.d?N4Gt4devPhSbjpX1M=13&s=EXCITE&sourceCodeCNum=4110&redirect=/co/StoreLocator%3fcm_2mmc=usnews-_2-usnews_2102615_2eonly-_2-footer-_2-footer_2storelocate%26emid=usnews_2102615_2eonly%26RRID=1510261321108349715691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2102615_2eonly|1083497" target="_blank" style="color: #29a7dc; text-decoration: none;"><b>FREE RETURNS &gt;</b></a>
+								</td>
+							</tr>
+							<tr><td align="center" style="color:#000000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 0 0 0;">
+									To any full-line Sears store in the U.S.
+								</td>
+							</tr>
+							<tr><td align="center" style="color:#29a7dc; font-size: 16px; line-height: 120%; font-family: Arial, sans-serif; padding: 16px 0 0 0;">
+									<a href="https://link.landsend.com/u.d?J4Gt4devPhSbjpX1B=23&s=EXCITE&sourceCodeCNum=4110&redirect=/customerservice/services/cuffing%5fhemming/%3fcm_2mmc=usnews-_2-usnews_2102615_2eonly-_2-footer-_2-footer_2hemming%26emid=usnews_2102615_2eonly%26RRID=1510261321108349715691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2102615_2eonly|1083497" target="_blank" style="color: #29a7dc; text-decoration: none;"><b>HEMMING IS ALWAYS FREE &gt;</b></a>
+								</td>
+							</tr>
+							<tr><td align="center" style="color:#000000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 0 0 0;">
+									When you buy pants that can be hemmed.
+								</td>
+							</tr>
+							<tr><td align="center" style="color:#29a7dc; font-size: 16px; line-height: 120%; font-family: Arial, sans-serif; padding: 16px 0 0 0;">
+									<a href="https://link.landsend.com/u.d?a4Gt4devPhSbjpX1a2=33&s=EXCITE&sourceCodeCNum=4110&redirect=/aboutus/values/guaranteed%2dperiod/%3fcm_2mmc=usnews-_2-usnews_2102615_2eonly-_2-footer-_2-footer_2guaranteed%26emid=usnews_2102615_2eonly%26RRID=1510261321108349715691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2102615_2eonly|1083497" target="_blank" style="color: #29a7dc; text-decoration: none;"><b>GUARANTEED. PERIOD.<span style="font-size:13px;"><sup>&reg;</sup></span> &gt;</b></a>
+								</td>
+							</tr>
+							<tr><td align="center" style="color:#000000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 0 16px 0;">
+									A guarantee so simple, it&rsquo;s only two words long.
+								</td>
+							</tr>
+    					</table>
+    				</td>
+    			</tr>
+    			<tr><td><img class="shrinkfull" src="http://media.4at5.net/email_domains/lad/template/dary.png" width="690" height="26" alt="" border="0" style="display: block;" /></td></tr>
+			</table>
+    	</td>
+    </tr>
+    </tbody>
+</table> -->
+<table width="690" border="0" align="center" cellspacing="0" bgcolor="#ffffff" class="emailwrapto320">
+                <tbody>
+
+<!-- SOCIAL MEDIA -->
+<tr><td align="center" valign="top" colspan="3"><table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="320" align="center">
+  <tbody><tr>
+   <td><img style="display:block;" name="n01" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/01.jpg" width="320" height="22" border="0" id="n01" alt=""></td>
+  </tr>
+  <tr>
+   <td><table style="display: inline-table;" align="left" border="0" cellpadding="0" cellspacing="0" width="320">
+	  <tbody><tr>
+	   <td><img style="display:block;" name="n02" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/02.jpg" width="19" height="47" border="0" id="n02" alt=""></td>
+	   <td><a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/C9HCM/RU/h?a=10212015FlashSalePMRemail&amp;b=290203426"><img style="display:block;" name="n03" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/03.jpg" width="48" height="47" border="0" id="n03" alt="FACEBOOK"></a></td>
+	   <td><img style="display:block;" name="n04" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/04.jpg" width="11" height="47" border="0" id="n04" alt=""></td>
+	   <td><a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/L12WQ/RU/h?a=10212015FlashSalePMRemail&amp;b=290203426"><img style="display:block;" name="n05" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/05.jpg" width="47" height="47" border="0" id="n05" alt="TWITTER"></a></td>
+	   <td><img style="display:block;" name="n06" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/06.jpg" width="12" height="47" border="0" id="n06" alt=""></td>
+	   <td><a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/NTZKJ/RU/h?a=10212015FlashSalePMRemail&amp;b=290203426"><img style="display:block;" name="n07" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/07.jpg" width="47" height="47" border="0" id="n07" alt="YOUTUBE"></a></td>
+	   <td><img style="display:block;" name="n08" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/08.jpg" width="12" height="47" border="0" id="n08" alt=""></td>
+	   <td><a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/I30ME/RU/h?a=10212015FlashSalePMRemail&amp;b=290203426"><img style="display:block;" name="n09" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/09.jpg" width="46" height="47" border="0" id="n09" alt="INSTAGRAM"></a></td>
+	   <td><img style="display:block;" name="n10" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/10.jpg" width="13" height="47" border="0" id="n10" alt=""></td>
+	   <td><a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/C9HCX/RU/h?a=10212015FlashSalePMRemail&amp;b=290203426"><img style="display:block;" name="n11" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/11.jpg" width="46" height="47" border="0" id="n11" alt="PINTEREST"></a></td>
+	   <td><img style="display:block;" name="n12" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/12.jpg" width="19" height="47" border="0" id="n12" alt=""></td>
+	  </tr>
+	</tbody></table></td>
+  </tr>
+  <tr>
+   <td><img style="display:block;" name="n13" src="http://img.ed4.net/dcsg/images/2014/SocialBar/img/13.jpg" width="320" height="21" border="0" id="n13" alt=""></td>
+  </tr>
+</tbody></table></td></tr>
+
+
+                  <tr>
+                    <td width="18" align="center" valign="top"><img src="http://img.ed4.net/spacer50.gif" width="18" height="20" border="0" style="display: block"></td>
+                    <td align="left" valign="top"><font style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:  Arial, Helvetica, sans-serif"><br>
+
+<!-- ############## DISCLAIMERS ############## -->
+
+*Online Only. Offer only valid on items marked with the FREE SHIPPING Savings Alert message. Applies only for standard economy shipping and only up to a $15 shipping credit shown in the cart. <b>Excludes PING and YETI.</b> Discount does not apply to taxes or similar charges. Entire order must be shipped to a single address. Cannot be combined with any other offer nor is this valid on previous purchases. Only applies to orders to be shipped to a valid address in the United States, excluding
+Alaska and Hawaii. Not available for shipments to APO/FPO addresses or P.O. boxes. Customer responsible for all shipping costs for returned merchandise other than footwear or apparel. Offer not valid on canceled or out of stock merchandise. This offer only applies to the individual items; other items in your cart that are not eligible will still incur a shipping charge. This promotional offer may be modified or terminated at any time without notice.<br>
+<br>
+
+
+<!-- ############## END DISCLAIMERS ############## -->
+
+
+                      <b>DICK'S Sporting Goods, 345 Court Street, Coraopolis, PA  15108</b><br>
+                      <br>
+You are receiving this email because you signed up as <font style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:  Arial, Helvetica, sans-serif"><u>joel.dombek@dcsg.com</u></font> to receive our emails.  If you no longer wish to receive emails from DICK'S Sporting Goods, please <a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/NTZXE/RU/h?a=727X3Q0&amp;b=joel.dombek@dcsg.com&amp;c=7D3RK&amp;d=817580621&amp;e=10212015FlashSalePMRemail&amp;f=290203426" style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:  Arial, Helvetica, sans-serif" target="_blank">click here</a> or to read our Privacy Policy <a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/7DPBC/RU/h?a=10212015FlashSalePMRemail&amp;b=290203426" style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:  Arial, Helvetica, sans-serif" target="_blank">click here.</a><br><br>
+<br>
+                    </font></td><td align="left" valign="top"><img src="http://img.ed4.net/spacer50.gif" width="30" height="20" border="0" style="display: block"></td>
+                  </tr>
+            </tbody></table>
+
+
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+    <tr><td align="center">
+			<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="690" class="divider">
+				<tr><td bgcolor="#cccccc" class="divider"><img class="hide" src="http://media.4at5.net/email_domains/lad/template/divider.png" width="690" height="80" alt="" border="0" style="display: block;" /></td></tr>
+			</table>
+		</td>
+	</tr>
+</table> -->
+
+
+
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+    <tr><td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="290">
+    			<tr><td align="center"><table cellpadding="0" cellspacing="0" align="left" border="0" width="292" id="socialft">
+							<tr><td><a href="https://link.landsend.com/u.d?aYGt4devPhSbjpWAr=3" target="_blank"><img src="http://media.4at5.net/email_domains/lad/template/social-fb.png" width="24" height="37" alt="Facebook" border="0" style="display:block;" /></a></td>
+								<td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+								<td><a href="https://link.landsend.com/u.d?f4Gt4devPhSbjpWAs=13" target="_blank"><img src="http://media.4at5.net/email_domains/lad/template/social-twit.png" width="25" height="37" alt="Twitter" border="0" style="display:block;" /></a></td>
+								<td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+								<td><a href="https://link.landsend.com/u.d?G4Gt4devPhSbjpWAh=23" target="_blank"><img src="http://media.4at5.net/email_domains/lad/template/social-pin.png" width="24" height="37" alt="Pinterest" border="0" style="display:block;" /></a></td>
+								<td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+								<td><a href="https://link.landsend.com/u.d?V4Gt4devPhSbjpWA62=33" target="_blank"><img src="http://media.4at5.net/email_domains/lad/template/social-gplus.png" width="25" height="37" alt="Google Plus" border="0" style="display:block;" /></a></td>
+								<td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+								<td><a href="https://link.landsend.com/u.d?NYGt4devPhSbjpWA6z=43" target="_blank"><img src="http://media.4at5.net/email_domains/lad/template/social-insta.png" width="23" height="37" alt="Instagram" border="0" style="display:block;" /></a></td>
+								<td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+								<td><a href="https://link.landsend.com/u.d?aYGt4devPhSbjpWA68=53" target="_blank"><img src="http://media.4at5.net/email_domains/lad/template/social-utub.png" width="21" height="37" alt="Youtube" border="0" style="display:block;" /></a></td>
+								<td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+								<td><a href="https://link.landsend.com/u.d?U4Gt4devPhSbjpWA65=63" target="_blank"><img src="http://media.4at5.net/email_domains/lad/template/social-shop.png" width="19" height="37" alt="Cart" border="0" style="display:block;" /></a></td>
+							</tr>
+    					</table>
+    				</td>
+    			</tr>
+
+			</table>
+    	</td>
+    </tr>
+    </tbody>
+</table> -->
+
+
+<!-- spacer -->
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tr><td style="font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="20" height="20" alt="" border="0" style="display:block;" /></td></tr>
+</table> -->
+
+<!-- US SOCIAL_SHARES_REFER_BANNER begin-->
+<!-- spacer -->
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+    <tr>
+		<td align="center" style="font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="20" height="20" alt="" border="0" style="display:block;" /></td>
+	</tr>
+</table> -->
+<!-- spacer-->
+
+
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+					<tr>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="https://link.landsend.com/u.d?IYGt4devPhSbjpWQab=123" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://media.4at5.net/email_domains/lad/template/extole_bnr.gif" alt="REFER A FRIEND AND YOU CAN EACH GET $25 OFF $75" border="0" style="display: block;" /></a></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table> -->
+
+<!-- spacer -->
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tr>
+		<td align="center" style="font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="20" height="20" alt="" border="0" style="display:block;" /></td>
+	</tr>
+</table> -->
+<!-- spacer-->
+
+<!-- US SOCIAL_SHARES_REFER_BANNER end-->
+
+
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+    <tr><td align="center">
+    		<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+    			<tr><td align="left" style="color: #000000; font-size: 14px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 40px 6px 40px;" class="mobgutters"><br />
+
+                       <span style="color:#0a2240; font-weight:900;">*How to receive 30% off regularly priced merchandise! Plus, receive free shipping to US and Canada addresses on regularly priced merchandise.</span><br/>
+    						Simply click any link in this e-mail and the Promotion Code and PIN will automatically be applied to your order.
+							Or at checkout‚ manually enter the Promotion Code <span style="color:#0a2240; font-weight:900;">EXCITE</span> and PIN <span style="color:#0a2240; font-weight:900;">4110</span>. <br/>
+							<br/>
+							Receive 30% off regularly priced merchandise. Plus‚ receive free shipping to US and Canada addresses on regularly priced merchandise online, in-store or by phone (excludes buy more and save pricing‚ gift cards‚ monogramming‚ embroidery‚ gift boxing‚ shipping‚ taxes‚ duties‚ Lands’ End Business Outfitters purchases and excluded items as marked). Discount will be applied at checkout. This offer has no cash value and is not redeemable for cash. 4-6 business day delivery to most addresses. Promotional savings may be deducted from returns. Offer valid through 11:59 p.m. Central‚ October 26‚ 2015.<br/>
+							<br/>
+							Not valid on previous purchases or when combined with any other promotional offers.
+
+                    <br/> <br/>
+
+
+						This is an e-mail advertisement from Lands&#8217; End, Inc., 1 Lands&#8217; End Lane&#8218; Dodgeville&#8218; WI 53595<br /><br />
+<a style="color:#0a2240;text-decoration:underline;" href="https://link.landsend.com/u.d?M4Gt4devPhSbjpX4L=3&s=usnews_2102615_2eonly-_2-feature-_2-signup&emid=usnews_2102615_2eonly&RRID=1510261321108349715691855&YCID=15691855&ym=ym_2landsendus|usnews_2102615_2eonly|1083497"><span style="color: #0a2240;">Subscribe</span></a> to our email&nbsp;&nbsp;&nbsp; </br>
+
+<a style="color:#0a2240;" href="https://link.landsend.com/u.d?cYGt4devPhSbjpX4M=13&s=joel.dombek@dcsg.com&id=105014537&subscription=MODIFY&cm_2mmc=usnews-_2-usnews_2102615_2eonly-_2-footer-_2-modify_2preferences&emid=usnews_2102615_2eonly&RRID=1510261321108349715691855&YCID=15691855&ym=ym_2landsendus|usnews_2102615_2eonly|1083497"> <span style="color: #0a2240;">Modify Your Email Preferences</span></a>
+<br>
+
+<a style="color:#0a2240;" href="https://link.landsend.com/u.d?ZYGt4devPhSbjpX4B=23&s=joel.dombek@dcsg.com&id=105014537&subscription=UNSUBSCRIBE_2REQUEST&cm_2mmc=usnews-_2-usnews_2102615_2eonly-_2-footer-_2-unsubscribe&emid=usnews_2102615_2eonly&RRID=1510261321108349715691855&YCID=15691855&ym=ym_2landsendus|usnews_2102615_2eonly|1083497"> <span style="color: #0a2240;">Unsubscribe</span></a>
+&nbsp;&nbsp;&nbsp; <a style="color:#0a2240;text-decoration:underline;" href="https://link.landsend.com/u.d?MYGt4devPhSbjpX4a2=33&s=usnews_2102615_2eonly-_2-footer-_2-footer_2privacy&emid=usnews_2102615_2eonly&RRID=1510261321108349715691855&YCID=15691855&ym=ym_2landsendus|usnews_2102615_2eonly|1083497"><span style="color: #0a2240;">Privacy Policy</span></a>
+<br>
+<a style="color:#0a2240;text-decoration:underline;" href="https://link.landsend.com/u.d?TYGt4devPhSbjpX4az=43&s=usnews_2102615_2eonly-_2-footer-_2-footer_2legal_2policies&emid=usnews_2102615_2eonly&RRID=1510261321108349715691855&YCID=15691855&ym=ym_2landsendus|usnews_2102615_2eonly|1083497"><span style="color: #0a2240;">Terms of Use</span></a>
+<br>
+<a style="color:#0a2240;text-decoration:underline;" href="mailto:talkback@landsend.com"><span style="color: #0a2240;">talkback@landsend.com</span></a>
+						<br /><br />
+    				</td>
+    			</tr>
+    		</table>
+    	</td>
+    </tr>
+    </tbody>
+</table> -->
+</body>
+</html>
