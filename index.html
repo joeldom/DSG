@@ -25,6 +25,8 @@
 		.salelink {text-align:left;}
 		.hidelg{ width: 0 !important; display: none !important; }
 		a img {border:none;margin:0;padding:0;}
+		td[class=bordleft]{border-left:1px solid white;}
+		td[class=bordright]{border-right:1px solid white;}
 
 		/* Responsive styles - note max-width parameter will shift at 480px browser/screen width */
 		@media screen and (max-width : 480px) {
@@ -89,6 +91,7 @@
 			img[class=emailimageresize320]{width:320px !important; height: auto !important; padding:0;}
 			table[class=emailnomob],td[class=emailnomob],img[class=emailnomob], span[class=emailnomob] {display:none !important;}
 			td[class=shrinktext]{font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:10px;}
+			td[class=bordleft],td[class=bordright]{border-left: none !important; border-right: none !important}
 		}
 	</style>
 </head>
@@ -289,13 +292,14 @@
 								<tr>
 									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
 											<tr>
-												<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+												<td class="bordright" align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
 													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x560?text=Left+Stack" width="345" height="560" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
 											</tr>
 										</table></td>
 									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
 											<tr>
-												<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"> <a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x560?text=Right+Stack" width="345" height="560" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
+												<td class="bordleft" align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x560?text=Right+Stack" width="345" height="560" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
 											</tr>
 										</table></td>
 								</tr>
@@ -325,13 +329,15 @@
 								<tr>
 									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
 											<tr>
-												<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
-													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x380?text=Left+Stack" width="345" height="380" alt="ALT" border="0" style="display: block;" class="triptych" /></a></td>
+												<td class="bordright" align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+													<!-- ADDING BORDERS TO CREATE VISUAL GRID -->
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x380?text=Left+Stack+2" width="345" height="380" alt="ALT" border="0" style="display: block;" class="triptych" /></a></td>
 											</tr>
 										</table></td>
 									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
 											<tr>
-												<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"> <a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x380?text=Right+Stack" width="345" height="380" alt="ALT" border="0" style="display: block;" class="triptych" /></a></td>
+												<td class="bordleft" align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x380?text=Right+Stack" width="345" height="380" alt="ALT" border="0" style="display: block;" class="triptych" /></a></td>
 											</tr>
 										</table></td>
 								</tr>
