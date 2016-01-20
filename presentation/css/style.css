@@ -22,6 +22,34 @@
   src: url('../font/150818051053din_blackregular.eot');
   src: local('din_blackregular'), url('../font/150818051053din_blackregular.eot') format('embedded-opentype'), url('../font/150818051053din_blackregular.woff') format('woff');
 }
+body{margin: 0;padding: 0;}
+.presi-wrapper{
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #eee;
+  border-bottom: 1px solid white;
+  color: #878787;
+  font-family: Arial;
+  font-feature-settings: "'liga' 1";
+  font-kerning: auto;
+  font-style: normal;
+  font-size: 0.9em;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  line-height: 1.75em;
+  text-align: left;
+  text-decoration: none;
+  text-transform: none;
+  word-spacing: 0;
+  padding: 5px 0;
+}
+.presi-wrapper p{
+  max-width: 690px;
+  margin: 0 auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: block;}
 
 .presentation-prev{
   position: absolute;
@@ -35,7 +63,7 @@
 .presentation-next,.presentation-prev{
   bottom: 10px;
   padding: 10px 20px;
-  background: grey;
+  background: #eee;
   border: 2px solid white;
   color: white;
   font-family: 'din_mediumregular';
