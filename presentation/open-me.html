@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]--
+<html lang="en-US" prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb#"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title></title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="import" id="template-file" href="pages/template.html">
+
+  </head>
+  <body>
+
+    <!-- demo content -->
+    <div class="demo-wrapper">
+    	<p><strong>This is the original content:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptatem, modi, consequatur dolores adipisci expedita amet sint sequi soluta alias voluptatibus ut eligendi accusantium. Adipisci, dolores laudantium eos nihil tempore.</p>
+    </div>
+
+
+
+
+
+
+    <a href="../open-me.html" class="presentation-prev">home</a>
+    <a href="pages/1.html" class="presentation-next">next</a>
+    <script>
+      var getImport  = document.querySelector('#template-file');
+      var getContent = getImport.import.querySelector('#content');
+        document.body.appendChild(document.importNode(getContent, true));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,46 @@
+@font-face {
+  font-family: 'din_mediumregular';
+  font-style: normal;
+  src: url('../font/150817051957din_mediumregular.eot');
+  src: local('din_mediumregular'), url('../font/150817051957din_mediumregular.eot') format('embedded-opentype'), url('../font/150817051957din_mediumregular.woff') format('woff');
+}
+@font-face {
+  font-family: 'helvetica_neuereg';
+  font-style: normal;
+  src: url('../font/150817052128helvetica_neuereg.eot');
+  src: local('helvetica_neuereg'), url('../font/150817052128helvetica_neuereg.eot') format('embedded-opentype'), url('../font/150817052128helvetica_neuereg.woff') format('woff');
+}
+@font-face {
+  font-family: 'dinbold';
+  font-style: normal;
+  src: url('../font/150818050912dinbold.eot');
+  src: local('dinbold'), url('../font/150818050912dinbold.eot') format('embedded-opentype'), url('../font/150818050912dinbold.woff') format('woff');
+}
+@font-face {
+  font-family: 'din_blackregular';
+  font-style: normal;
+  src: url('../font/150818051053din_blackregular.eot');
+  src: local('din_blackregular'), url('../font/150818051053din_blackregular.eot') format('embedded-opentype'), url('../font/150818051053din_blackregular.woff') format('woff');
+}
+
+.presentation-prev{
+  position: absolute;
+  left: 10px;
+}
+
+.presentation-next{
+  position: absolute;
+  right: 10px;
+}
+.presentation-next,.presentation-prev{
+  bottom: 10px;
+  padding: 10px 20px;
+  background: grey;
+  border: 2px solid white;
+  color: white;
+  font-family: 'din_mediumregular';
+  font-size: 14px;
+  text-decoration: none;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}

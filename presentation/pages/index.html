@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+<title>HTML Import</title>
+
+<!-- demo scripts -->
+<link rel="import" id="template-file" href="template.html">
+
+</head>
+
+<body>
+
+<!-- demo content -->
+<div class="demo-wrapper">
+	<p><strong>This is the original content:</strong> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, voluptatem, modi, consequatur dolores adipisci expedita amet sint sequi soluta alias voluptatibus ut eligendi accusantium. Adipisci, dolores laudantium eos nihil tempore.</p>
+	<script>
+		var getImport  = document.querySelector('#template-file');
+		var getContent = getImport.import.querySelector('#content');
+	    document.body.appendChild(document.importNode(getContent, true));
+	</script>
+</div>
+
+</body>
+</html>
