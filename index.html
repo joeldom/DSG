@@ -23,7 +23,7 @@
 		/* Outlook alignment fixes */
 		.navcol1 {text-align:left;}
 		.salelink {text-align:left;}
-		.hidelg{ width: 0 !important; display: none !important; }
+		.hidelg{ width: 0 !important; visibility: hidden; display: none !important; }
 		a img {border:none;margin:0;padding:0;}
 		td[class=bordleft]{border-left:1px solid white;}
 		td[class=bordright]{border-right:1px solid white;}
@@ -40,7 +40,7 @@
 			table[class=hide] { display: none; height: 0; }
 			img[class=hide], td[class=hide] { width: 0 !important; display: none !important; }
 			span[class=hideslash] { display: none !important; font-size: 1px !important; }
-			table[class=hidelg], td[class=hidelg], br[class=hidelg] {display: initial !important; width: initial !important;}
+			table[class=hidelg], tr[class=hidelg], td[class=hidelg], br[class=hidelg] {display: initial !important; width: initial !important; visibility: initial !important;}
 			/*	change gutters to a narrower width on mobile	*/
 			td[class=mobgutters] { padding: 6px 12px 6px 12px !important; }
 			table[class=navblock] { width: 100% !important; border-bottom: 1px dashed #cccccc; border-left: none !important; }
@@ -140,7 +140,7 @@
 							</table>
 						</td>
 					</tr>
-					<tr>
+					<tr class="hide">
 						 <td class="hide">
 							 <table class="emailwrapto320" style="display: inline-table;" align="left" border="0" cellpadding="0" cellspacing="0" width="690">
 								 <tbody>
@@ -195,22 +195,23 @@
 							 </tbody>
 						 </table>
 					 </td>
-
-					 <!-- <td class="hidelg">
+				 </tr>
+				 <tr class="hidelg">
+					 <td class="hidelg">
 						<table style="display: block; margin:auto;" align="center" border="0" cellpadding="0" cellspacing="0" width="353">
 							<tbody>
 									<tr>
- 									 <td style="display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n05" src="img/nav_05.png" width="106" height="40" id="n05" alt="TEAM SPORTS >"></a></td>
+										 <td style="display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n05" src="img/nav_02.png" width="106" height="40" id="n05" alt="TEAM SPORTS >"></a></td>
 
-  									<td style="display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n07" src="img/nav_07.png" width="86" height="40" id="n07" alt="FOOTWEAR >"></a></td>
+										<td style="display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n07" src="img/nav_04.png" width="86" height="40" id="n07" alt="FOOTWEAR >"></a></td>
 
-  									<td style="display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n08" src="img/nav_08.png" width="75" height="40" id="n08" alt="APPAREL >"></a></td>
+										<td style="display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n08" src="img/nav_05.png" width="75" height="40" id="n08" alt="APPAREL >"></a></td>
 
-  									<td style="display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n10" src="img/nav_10.png" width="85" height="40" id="n10" alt="OUTDOORS >"></a></td>
- 								 </tr>
+										<td style="display:inline-block;"><a href="LINK" target="_blank"><img class="" style="display:block;" name="n10" src="img/nav_07.png" width="85" height="40" id="n10" alt="OUTDOORS >"></a></td>
+									 </tr>
 							</tbody>
 						</table>
-					 </td> -->
+					 </td>
 				 </tr>
 
 					 <!-- MOBILE MENU -->
@@ -247,6 +248,117 @@
 						 </tbody>
 					 </table> -->
 					 <!-- MOBILE MENU END-->
+
+
+					 <!-- REI MBILE MENU HAMBURGER MENU
+
+
+					 *[class].logo {
+	 position:absolute;
+	 top:0;
+	 left:0;
+	}
+	*[class].menu {
+	background-image: url('https://responsys.hs.llnwd.net/i5/responsysimages/rei/!CampaignImages/bg_GMshell_1026/z_menubg.png') !important;
+	background-color: #000000;
+	background-size: 370px 80px;
+	width:370px;
+	height:70px;
+	margin:0 auto;
+	padding: 0;
+	}
+
+	*[class].menu ul {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.25s linear;
+	margin: 0;
+	padding: 0;
+	}
+	*[class].menu li {
+	visibility: hidden;
+	display: block;
+	border: none;
+	background-color:#333333;
+	border-bottom:1px solid #666666;
+	border-left:1px solid #666666;
+	}
+
+	*[class].menu li { float:right;}
+	*[class].menu li:first-child { margin-top:80px !important;}
+
+
+	*[class].menu *[class].navbar-handle {
+	display: block;
+	background-image: url('https://responsys.hs.llnwd.net/i5/responsysimages/rei/!CampaignImages/rei_shell_0915/z_menu.png') !important;
+	background-size: 26px 25px !important;
+	}
+	#navbar-checkbox:checked + *[class].menu ul {
+	max-height: 450px;
+	}
+	#navbar-checkbox:checked + *[class].menu li {
+	visibility: visible;
+	}
+	#navbar-checkbox:checked + *[class].menu *[class].navbar-handle,
+	#navbar-checkbox:checked + *[class].menu *[class].navbar-handle:after,
+	#navbar-checkbox:checked + *[class].menu *[class].navbar-handle:before {
+	background-image: url('https://responsys.hs.llnwd.net/i5/responsysimages/rei/!CampaignImages/rei_shell_0915/z_x.png') !important; background-size: 26px 25px !important;
+
+	}
+	*[class].navbar-checkbox {
+	display: none;
+	}
+	*[class].navbar-handle {
+	display: none;
+	cursor: pointer;
+	padding: 0;
+	height: 25px;
+	width: 26px;
+	border-top: 0;
+	}
+	*[class].navbar-handle:before,
+	*[class].navbar-handle:after {
+	position: absolute;
+	content: ' ';
+
+	}
+	*[class].menu {
+	position: relative;
+	}
+	*[class].menu *[class].navbar-handle {
+	position: absolute;
+	top: 28px;
+	right: 15px;
+	z-index: 10;
+	}
+
+
+					 <table cellpadding="0" cellspacing="0">
+
+					<tbody><tr>
+					<td height="80" valign="top" bgcolor="#000000">
+						<form><input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
+							<div class="menu">
+						<a href="https://notices.rei.com/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlYQGuuH0Jm674lGUEXrFzfzeH4KzdwfiMl0pzfs1F40zf1hzgzdkoi5wjvfTBJYyFEXPfnYnVXtpKX%3DSRRCTSUW&amp;_ei_=EldraVWzOI3LOqwwZTg1_pcBR6QDTUF3XmNTWHf4kd2r7wi_8MkaCv9xY2YYkG3HpebeoQDsMEpRFu164v-8MrDOb_ZhnfW3Z9pRkOyAljg2NF4Crgut8CfzJ47eD3PaQIiHTvGmK4YyuVUMFciUcxmD8tzPwUwa_MT-pyGpC2yncPabVmfc27P_N8Y."><img src="https://static.cdn.responsys.net/i5/responsysimages/rei/contentlibrary/promo_/2016/01/0118_national_parks/011816_NationalParks/images/spcr.gif" width="125" height="75" style="display:block; border:0;" alt="REI™ CO-OP" class="logo"></a>
+								<ul>
+									<li><a href="https://notices.rei.com/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlYQGuuH0Jm674lGUEXrFzfzeH4KzdwfiMl0pzfs1F40zf1hzgzdkoi5wjvfTBJYyFEXPfnYnVXtpKX%3DSRRCTSUY&amp;_ei_=EldraVWzOI3LOqwwZTg1_pcBR6QDTUF3XmNTWHf4kd2r7wi_8MkaCv9xY2YYkG3HpebeoQDsMEpRFu164v-8MrDOb_ZhnfW3Z9pRkOyAljg2NF4Crgut8CfzJ47eD3PaQIiHTvGmK4YyuVUMFciUcxmD8tzPwUwa_MT-pyGpC2yncPabVmfc27P_N8Y."><img src="https://static.cdn.responsys.net/i5/responsysimages/rei/contentlibrary/promo_/2016/01/0118_national_parks/011816_NationalParks/images/zmnav_camp.png" width="195" height="50" style="display:block; border:0;"></a></li>
+									<li><a href="https://notices.rei.com/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlYQGuuH0Jm674lGUEXrFzfzeH4KzdwfiMl0pzfs1F40zf1hzgzdkoi5wjvfTBJYyFEXPfnYnVXtpKX%3DSRRCTSUA&amp;_ei_=EldraVWzOI3LOqwwZTg1_pcBR6QDTUF3XmNTWHf4kd2r7wi_8MkaCv9xY2YYkG3HpebeoQDsMEpRFu164v-8MrDOb_ZhnfW3Z9pRkOyAljg2NF4Crgut8CfzJ47eD3PaQIiHTvGmK4YyuVUMFciUcxmD8tzPwUwa_MT-pyGpC2yncPabVmfc27P_N8Y."><img src="https://static.cdn.responsys.net/i5/responsysimages/rei/contentlibrary/promo_/2016/01/0118_national_parks/011816_NationalParks/images/zmnav_climb.png" width="195" height="50" style="display:block; border:0;"></a></li>
+									<li><a href="https://notices.rei.com/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlYQGuuH0Jm674lGUEXrFzfzeH4KzdwfiMl0pzfs1F40zf1hzgzdkoi5wjvfTBJYyFEXPfnYnVXtpKX%3DSRRCTSUB&amp;_ei_=EldraVWzOI3LOqwwZTg1_pcBR6QDTUF3XmNTWHf4kd2r7wi_8MkaCv9xY2YYkG3HpebeoQDsMEpRFu164v-8MrDOb_ZhnfW3Z9pRkOyAljg2NF4Crgut8CfzJ47eD3PaQIiHTvGmK4YyuVUMFciUcxmD8tzPwUwa_MT-pyGpC2yncPabVmfc27P_N8Y."><img src="https://static.cdn.responsys.net/i5/responsysimages/rei/contentlibrary/promo_/2016/01/0118_national_parks/011816_NationalParks/images/zmnav_cycle.png" width="195" height="50" style="display:block; border:0;"></a></li>
+									<li><a href="https://notices.rei.com/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlYQGuuH0Jm674lGUEXrFzfzeH4KzdwfiMl0pzfs1F40zf1hzgzdkoi5wjvfTBJYyFEXPfnYnVXtpKX%3DSRRCTSUC&amp;_ei_=EldraVWzOI3LOqwwZTg1_pcBR6QDTUF3XmNTWHf4kd2r7wi_8MkaCv9xY2YYkG3HpebeoQDsMEpRFu164v-8MrDOb_ZhnfW3Z9pRkOyAljg2NF4Crgut8CfzJ47eD3PaQIiHTvGmK4YyuVUMFciUcxmD8tzPwUwa_MT-pyGpC2yncPabVmfc27P_N8Y."><img src="https://static.cdn.responsys.net/i5/responsysimages/rei/contentlibrary/promo_/2016/01/0118_national_parks/011816_NationalParks/images/zmnav_paddle.png" width="195" height="51" style="display:block; border:0;"></a></li>
+									<li><a href="https://notices.rei.com/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlYQGuuH0Jm674lGUEXrFzfzeH4KzdwfiMl0pzfs1F40zf1hzgzdkoi5wjvfTBJYyFEXPfnYnVXtpKX%3DSRRCTSUD&amp;_ei_=EldraVWzOI3LOqwwZTg1_pcBR6QDTUF3XmNTWHf4kd2r7wi_8MkaCv9xY2YYkG3HpebeoQDsMEpRFu164v-8MrDOb_ZhnfW3Z9pRkOyAljg2NF4Crgut8CfzJ47eD3PaQIiHTvGmK4YyuVUMFciUcxmD8tzPwUwa_MT-pyGpC2yncPabVmfc27P_N8Y."><img src="https://static.cdn.responsys.net/i5/responsysimages/rei/contentlibrary/promo_/2016/01/0118_national_parks/011816_NationalParks/images/zmnav_run.png" width="195" height="50" style="display:block; border:0;"></a></li>
+									<li><a href="https://notices.rei.com/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlYQGuuH0Jm674lGUEXrFzfzeH4KzdwfiMl0pzfs1F40zf1hzgzdkoi5wjvfTBJYyFEXPfnYnVXtpKX%3DSRRCTSWR&amp;_ei_=EldraVWzOI3LOqwwZTg1_pcBR6QDTUF3XmNTWHf4kd2r7wi_8MkaCv9xY2YYkG3HpebeoQDsMEpRFu164v-8MrDOb_ZhnfW3Z9pRkOyAljg2NF4Crgut8CfzJ47eD3PaQIiHTvGmK4YyuVUMFciUcxmD8tzPwUwa_MT-pyGpC2yncPabVmfc27P_N8Y."><img src="https://static.cdn.responsys.net/i5/responsysimages/rei/contentlibrary/promo_/2016/01/0118_national_parks/011816_NationalParks/images/zmnav_snow.png" width="195" height="50" style="display:block; border:0;"></a></li>
+									<li><a href="https://notices.rei.com/pub/cc?_ri_=X0Gzc2X%3DYQpglLjHJlYQGuuH0Jm674lGUEXrFzfzeH4KzdwfiMl0pzfs1F40zf1hzgzdkoi5wjvfTBJYyFEXPfnYnVXtpKX%3DSRRCTSWS&amp;_ei_=EldraVWzOI3LOqwwZTg1_pcBR6QDTUF3XmNTWHf4kd2r7wi_8MkaCv9xY2YYkG3HpebeoQDsMEpRFu164v-8MrDOb_ZhnfW3Z9pRkOyAljg2NF4Crgut8CfzJ47eD3PaQIiHTvGmK4YyuVUMFciUcxmD8tzPwUwa_MT-pyGpC2yncPabVmfc27P_N8Y."><img src="https://static.cdn.responsys.net/i5/responsysimages/rei/contentlibrary/promo_/2016/01/0118_national_parks/011816_NationalParks/images/zmnav_outlet.png" width="195" height="50" style="display:block; border:0;"></a></li>
+								</ul>
+								<label for="navbar-checkbox" class="navbar-handle"></label>
+								</div><input type="hidden" name="__HIDDEN_FIELD_NAMES__" value="__HIDDEN_FIELD_NAMES__"><input type="hidden" name="charset_" value="UTF-8">
+
+
+								</form>
+					</td>
+					</tr>
+					</tbody></table>
+
+				 -->
 				</table>
 			</td>
 		</tr>
