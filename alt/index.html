@@ -103,7 +103,7 @@ background-image: url('../img/logo-black.png') !important;
 background-repeat: no-repeat;
 background-color: #F1F1F1;
 background-size: 140px 80px;
-background-position: 10px 0;
+background-position: center;
 width:100%;
 height:80px;
 margin:10px auto;
@@ -116,38 +116,40 @@ overflow: hidden;
 transition: max-height 0.25s linear;
 margin: 0;
 padding: 0;
-text-align: left;
+text-align: right;
 }
 *[class].menu li {
 visibility: hidden;
 display: block;
 border: none;
+text-align: right;
 background-color:#f1f1f1;
 border-bottom:1px solid #c7c7c7;
 border-left:1px solid #c7c7c7;
 }
-
+*[class].menu li a img.right{float: right;padding: 0px 10px 0 195px}
 *[class].menu li { float:right;}
-*[class].menu li:first-child { margin-top:80px !important;}
+*[class].menu li:first-child { margin-top:90px !important;border-top:1px solid #c7c7c7;}
 
 
 *[class].menu *[class].navbar-handle {
 display: block;
-background-image: url('https://responsys.hs.llnwd.net/i5/responsysimages/rei/!CampaignImages/rei_shell_0915/z_menu.png') !important;
+background-image: url('../img/z_menu-grey.png') !important;
 background-size: 26px 25px !important;
 }
 #navbar-checkbox:checked + *[class].menu ul {
-max-height: 450px;
+max-height: 525px;
 width: 100%
 }
 #navbar-checkbox:checked + *[class].menu li {
 visibility: visible;
 width: 100%;
+text-align: right;
 }
 #navbar-checkbox:checked + *[class].menu *[class].navbar-handle,
 #navbar-checkbox:checked + *[class].menu *[class].navbar-handle:after,
 #navbar-checkbox:checked + *[class].menu *[class].navbar-handle:before {
-background-image: url('https://responsys.hs.llnwd.net/i5/responsysimages/rei/!CampaignImages/rei_shell_0915/z_x.png') !important; background-size: 26px 25px !important;
+background-image: url('../img/z_x-grey.png') !important; background-size: 26px 25px !important;
 
 }
 *[class].navbar-checkbox {
@@ -185,7 +187,7 @@ z-index: 10;
 
 <!-- ALT COLOR -->
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#005644" border="0" width="100%">
-		<tr><td class="emailnomob" align="center">
+		<tr><td class="" align="center">
 				<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
 				<tr>
 					<td align="center" style="color:#777777; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 12px 0px 12px;">
@@ -289,28 +291,28 @@ z-index: 10;
   							<div class="menu">
   								<ul>
   									<li><a href="#">
-											<img src="../img/nav_02.png" width="106" height="40" style="display:block; border:0;" id="n05" alt="TEAM SPORTS >">
+											<img class="right" src="../img/nav_02.png" width="129" height="50" style="display:block; border:0;" id="n05" alt="TEAM SPORTS >">
 										</a></li>
   									<li><a href="#">
-											<img src="../img/nav_03.png" width="78" height="40" style="display:block; border:0;" id="n06" alt="EXERCISE >">
+											<img class="right" src="../img/nav_03.png" width="96" height="50" style="display:block; border:0;" id="n06" alt="EXERCISE >">
 										</a></li>
   									<li><a href="#">
-											<img src="../img/nav_04.png" width="86" height="40" style="display:block; border:0;" id="n07" alt="FOOTWEAR >">
+											<img class="right" src="../img/nav_04.png" width="106" height="50" style="display:block; border:0;" id="n07" alt="FOOTWEAR >">
 										</a></li>
   									<li><a href="#">
-											<img src="../img/nav_05.png" width="75" height="40" style="display:block; border:0;" id="n08" alt="APPAREL >">
+											<img class="right" src="../img/nav_05.png" width="91" height="50" style="display:block; border:0;" id="n08" alt="APPAREL >">
 										</a></li>
   									<li><a href="#">
-											<img src="../img/nav_06.png" width="52" height="40" style="display:block; border:0;" id="n09" alt="GOLF >">
+											<img class="right" src="../img/nav_06.png" width="60" height="50" style="display:block; border:0;" id="n09" alt="GOLF >">
 										</a></li>
   									<li><a href="#">
-											<img src="../img/nav_07.png" width="85" height="40" style="display:block; border:0;" id="n10" alt="OUTDOORS >">
+											<img class="right" src="../img/nav_07.png" width="105" height="50" style="display:block; border:0;" id="n10" alt="OUTDOORS >">
 										</a></li>
 										<li><a href="#">
-											<img src="../img/nav_08.png" width="80" height="40" style="display:block; border:0;" id="n11" alt="FAN SHOP >">
+											<img class="right" src="../img/nav_08.png" width="98" height="50" style="display:block; border:0;" id="n11" alt="FAN SHOP >">
 										</a></li>
 										<li><a href="#">
-											<img src="../img/nav_09.png" width="94" height="40" style="display:block; border:0;" id="n12" alt="CLEARANCE >">
+											<img class="right" src="../img/nav_09.png" width="115" height="50" style="display:block; border:0;" id="n12" alt="CLEARANCE >">
 										</a></li>
   								</ul>
   								<label for="navbar-checkbox" class="navbar-handle"></label>
@@ -370,7 +372,7 @@ z-index: 10;
 
 
 
-<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
 		<tbody>
 		<tr>
 			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
@@ -380,7 +382,7 @@ z-index: 10;
 				</table></td>
 		</tr>
 	</tbody>
-</table>
+</table> -->
 
 <!-- spacer -->
 <!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
@@ -432,9 +434,34 @@ z-index: 10;
 		<tr>
 			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
 					<tr>
-						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="hLINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://placehold.it/690x650?text=Main+Message" width="690" height="650" alt="ALT_TEXT" border="0" style="display: block;" /></a>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+							<a href="hLINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="../img/aspot.png" width="690" height="650" alt="ALT_TEXT" border="0" style="display: block;" /></a>
 						</td>
 					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+				<tr>
+					<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+						<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="../img/panel.png" width="690" height="250" alt="ALT_TEXT" border="0" style="display: block;"/></a>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+						<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="../img/panel.png" width="690" height="250" alt="ALT_TEXT" border="0" style="display: block;"/></a>
+					</td>
+				</tr>
+				<tr>
+					<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+						<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="../img/panel.png" width="690" height="250" alt="ALT_TEXT" border="0" style="display: block;"/></a>
+					</td>
+				</tr>
 				</table></td>
 		</tr>
 	</tbody>
@@ -459,13 +486,14 @@ z-index: 10;
 									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
 											<tr>
 												<td class="bordright" align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
-													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x560?text=Left+Stack" width="345" height="560" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="../img/left-tile.png" width="345" height="400" alt="ALT_TEXT" border="0" style="display: block;" class="triptych" /></a></td>
 											</tr>
 										</table></td>
 									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
 											<tr>
 												<td class="bordleft" align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
-													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x560?text=Right+Stack" width="345" height="560" alt="Sweaters" border="0" style="display: block;" class="triptych" /></a></td>
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="../img/right-tile.png" width="345" height="400" alt="ALT_TEXT" border="0" style="display: block;" class="triptych" /></a>
+												</td>
 											</tr>
 										</table></td>
 								</tr>
@@ -497,13 +525,15 @@ z-index: 10;
 											<tr>
 												<td class="bordright" align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
 													<!-- ADDING BORDERS TO CREATE VISUAL GRID -->
-													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x380?text=Left+Stack+2" width="345" height="380" alt="ALT" border="0" style="display: block;" class="triptych" /></a></td>
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="../img/left-tile.png" width="345" height="400" alt="ALT_TEXT" border="0" style="display: block;" class="triptych" /></a>
+												</td>
 											</tr>
 										</table></td>
 									<td valign="top" class="stack"><table cellpadding="0" cellspacing="0" align="center" width="345" border="0">
 											<tr>
 												<td class="bordleft" align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
-													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://placehold.it/345x380?text=Right+Stack+2" width="345" height="380" alt="ALT" border="0" style="display: block;" class="triptych" /></a></td>
+													<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="../img/right-tile.png" width="345" height="400" alt="ALT_TEXT" border="0" style="display: block;" class="triptych" /></a>
+												</td>
 											</tr>
 										</table></td>
 								</tr>
@@ -526,8 +556,8 @@ z-index: 10;
 	<tbody>
 		<tr>
 			<td align="center">
-				<table class="wrapper" cellpadding="0" cellspacing="0" align="center" bgcolor="#ccc" border="0" width="690">
-					<tr bgcolor="#ccc">
+				<table class="wrapper" cellpadding="0" cellspacing="0" align="center" bgcolor="#717171" border="0" width="690">
+					<tr bgcolor="#717171">
 						<td align="center" class="nav-button-bar" style="color:#ffffff; font-size: 14px; line-height: 130%; font-family: Arial, sans-serif; padding: 10px 0px 10px 0px;">
 							<a href="LINK" style="display: inline-block; text-decoration: none; color: #005644; border-style: solid; border-width: 2px; border-color: #005644; padding: 10px 20px;margin:10px 0;" target="_blank" class="nav-button"><b>SHOP NOW</b></a>&nbsp;
 							<a href="LINK" style="display: inline-block; text-decoration: none; color: #ffffff; border-style: solid; border-width: 2px; border-color: #ffffff; padding: 10px 20px;" target="_blank" class="nav-button"><b>SHOP NOW</b></a>&nbsp;
@@ -555,35 +585,9 @@ z-index: 10;
 		<tr>
 			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
 					<tr>
-						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://placehold.it/690x345?text=Secondary+Message" width="690" height="345" alt="Boots" border="0" style="display: block;" /></a></td>
-					</tr>
-				</table></td>
-		</tr>
-	</tbody>
-</table>
-
-
-
-
-
-
-
-
-
-<!-- spacer -->
-<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
-	<tr>
-		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="" border="0" style="display: block;" /></td>
-	</tr>
-</table>
-<!-- /spacer -->
-
-<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
-	<tbody>
-		<tr>
-			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
-					<tr>
-						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://placehold.it/690x160?text=Bottom+Banner" width="690" height="160" alt="Sale & Clearance" border="0" style="display: block;" /></a></td>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+							<a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="../img/banner.png" width="690" height="250" alt="ALT_TEXT" border="0" style="display: block;"/></a>
+						</td>
 					</tr>
 				</table></td>
 		</tr>
@@ -616,7 +620,7 @@ z-index: 10;
 					<table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="320" align="center">
 						<tbody><tr>
 							<td>
-								<table style="display: inline-table;" align="left" border="0" cellpadding="0" cellspacing="0" width="320">
+								<table style="display: inline-table;margin:20px 0;" align="left" border="0" cellpadding="0" cellspacing="0" width="320">
 									<tbody><tr>
 						 				<td align="center" valign="top">
 
@@ -656,8 +660,8 @@ z-index: 10;
 									</tr>
 								</tbody></table>
 							</td>
-						</tr><tr>
-					</tr></tbody></table>
+						</tr>
+					</tbody></table>
 				</td>
 	</tr>
 </table>
@@ -670,6 +674,7 @@ z-index: 10;
 </table>
 <!-- spacer -->
 
+<!-- FOOTER START -->
 <table width="690" border="0" align="center" cellspacing="0" bgcolor="#333" class="emailwrapto320">
 <tbody>
 
@@ -703,36 +708,43 @@ z-index: 10;
 </tbody></table></td></tr>
 
 
-									<tr>
-										<td width="18" align="center" valign="top"><img src="http://img.ed4.net/spacer50.gif" width="18" height="20" border="0" style="display: block"></td>
-										<td align="left" valign="top"><font style="FONT-SIZE: 9px; COLOR: #818181; LINE-HEIGHT: 8px; FONT-FAMILY:	Arial, Helvetica, sans-serif;text-align:center;"><br>
+	<tr>
+		<td width="18" align="center" valign="top"><img src="http://img.ed4.net/spacer50.gif" width="18" height="20" border="0" style="display: block"></td>
+		<td align="left" valign="top">
+			<font style="FONT-SIZE: 9px; COLOR: #818181; LINE-HEIGHT: 8px; FONT-FAMILY:	Arial, Helvetica, sans-serif;text-align:center;">
+				<br>
 
-<!-- ############## DISCLAIMERS ############## -->
+				<!-- ############## DISCLAIMERS ############## -->
 
-*Online Only. Offer only valid on items marked with the FREE SHIPPING Savings Alert message. Applies only for standard economy shipping and only up to a $15 shipping credit shown in the cart. <b>Excludes PING and YETI.</b> Discount does not apply to taxes or similar charges. Entire order must be shipped to a single address. Cannot be combined with any other offer nor is this valid on previous purchases. Only applies to orders to be shipped to a valid address in the United States, excluding
-Alaska and Hawaii. Not available for shipments to APO/FPO addresses or P.O. boxes. Customer responsible for all shipping costs for returned merchandise other than footwear or apparel. Offer not valid on canceled or out of stock merchandise. This offer only applies to the individual items; other items in your cart that are not eligible will still incur a shipping charge. This promotional offer may be modified or terminated at any time without notice.<br>
-<br>
-
-
-<!-- ############## END DISCLAIMERS ############## -->
+				*Online Only. Offer only valid on items marked with the FREE SHIPPING Savings Alert message. Applies only for standard economy shipping and only up to a $15 shipping credit shown in the cart. <b>Excludes PING and YETI.</b> Discount does not apply to taxes or similar charges. Entire order must be shipped to a single address. Cannot be combined with any other offer nor is this valid on previous purchases. Only applies to orders to be shipped to a valid address in the United States, excluding
+				Alaska and Hawaii. Not available for shipments to APO/FPO addresses or P.O. boxes. Customer responsible for all shipping costs for returned merchandise other than footwear or apparel. Offer not valid on canceled or out of stock merchandise. This offer only applies to the individual items; other items in your cart that are not eligible will still incur a shipping charge. This promotional offer may be modified or terminated at any time without notice.<br>
+				<br>
 
 
-											<b>DICK'S Sporting Goods, 345 Court Street, Coraopolis, PA	15108</b><br>
-											<br>
-You are receiving this email because you signed up as <font style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:	Arial, Helvetica, sans-serif"><u>_____________</u></font> to receive our emails.	If you no longer wish to receive emails from DICK'S Sporting Goods, please <a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/NTZXE/RU/h?a=727X3Q0&amp;b=joel.dombek@dcsg.com&amp;c=7D3RK&amp;d=817580621&amp;e=10212015FlashSalePMRemail&amp;f=290203426" style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:	Arial, Helvetica, sans-serif" target="_blank">click here</a> or to read our Privacy Policy <a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/7DPBC/RU/h?a=10212015FlashSalePMRemail&amp;b=290203426" style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:	Arial, Helvetica, sans-serif" target="_blank">click here.</a><br><br>
-<br>
-										</font></td><td align="left" valign="top"><img src="http://img.ed4.net/spacer50.gif" width="30" height="20" border="0" style="display: block"></td>
-									</tr>
-						</tbody></table>
-						<table width="690" border="0" align="center" cellspacing="0" bgcolor="#333" class="emailwrapto320">
-			      	<tbody><tr>
-			      		<td align="center" valign="top">
-			      			<a href="LINK">
-			              <img class="emailimageresize320" style="display:block;" width="307" height="89" src="http://joeldom.github.io/DSG/olympics/img//DSG_OlyPara_Horiz-1col.png">
-			            </a>
-			            <br>
-			      		</td>
-			      	</tr>
-			      </tbody></table>
+				<!-- ############## END DISCLAIMERS ############## -->
+
+
+				<b>DICK'S Sporting Goods, 345 Court Street, Coraopolis, PA	15108</b><br>
+				<br>
+				You are receiving this email because you signed up as <font style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:	Arial, Helvetica, sans-serif"><u>_____________</u></font> to receive our emails.	If you no longer wish to receive emails from DICK'S Sporting Goods, please <a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/NTZXE/RU/h?a=727X3Q0&amp;b=joel.dombek@dcsg.com&amp;c=7D3RK&amp;d=817580621&amp;e=10212015FlashSalePMRemail&amp;f=290203426" style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:	Arial, Helvetica, sans-serif" target="_blank">click here</a> or to read our Privacy Policy <a href="http://link.dcsg.com/r/AICX0O/PG4PG/EWD9B3M/RZFSQZ/7DPBC/RU/h?a=10212015FlashSalePMRemail&amp;b=290203426" style="FONT-SIZE: 11px; COLOR: #999999; LINE-HEIGHT: 14px; FONT-FAMILY:	Arial, Helvetica, sans-serif" target="_blank">click here.</a>
+				<br>
+				<br>
+				<br>
+			</font>
+		</td>
+		<td align="left" valign="top"><img src="http://img.ed4.net/spacer50.gif" width="30" height="20" border="0" style="display: block"></td>
+	</tr>
+	</tbody></table>
+
+		<table width="690" border="0" align="center" cellspacing="0" bgcolor="#333" class="emailwrapto320">
+    	<tbody><tr>
+    		<td align="center" valign="top">
+    			<a href="LINK">
+            <img class="emailimageresize320" style="display:block;" width="307" height="89" src="http://joeldom.github.io/DSG/olympics/img//DSG_OlyPara_Horiz-1col.png">
+          </a>
+          <br>
+    		</td>
+    	</tr>
+    </tbody></table>
 </body>
 </html>
