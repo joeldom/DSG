@@ -50,8 +50,10 @@ body{margin: 0;padding: 0;}
   margin: 0 auto;
   padding: 0 20px;
   box-sizing: border-box;
-  display: block;}
-
+  display: block;
+  font-size: 12px;
+  line-height: 18px;
+}
   .presi-wrapper .logo{
     position: absolute;
     left: 100px;
@@ -71,10 +73,13 @@ body{margin: 0;padding: 0;}
 .presentation-prev{
   left: 0px;
 }
+.presentation-home{
+  left:80px;
+}
 .presentation-next{
   right: 0px;
 }
-.presentation-next,.presentation-prev{
+.presentation-next,.presentation-prev, .presentation-home{
   position: fixed;
   bottom: 0px;
   padding: 10px 20px;
@@ -87,14 +92,16 @@ body{margin: 0;padding: 0;}
   letter-spacing: 1px;
   text-transform: uppercase;
 }
-.presentation-next:hover,.presentation-prev:hover{
+.presentation-next:hover,.presentation-prev:hover, .presentation-home:hover{
   background-color: grey;
 }
 /*.presentation-next:visited,.presentation-prev:visited{
   background-color: #006554;
 }*/
 @media (max-width: 700px){
-  .presentation-next,.presentation-prev{
+  .presi-wrapper,.presentation-next,.presentation-prev, .presentation-home{
     display: none;
+    width: 0;
+    visibility: hidden;
   }
 }

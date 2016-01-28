@@ -93,91 +93,88 @@
 			td[class=shrinktext]{font-family:Arial, Helvetica, sans-serif; color:#ffffff; font-size:10px;}
 			td[class=bordleft],td[class=bordright]{border-left: none !important; border-right: none !important}
 		}
+		/*BEGIN HAM MENU STYLES*/
 		*[class].logo {
-position:absolute;
-top:0;
-left:0;
-}
-*[class].menu {
-background-image: url('../img/logo-black.png') !important;
-background-repeat: no-repeat;
-background-color: #F1F1F1;
-background-size: 140px 80px;
-background-position: center;
-width:100%;
-height:80px;
-margin:10px auto;
-padding: 0 ;
-}
-
-*[class].menu ul {
-max-height: 0;
-overflow: hidden;
-transition: max-height 0.25s linear;
-margin: 0;
-padding: 0;
-text-align: right;
-}
-*[class].menu li {
-visibility: hidden;
-display: block;
-border: none;
-text-align: right;
-background-color:#f1f1f1;
-border-bottom:1px solid #c7c7c7;
-border-left:1px solid #c7c7c7;
-}
-*[class].menu li a img.right{float: right;padding: 0px 10px 0 195px}
-*[class].menu li { float:right;}
-*[class].menu li:first-child { margin-top:90px !important;border-top:1px solid #c7c7c7;}
-
-
-*[class].menu *[class].navbar-handle {
-display: block;
-background-image: url('../img/z_menu-grey.png') !important;
-background-size: 26px 25px !important;
-}
-#navbar-checkbox:checked + *[class].menu ul {
-max-height: 525px;
-width: 100%
-}
-#navbar-checkbox:checked + *[class].menu li {
-visibility: visible;
-width: 100%;
-text-align: right;
-}
-#navbar-checkbox:checked + *[class].menu *[class].navbar-handle,
-#navbar-checkbox:checked + *[class].menu *[class].navbar-handle:after,
-#navbar-checkbox:checked + *[class].menu *[class].navbar-handle:before {
-background-image: url('../img/z_x-grey.png') !important; background-size: 26px 25px !important;
-
-}
-*[class].navbar-checkbox {
-display: none;
-}
-*[class].navbar-handle {
-display: none;
-cursor: pointer;
-padding: 0;
-height: 25px;
-width: 26px;
-border-top: 0;
-}
-*[class].navbar-handle:before,
-*[class].navbar-handle:after {
-position: absolute;
-content: ' ';
-
-}
-*[class].menu {
-position: relative;
-}
-*[class].menu *[class].navbar-handle {
-position: absolute;
-top: 28px;
-right: 15px;
-z-index: 10;
-}
+			position:absolute;
+			top:0;
+			left:0;
+		}
+		*[class].menu {
+			background-image: url('../img/logo-black.png') !important;
+			background-repeat: no-repeat;
+			background-color: #F1F1F1;
+			background-size: 140px 80px;
+			background-position: center;
+			width:100%;
+			height:80px;
+			margin:10px auto;
+			padding: 0 ;
+		}
+		*[class].menu ul {
+			max-height: 0;
+			overflow: hidden;
+			transition: max-height 0.25s linear;
+			margin: 0;
+			padding: 0;
+			text-align: right;
+		}
+		*[class].menu li {
+			visibility: hidden;
+			display: block;
+			border: none;
+			text-align: right;
+			background-color:#f1f1f1;
+			border-bottom:1px solid #c7c7c7;
+			border-left:1px solid #c7c7c7;
+		}
+		*[class].menu li a img.right{float: right;padding: 0px 10px 0 195px}
+		*[class].menu li { float:right;}
+		*[class].menu li:first-child { margin-top:90px !important;border-top:1px solid #c7c7c7;}
+		*[class].menu *[class].navbar-handle {
+			display: block;
+			background-image: url('../img/z_menu-grey.png') !important;
+			background-size: 26px 25px !important;
+		}
+		#navbar-checkbox:checked + *[class].menu ul {
+			max-height: 525px;
+			width: 100%
+		}
+		#navbar-checkbox:checked + *[class].menu li {
+			visibility: visible;
+			width: 100%;
+			text-align: right;
+		}
+		#navbar-checkbox:checked + *[class].menu *[class].navbar-handle,
+		#navbar-checkbox:checked + *[class].menu *[class].navbar-handle:after,
+		#navbar-checkbox:checked + *[class].menu *[class].navbar-handle:before {
+			background-image: url('../img/z_x-grey.png') !important; background-size: 26px 25px !important;
+		}
+		*[class].navbar-checkbox {
+			display: none;
+		}
+		*[class].navbar-handle {
+			display: none;
+			cursor: pointer;
+			padding: 0;
+			height: 25px;
+			width: 26px;
+			border-top: 0;
+		}
+		*[class].navbar-handle:before,
+		*[class].navbar-handle:after {
+			position: absolute;
+			content: ' ';
+		}
+		*[class].menu {
+			position: relative;
+		}
+		*[class].menu *[class].navbar-handle {
+			position: absolute;
+			top: 28px;
+			right: 15px;
+			z-index: 10;
+		}
+		/*END HAM MENU STYLES*/
 	</style>
 </head>
 <body bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
@@ -325,72 +322,11 @@ z-index: 10;
   					</tbody></table>
 					 </td>
 				 </tr>
-
-					 <!-- MOBILE MENU -->
-					 <!-- <table width="690" border="0" align="center" cellspacing="0" bgcolor="#f1f1f1" class="emailwrapto320">
-						 <tbody>
-							 <tr>
-								 <td align="center" valign="top" colspan="3">
-									 <table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="320" align="center">
-										 <tbody>
-											 <tr>
-												 <td><img style="display:block;" name="n01" src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="320" height="1" border="0" id="n01" alt=""></td>
-											 </tr>
-											 <tr>
-												 <td>
-													 <table style="display: inline-table;" align="left" border="0" cellpadding="0" cellspacing="0" width="320">
-														 <tbody>
-															 <tr>
-																 <td><a href="LINK" target="_blank"><img class="" style="display:block;" name="n05" src="img/nav_05.png" width="106" height="40" id="n05" alt="TEAM SPORTS >"></a></td>
-
-																 <td><a href="LINK" target="_blank"><img class="" style="display:block;" name="n07" src="img/nav_07.png" width="86" height="40" id="n07" alt="FOOTWEAR >>"></a></td>
-
-																 <td><a href="LINK" target="_blank"><img class="" style="display:block;" name="n08" src="img/nav_08.png" width="75" height="40" id="n08" alt="APPAREL >"></a></td>
-
-																 <td><a href="LINK" target="_blank"><img class="" style="display:block;" name="n10" src="img/nav_10.png" width="85" height="40" id="n10" alt="OUTDOORS >>"></a></td>
-															 </tr>
-														 </tbody>
-													 </table>
-												 </td>
-											 </tr>
-										 </tbody>
-									 </table>
-								 </td>
-							 </tr>
-						 </tbody>
-					 </table> -->
-					 <!-- MOBILE MENU END-->
-
 				</table>
 			</td>
 		</tr>
 		</tbody>
 </table>
-
-
-
-
-
-
-<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
-		<tbody>
-		<tr>
-			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
-					<tr>
-						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://placehold.it/690x160?text=Top+Banner" width="690" height="160" alt="30% OFF Reg. priced styles + free shipping on your order" border="0" style="display: block;" /></a></td>
-					</tr>
-				</table></td>
-		</tr>
-	</tbody>
-</table> -->
-
-<!-- spacer -->
-<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
-	<tr>
-		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="" border="0" style="display: block;" /><br/></td>
-	</tr>
-</table> -->
-<!-- /spacer -->
 
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
 	<tbody>
@@ -411,24 +347,6 @@ z-index: 10;
 	</tbody>
 </table>
 
-<!-- spacer -->
-<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
-	<tr>
-		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="" border="0" style="display: block;" /><br/></td>
-	</tr>
-</table> -->
-<!-- /spacer -->
-<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
-	<tbody>
-		<tr>
-			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
-					<tr>
-						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="LINK" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://imagesle.postdirect.com/master/13/1083497/102615_wms_01.jpg" width="690" height="657" alt="Shop Sweaters" border="0" style="display: block;" /></a></td>
-					</tr>
-				</table></td>
-		</tr>
-	</tbody>
-</table> -->
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
 	<tbody>
 		<tr>
@@ -594,18 +512,6 @@ z-index: 10;
 	</tbody>
 </table>
 
-
-<!-- <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
-	<tbody>
-		<tr>
-			<td align="center"><table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="690" class="divider">
-					<tr>
-						<td bgcolor="#cccccc" class="divider"><img class="hide" src="http://media.4at5.net/email_domains/lad/template/divider.png" width="690" height="80" alt="" border="0" style="display: block;" /></td>
-					</tr>
-				</table></td>
-		</tr>
-	</tbody>
-</table> -->
 
 <!-- spacer -->
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
