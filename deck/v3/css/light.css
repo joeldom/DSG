@@ -101,13 +101,13 @@
     2.Template Basics
 ============================================================================================================================================
 ============================================================================================================================================*/
-    
+
     body.admin-bar {
         margin-top: 32px;
     }
-    body header {
+    header {
         position: absolute;
-        background-color: #ffffff;
+        /*background-color: #ffffff;*/
         top: 0;
         left: 0;
         width: 100%;
@@ -291,7 +291,7 @@
 
     /*Flexslider*/
         .flexslider {
-            
+
         }
         .flexslider ul, .flexslider ul li {
             width: 100%;
@@ -309,7 +309,7 @@
             position: relative;
         }
         .inner-wrapper .flexslider .nav {
-            
+
         }
         .inner-wrapper .flexslider .nav .next {
             position: absolute;
@@ -519,7 +519,7 @@
             display: none;
         }
 
-        
+
     blockquote {
         padding: 20px 15px;
         border: 0;
@@ -596,7 +596,7 @@
     3.Transitions Setup
 ============================================================================================================================================
 ============================================================================================================================================*/
-    
+
     ::selection {
         color: #000000;
         background-color: #ffffff;
@@ -610,15 +610,15 @@
         opacity: 1;
     }
     ::-moz-placeholder {
-        color: #7C7C7C!important;  
+        color: #7C7C7C!important;
         opacity: 1;
     }
     :-moz-placeholder {
-        color: #7C7C7C!important;  
+        color: #7C7C7C!important;
         opacity: 1;
     }
     :-ms-input-placeholder {
-        color: #7C7C7C!important;  
+        color: #7C7C7C!important;
         opacity: 1;
     }
 
@@ -631,11 +631,11 @@
     .portfolio .projects .project .project-cont:before, .portfolio .projects .project .overlay:before, .portfolio .projects .project .overlay, .portfolio .projects .project .cat a,.button-small,
     .portfolio-striped .projects .project .overlay, .portfolio-striped .projects .project .overlay:before, .portfolio-striped .projects .project .cat a, .portfolio-single.style-1 .nav a,
     .portfolio-single.style-1 .images a:before, .team .member .overlay, .contact-1 form textarea, .contact-1 form input, .contact-1 form input[type=button], .contact-1 form .message-info,
-    .contact-2 form input[type=text], .contact-2 form input[type=email], .contact-2 form textarea, .contact-2 form input[type=button], .gallery-images .filters a, .blog .filters a, 
+    .contact-2 form input[type=text], .contact-2 form input[type=email], .contact-2 form textarea, .contact-2 form input[type=button], .gallery-images .filters a, .blog .filters a,
     .blog .articles .overlay, .blog.style-1 .article .date a, .blog.style-1 .article .cat a, .blog.style-2 .article .date a, .blog.style-2 .article .cat a, .sidebar .widget.recent-posts ul li a,
     .sidebar .widget.categories ul li a, .blog.filtered .articles .article .article-cont:before, .sidebar .widget.flickr ul li:before, .blog-single .article .info a, .shop .items .item .overlay:before,
     .blog-single form input[type=button], .blog-single form input[type=text], .blog-single form input[type=email], .blog-single form textarea, .shop .items .item .rate-2,.shop .filters a,
-    .shop .items .item .overlay, .shop .items .item .item-cont:before, .item-single .add-to-cart button,.item-single .add-to-cart input[type=number], .item-single .rate .full a, 
+    .shop .items .item .overlay, .shop .items .item .item-cont:before, .item-single .add-to-cart button,.item-single .add-to-cart input[type=number], .item-single .rate .full a,
     .inner-wrapper .flexslider .nav a, .item-single .items .item .overlay, .gallery-images .images .img .icon, .gallery-images.style-title .images .img .love-2 {
         -webkit-transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
@@ -685,7 +685,7 @@
     footer .social-networks a i {
         display: none;
         line-height: 60px;
-        font-size: 13px;        
+        font-size: 13px;
     }
     footer .social-networks a:hover {
         color: #000000;
@@ -2154,7 +2154,7 @@
                 right: 15px;
             }
             .portfolio-single.style-2 .content {
-                
+
             }
             .portfolio-single.style-2 .content .info-box {
                 text-align: left;
@@ -2296,7 +2296,7 @@
     9.Blog Setup
 ============================================================================================================================================
 ============================================================================================================================================*/
-    
+
     /*Basics*/
         .blog {
             position: relative;
@@ -2554,7 +2554,7 @@
             margin-bottom: 0;
         }
         .sidebar .widget.categories {
-            
+
         }
         .sidebar .widget.categories ul {
             margin: 0;
@@ -2577,7 +2577,7 @@
             color: #000000;
         }
         .sidebar .widget.recent-posts {
-            
+
         }
         .sidebar .widget.recent-posts ul {
             margin: 0;
@@ -2600,7 +2600,7 @@
             color: #000000;
         }
         .sidebar .widget.flickr {
-            
+
         }
         .sidebar .widget.flickr ul {
             margin: 0;
@@ -2641,7 +2641,7 @@
             position: relative;
         }
         .blog-single .article {
-            
+
         }
         .blog-single .article .media {
             margin-bottom: 30px;
@@ -2792,7 +2792,7 @@
             height: 165px;
             font-family: effra, arial;
         }
-        .blog-single form textarea:hover, .blog-single form input:hover, 
+        .blog-single form textarea:hover, .blog-single form input:hover,
         .blog-single form textarea:focus, .blog-single form input:focus {
             color: #000000;
             border: 1px solid #000000;
@@ -2822,7 +2822,7 @@
     11.Pages Setup
 ============================================================================================================================================
 ============================================================================================================================================*/
-    
+
     /*About Us*/
 
         /*Basics*/
@@ -3148,7 +3148,7 @@
             -ms-animation: tooltippulse 1.4s 0.1s linear infinite;
         }
         @-webkit-keyframes tooltippulse {
-            0% { 
+            0% {
                 -moz-transform: scale(0.7);
                 -webkit-transform: scale(0.7);
                 -o-transform: scale(0.7);
@@ -3162,7 +3162,7 @@
             85% {
                 opacity: 0;
             }
-            100% { 
+            100% {
                 -moz-transform: scale(2.5);
                 -webkit-transform: scale(2.5);
                 -o-transform: scale(2.5);
@@ -3171,7 +3171,7 @@
             }
         }
         @-moz-keyframes tooltippulse {
-            0% { 
+            0% {
                 -moz-transform: scale(0.7);
                 -webkit-transform: scale(0.7);
                 -o-transform: scale(0.7);
@@ -3185,7 +3185,7 @@
             85% {
                 opacity: 0;
             }
-            100% { 
+            100% {
                 -moz-transform: scale(2.5);
                 -webkit-transform: scale(2.5);
                 -o-transform: scale(2.5);
@@ -3194,7 +3194,7 @@
             }
         }
         @-o-keyframes tooltippulse {
-            0% { 
+            0% {
                 -moz-transform: scale(0.7);
                 -webkit-transform: scale(0.7);
                 -o-transform: scale(0.7);
@@ -3208,7 +3208,7 @@
             85% {
                 opacity: 0;
             }
-            100% { 
+            100% {
                 -moz-transform: scale(2.5);
                 -webkit-transform: scale(2.5);
                 -o-transform: scale(2.5);
@@ -3217,7 +3217,7 @@
             }
         }
         @keyframes tooltippulse {
-            0% { 
+            0% {
                 -moz-transform: scale(0.7);
                 -webkit-transform: scale(0.7);
                 -o-transform: scale(0.7);
@@ -3231,7 +3231,7 @@
             85% {
                 opacity: 0;
             }
-            100% { 
+            100% {
                 -moz-transform: scale(2.5);
                 -webkit-transform: scale(2.5);
                 -o-transform: scale(2.5);
@@ -3329,7 +3329,7 @@
                 height: 165px;
                 font-family: effra, arial;
             }
-            .contact-1 form textarea:hover, .contact-1 form input:hover, 
+            .contact-1 form textarea:hover, .contact-1 form input:hover,
             .contact-1 form textarea:focus, .contact-1 form input:focus {
                 color: #000000;
                 border: 1px solid #000000!important;
@@ -3438,7 +3438,7 @@
                 height: 165px;
                 font-family: effra, arial;
             }
-            .contact-2 form textarea:hover, .contact-2 form input:hover, 
+            .contact-2 form textarea:hover, .contact-2 form input:hover,
             .contact-2 form textarea:focus, .contact-2 form input:focus {
                 color: #000000;
                 border: 1px solid #000000!important;
@@ -3763,7 +3763,7 @@
                 .gallery-images.style-icons.masonry .images .img .love, .gallery-images.style-icons.masonry .images .img .love-2 {
                     left: 66%;
                 }
-    
+
         /*Portfolio*/
 
             /*Single 1*/
@@ -3890,7 +3890,7 @@
                 display: none;
             }
             footer .social-networks a i {
-                display: block;     
+                display: block;
             }
             footer .copyrights {
                 font-size: 8px;
@@ -4108,7 +4108,7 @@
             .three-fifth {
                 width: 66.666%!important;
             }
-        
+
         /*Pages*/
             .min-style .content-wrapper {
                 width: 80%;
@@ -4174,7 +4174,7 @@
     }
 
     @media only screen and (max-width : 768px) {
-        
+
         /*Preloader*/
             .loader .circle {
                 top: 48.5%!important;
@@ -4184,7 +4184,7 @@
                 left:calc(50% + 95px)!important;
             }
 
-        
+
         /*Header & Footer*/
             header .logo-container img {
                 height: auto;
@@ -4237,7 +4237,7 @@
                             -ms-transform: translate(-50%,-50%);
                             transform: translate(-50%,-50%);
                         }
-    
+
             /*Fullscreen Slideshow*/
                 body .main-container {
                     margin: 60px 0px;
@@ -4363,11 +4363,11 @@
     /*========== S M A L L     S C R E E N =============*/
 
     @media only screen and (max-width : 480px) {
-        
+
         /*Header*/
             header .logo-container {
                 margin-right: 10px;
-                padding: 0px 0px; 
+                padding: 0px 0px;
             }
             header .logo-container img {
                 max-width: 180px;
@@ -4488,7 +4488,7 @@
 
         /*Portfolio*/
             .portfolio-single.style-1 {
-                
+
             }
             .portfolio-single.style-1 .content {
                 height: auto!important;
