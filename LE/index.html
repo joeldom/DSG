@@ -1,0 +1,701 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Lands' End</title>
+	<meta name="viewport" content="width=device-width">
+
+	<style>
+.troubleshoot *{ background-color: rgba(255,0,0,.2); }
+.troubleshoot * *{ background-color: rgba(0,255,0,.2); }
+.troubleshoot * * *{ background-color: rgba(0,0,255,.2); }
+.troubleshoot * * * *{ background-color: rgba(255,0,255,.2); }
+.troubleshoot * * * * *{ background-color: rgba(0,255,255,.2); }
+.troubleshoot * * * * * *{ background-color: rgba(255,255,0,.2); }
+
+		body { width: 100%; margin-right: auto; margin-left: auto; background: #ffffff; }
+		* { -webkit-text-size-adjust: none; }
+		.ExternalClass * { line-height: 100%; } /* reset Hotmails jankyness */
+		table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
+		/* Outlook link fixes */
+		.lnheader a:link, .custserve a:link {color:#29a7dc;}
+		.navcol1 a:link, .topNav a:link {color:#022c5c;}
+		.salelink a:link {color:#ff0000;}
+		/* Outlook alignment fixes */
+		.navcol1 {text-align:left;}
+		.salelink {text-align:left;}
+
+		/* Responsive styles - note max-width parameter will shift at 480px browser/screen width */
+		@media screen and (max-width : 480px) {
+			body { width: 100%; min-width: 100%; position: relative; top: 0; left: 0; right: 0; margin: 0; padding: 0;}
+			table[class=wrapper] { width: 100% !important; }
+			table[class=mobContent] { width: 92.5% !important; }
+			table[class=quad] { width: 100% !important; }
+			td[class=quad] { width: 46%; }
+			/*  CSS for hiding things in mobile  */
+			table[class=hide] { display: none; height: 0; }
+			img[class=hide], td[class=hide] { width: 0 !important; display: none !important; }
+			span[class=hideslash] { display: none !important; font-size: 1px !important; }
+			/*  change gutters to a narrower width on mobile  */
+			td[class=mobgutters] { padding: 6px 12px 6px 12px !important; }
+			table[class=navblock] { width: 100% !important; border-left: none !important; }
+			/* td[class=navcol1] { padding: 5px 0 5px 12px !important; width: 150px !important; } */
+			td[class=navcol1] {  }
+			td[class=salelink] {  }
+			img[class=lnheader] { margin: 12px 0 0 0 !important; }
+			td[class=stack] { width: 100% !important; display: block !important; }
+			td[class=topstack] { width: 100% !important; display:table-header-group !important; }
+			td[class=bottomstack] { width: 100% !important; display:table-footer-group !important; }
+			tr[class=table] {width:100% !important; display:table !important;}
+			/*  image shrinking / growing  */
+			img[class=shrinkfull] { width: 100% !important; height: auto !important; }
+			img[class=imgfull] { width:280px !important; height: auto !important; }
+			table[class=width280] { width:280px !important; height: auto !important; }
+			td[class=width280] { width:280px !important; height: auto !important; }
+			img[class=imgmed] { width: 92.5% !important; height: auto !important; }
+			img[class=navimg] { height: 12px !important; width: auto; }
+			img[class=quad] { width: 100% !important; height: auto !important; }
+			td[class=triptych] { width: 48% !important; }
+			table[class=triptych] { width: 100% !important; }
+			img[class=triptych] { width: 100% !important; height: auto !important; }
+			td[class=tripspace] { font-size: 12px !important; padding: 8px 0 14px 0 !important; }
+			/*  font size adjustments */
+			td[class=fs13] { font-size: 13px !important; }
+			td[class=fs12] { font-size: 12px !important; }
+			td[class=topNav] { font-size: 18px; !important; }
+			a[class=topNav] { font-size: 16px; !important; }
+			/*  dividers  */
+			table[class=divider] { width: 100% !important; margin: 20px 0 20px 0 !important; background-color: #cccccc !important; }
+			td[class=divider] { height: 2px !important; background-color: #cccccc !important; }
+			img[id=LHicon] { width: 42px !important; height: auto !important; }
+			td[class=divtable] { width: 42% !important; }
+			table[class=divtable] { width: 100% !important; }
+			/*  reverse-stack cells */
+            td[class=smcell] { display: table-cell !important; width: 280px !important; height: auto !important;
+                max-height: inherit !important; overflow: visible !important; float: none !important; padding-top: 12px;
+            }
+            td[class=smcell] img { width: 280px !important; height: auto !important; display:block !important; }
+            /*  lower nav stuff  */
+			td[class=noborder] { border: none !important; }
+			table[id=socialft] { width: 90%; margin: auto 18px auto 18px !important; }
+			table[id=socialblog] { width: 27.5%; margin: 0 36.25% 0 36.25% !important; }
+			td[id=navpad] { padding: 15px 8px 15px 8px !important;}
+			td[class=lnheader] { padding-top: 12px !important; }
+            /* new button nav */
+td[class=nav-button-bar] { padding: 12px !important; }
+a[class=nav-button] { display: block !important; margin-top: 15px !important; }
+		}
+	</style>
+
+</head>
+<body bottommargin="0" leftmargin="0" topmargin="0" rightmargin="0" marginheight="0" marginwidth="0">
+
+
+<!--DEFAULTS AND VARIABLES-->
+
+<!-- END DEFAULTS AND VARIABLES-->
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+    <tr><td align="center">
+    		<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+				<tr><td align="center" bgcolor="#000000" style="color:#ffffff; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 10px 12px 10px 12px;">
+					<!--PREHEADER BELOW-->
+                   <a href="https://link.landsend.com/u.d?b4Gt-2xRWaybjpcpQD1qt=2391&s=PAL&sourceCodeCNum=7510&redirect=/shop/swim%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-preheader-_2-preheader_2swim%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color: #fff;">Plus, today only: 40% off all swim.</a> |
+
+					</td>
+				</tr>
+				<tr><td align="center" bgcolor="#efefef" style="color:#000000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 10px 12px 10px 12px;">
+            			<b>FREE SHIPPING EVERY DAY ON ORDERS $50+</b> $5&nbsp;MORE FOR UPS 2 DAY
+					</td>
+				</tr>
+    		</table>
+    	</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<!-- HEADER/NAV PROMO Classic -->
+<!-- CLASSIC TOP NAV -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+    <tr><td align="center">
+    		<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="600" class="wrapper" height="94">
+            	<tbody>
+                <tr><td align="center">
+                		<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+                        	<tr><td align="center" style="font-family: arial, sans-serif; font-size: 14px; font-weight: bold; color: #002b5c; padding-top: 27px;">
+                        			<a href="https://link.landsend.com/u.d?EYGt-2xRWaybjpXL6I=93&s=PAL&sourceCodeCNum=7510&redirect=/%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2homepage%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color: #002b5c;"><img src="http://media.4at5.net/email_domains/lad/182771/images/modern_logo.png" width="188" height="25" alt="LANDS' END" border="0" style="font-family: arial, sans-serif; font-size: 11px; font-weight: bold; color: #002b5c; display: block;" /></a>
+                        		</td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+
+
+				<tr><td style="padding: 15px 20px 14px 20px;" id="navpad" align="center" valign="bottom">
+						<table cellpadding="0" cellspacing="0" align="center" border="0">
+              <tr>
+                <td style="color:#000000; font-size: 12px; line-height: 100%; font-family: Arial, sans-serif; padding: 0 8px 0 0;" class="topNav"><a href="https://link.landsend.com/u.d?EYGt-2xRWaybjpXL4l=263&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens/-/N-fxl_0brandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2womentab%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color: #000000;" class="topNav"><strong>WOMEN</strong></a></td>
+								<td style="color:#000000; font-size: 12px; line-height: 100%; font-family: Arial, sans-serif; padding: 0 8px 0 8px;" class="topNav"><a href="https://link.landsend.com/u.d?FYGt-2xRWaybjpXL4u=273&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens/-/N-fz6_0brandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2mentab%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color: #000000;" class="topNav"><strong>MEN</strong></a></td>
+								<td style="color:#000000; font-size: 12px; line-height: 100%; font-family: Arial, sans-serif; padding: 0 8px 0 8px;" class="topNav"><a href="https://link.landsend.com/u.d?V4Gt-2xRWaybjpXL4r=283&s=PAL&sourceCodeCNum=7510&redirect=/shop/kids/_0brandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2kidstab%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color: #000000;" class="topNav"><strong>KIDS</strong></a></td>
+								<td class="hide" style="color:#000000; font-size: 12px; line-height: 100%; font-family: Arial, sans-serif; padding: 0 8px 0 8px;"><a href="https://link.landsend.com/u.d?M4Gt-2xRWaybjpXL40=293&s=PAL&sourceCodeCNum=7510&redirect=/shop/swim_0brandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2swim%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color: #000000;"><strong>SWIM</strong></a></td>
+								<td class="hide" style="color:#000000; font-size: 12px; line-height: 100%; font-family: Arial, sans-serif; padding: 0 8px 0 8px;"><a href="https://link.landsend.com/u.d?GYGt-2xRWaybjpXL4x=303&s=PAL&sourceCodeCNum=7510&redirect=/shop/shoes_0brandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2shoes%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color: #000000;"><strong>SHOES</strong></a></td>
+								<td class="hide" style="color:#000000; font-size: 12px; line-height: 100%; font-family: Arial, sans-serif; padding: 0 8px 0 8px;"><a href="https://link.landsend.com/u.d?GYGt-2xRWaybjpXL46=313&s=PAL&sourceCodeCNum=7510&redirect=/shop/home/-/N-g31_0brandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2hometab%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color: #000000;"><strong>HOME</strong></a></td>
+								<td class="hide" style="color:#000000; font-size: 12px; line-height: 100%; font-family: Arial, sans-serif; padding: 0 8px 0 8px;"><a href="https://link.landsend.com/u.d?KYGt-2xRWaybjpXL4H=323&s=PAL&sourceCodeCNum=7510&redirect=/shop/school-uniforms/-/N-g54_0brandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2unitab%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color: #000000;"><strong>SCHOOL</strong></a></td>
+								<td style="color:#000000; font-size: 12px; line-height: 100%; font-family: Arial, sans-serif; padding: 0 0 0 8px;" class="topNav"><a href="https://link.landsend.com/u.d?J4Gt-2xRWaybjpXL4A=333&s=PAL&sourceCodeCNum=7510&redirect=/shop/sale/_0brandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-topnav-_2-topnav_2overstocktab%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="text-decoration: none; color:#000000;" class="topNav"><strong>SALE</strong></a></td>
+							</tr>
+						</table>
+					</td>
+                </tr>
+                </tbody>
+            </table>
+        </td>
+	</tr>
+	</tbody>
+</table>
+<!-- CLASSIC TOP NAV END -->
+<!-- HEADER/NAV PROMO Classic END -->
+
+
+
+
+
+    <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+						<tr>
+							<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+								<a href="https://link.landsend.com/u.d?H4Gt-2xRWaybjpcpQD1q2=2401&s=PAL&sourceCodeCNum=7510&redirect=/shop/swim%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-top_2promo-_2-top_2promo_2swim%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://imagesle.postdirect.com/master/13/1088842/052316_all_01.jpg" width="600" height="305" alt="Ends Today 40% Off All Swim" border="0" style="display: block;" /></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+						<tr>
+							<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+								<a href="https://link.landsend.com/u.d?IYGt-2xRWaybjpcpQD1qz=2411&s=PAL&sourceCodeCNum=7510&redirect=/%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-hero-_2-hero_2homepage%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://imagesle.postdirect.com/master/13/1088842/052316_all_02.jpg" width="600" height="295" alt="25% Off Everything Else" border="0" style="display: block;" /></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="600">
+						<tr bgcolor="#002b5c">
+							<td align="center" class="nav-button-bar" style="color:#ffffff; font-size: 14px; line-height: 130%; font-family: Arial, sans-serif; padding: 20px 0px 20px 0px;">
+								<a href="https://link.landsend.com/u.d?Q4Gt-2xRWaybjpcpQD1q8=2421&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens/%2d/N%2dfxl%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-hero-_2-hero_2cta_2wms%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="display: inline-block; text-decoration: none; color: #FFFFFF; border-style: solid; border-width: 1px; border-color: #FFFFFF; padding: 10px;" target="_blank" class="nav-button">WOMEN</a>&nbsp;
+								<a href="https://link.landsend.com/u.d?NYGt-2xRWaybjpcpQD1q5=2431&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens/%2d/N%2dfz6%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-hero-_2-hero_2cta_2mns%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="display: inline-block; text-decoration: none; color: #FFFFFF; border-style: solid; border-width: 1px; border-color: #FFFFFF; padding: 10px;" target="_blank" class="nav-button">MEN</a>&nbsp;
+								<a href="https://link.landsend.com/u.d?JYGt-2xRWaybjpcpQD1rC=2441&s=PAL&sourceCodeCNum=7510&redirect=/shop/girls/%2d/N%2dg0f%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-hero-_2-hero_2cta_2girls%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="display: inline-block; text-decoration: none; color: #FFFFFF; border-style: solid; border-width: 1px; border-color: #FFFFFF; padding: 10px;" target="_blank" class="nav-button">GIRLS</a>&nbsp;
+								<a href="https://link.landsend.com/u.d?dYGt-2xRWaybjpcpQD1rP=2451&s=PAL&sourceCodeCNum=7510&redirect=/shop/boys/%2d/N%2dg1w%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-hero-_2-hero_2cta_2boys%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="display: inline-block; text-decoration: none; color: #FFFFFF; border-style: solid; border-width: 1px; border-color: #FFFFFF; padding: 10px;" target="_blank" class="nav-button">BOYS</a>&nbsp;
+								<a href="https://link.landsend.com/u.d?cYGt-2xRWaybjpcpQD1rI=2461&s=PAL&sourceCodeCNum=7510&redirect=/shop/swim%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-hero-_2-hero_2cta_2swim%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="display: inline-block; text-decoration: none; color: #FFFFFF; border-style: solid; border-width: 1px; border-color: #FFFFFF; padding: 10px;" target="_blank" class="nav-button">SWIM</a>&nbsp;
+								<a href="https://link.landsend.com/u.d?BYGt-2xRWaybjpcpQD1rV=2471&s=PAL&sourceCodeCNum=7510&redirect=/shop/shoes%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-hero-_2-hero_2cta_2shoes%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="display: inline-block; text-decoration: none; color: #FFFFFF; border-style: solid; border-width: 1px; border-color: #FFFFFF; padding: 10px;" target="_blank" class="nav-button">SHOES</a>&nbsp;
+								<a href="https://link.landsend.com/u.d?OYGt-2xRWaybjpcpQD1re=2481&s=PAL&sourceCodeCNum=7510&redirect=/shop/home/%2d/N%2dg31%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-hero-_2-hero_2cta_2home%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" style="display: inline-block; text-decoration: none; color: #FFFFFF; border-style: solid; border-width: 1px; border-color: #FFFFFF; padding: 10px;" target="_blank" class="nav-button">HOME</a>&nbsp;
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+						<tr>
+							<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+								<a href="https://link.landsend.com/u.d?SYGt-2xRWaybjpcpQD1rb=2491&s=PAL&sourceCodeCNum=7510&redirect=/shop/%2d/N%2dkag%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-sub1-_2-sub1_2swim_2tee%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://imagesle.postdirect.com/master/13/1088842/052316_all_03.jpg" width="600" height="50" alt="" border="0" style="display: block;" /></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+	<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+						<tr>
+							<td>
+								<table cellpadding="0" cellspacing="0" align="center" width="600" border="0" class="mobContent">
+									<tr>
+										<td valign="top" class="stack">
+											<table cellpadding="0" cellspacing="0" align="center" width="300" border="0" class="triptych">
+												<tr>
+													<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+
+														<a href="https://link.landsend.com/u.d?EYGt-2xRWaybjpcpQD1rk=2501&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens%2dswimsuits/%2d/N%2dfxm%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-sub2-_2-sub2_2wms_2swimsuits%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://imagesle.postdirect.com/master/13/1088842/052316_all_04.jpg" width="300" height="500" alt="Women's" border="0" style="display: block;" class="triptych" /></a>
+													</td>
+												</tr>
+											</table>
+										</td>
+										<td valign="top" class="stack">
+											<table cellpadding="0" cellspacing="0" align="center" width="300" border="0" class="triptych">
+
+												<tr>
+													<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+														<a href="https://link.landsend.com/u.d?UYGt-2xRWaybjpcpQD1rh=2511&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens%2dswimwear/%2d/N%2dfzz%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-sub3-_2-sub3_2mns_2swimwear%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://imagesle.postdirect.com/master/13/1088842/052316_all_05.jpg" width="300" height="250" alt="Men's" border="0" style="display: block;" class="triptych" /></a>
+													</td>
+												</tr>
+
+												<tr>
+													<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+														<a href="https://link.landsend.com/u.d?S4Gt-2xRWaybjpcpQD1rq=2521&s=PAL&sourceCodeCNum=7510&redirect=/shop/%2d/N%2djro%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-sub4-_2-sub4_2kids_2swim%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="text-decoration: none; color: #002b5c;"><img src="http://imagesle.postdirect.com/master/13/1088842/052316_all_06.jpg" width="300" height="250" alt="Kids'" border="0" style="display: block;" class="triptych" /></a>
+													</td>
+												</tr>
+											</table>
+										</td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- spacer -->
+	<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tr>
+			<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="25" alt="" border="0" style="display: block;" /></td>
+		</tr>
+	</table>
+	<!-- /spacer -->
+
+	<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+						<tr>
+							<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+								<a href="https://link.landsend.com/u.d?aYGt-2xRWaybjpcpQD1r3=2531&s=PAL&sourceCodeCNum=7510&redirect=/%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-sub5-_2-sub5_2homepage%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://imagesle.postdirect.com/master/13/1088842/cupofcustomer_bnr.jpg" width="600" height="350" alt="Cup of Customer" border="0" style="display: block;" /></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<!-- SOCIAL SHARE-->
+	<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center" class="wrapper" style="max-width: 600px;">
+						<tbody>
+							<tr>
+								<td>
+
+									<table width="100%" cellspacing="0" cellpadding="0" border="0" bgcolor="#ffffff" align="center">
+										<tbody>
+											<tr>
+												<td align="center">
+													<table width="50" cellspacing="0" cellpadding="0" border="0" align="center" class="wrapper">
+														<tbody>
+															<tr>
+																<td align="center" style="padding: 8px 0 16px 0;">
+																	<table width="170" cellspacing="0" cellpadding="0" border="0" align="center" id="">
+																		<tbody>
+																			<tr>
+																				<td style="width: 24px;">
+																					<a target="_blank" href="https://link.landsend.com/u.d?B4Gt-2xRWaybjpcpQD1rw=2541"><img width="24" border="0" height="37" style="display:block;" alt="Instagram" src="http://imagesle.postdirect.com/master/13/1088842/soc_inst.jpg"></a>
+																				</td>
+																				<td style="width: 24px;">
+																					<a target="_blank" href="https://link.landsend.com/u.d?WYGt-2xRWaybjpcpQD1r9=2551"><img width="24" border="0" height="37" style="display:block;" alt="Facebook" src="http://imagesle.postdirect.com/master/13/1088842/soc_face.jpg"></a>
+																				</td>
+																				<td style="width: 24px;">
+																					<a target="_blank" href="https://link.landsend.com/u.d?UYGt-2xRWaybjpcpQD1sG=2561"><img width="24" border="0" height="37" style="display:block;" alt="Twitter" src="http://imagesle.postdirect.com/master/13/1088842/soc_twit.jpg"></a>
+																				</td>
+																				<td style="width: 24px;">
+																					<a target="_blank" href="https://link.landsend.com/u.d?WYGt-2xRWaybjpcpQD1sD=2571"><img width="24" border="0" height="37" style="display:block;" alt="Email" src="http://imagesle.postdirect.com/master/13/1088842/soc_mail.jpg"></a>
+																				</td>
+																			</tr>
+																		</tbody>
+																	</table>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<!-- end SOCIAL SHARE-->
+	<!-- spacer -->
+	<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tr>
+			<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="15" alt="" border="0" style="display: block;" /></td>
+		</tr>
+	</table>
+	<!-- /spacer -->
+
+	<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+		<tbody>
+			<tr>
+				<td align="center">
+					<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+						<tr>
+							<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;">
+								<a href="https://link.landsend.com/u.d?G4Gt-2xRWaybjpcpQD1sM=2581&s=PAL&sourceCodeCNum=7510&redirect=/shop/clearance/%2d/N%2dk21%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-sub6-_2-sub6_2clearance%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://imagesle.postdirect.com/master/13/1088842/sale_bnr.jpg" width="600" height="160" alt="Up to 60% Off Sale & Clearance" border="0" style="display: block;" /></a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+
+
+
+
+<!-- US SOCIAL_SHARES_REFER_BANNER begin-->
+<!-- spacer -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+    <tr>
+		<td align="center" style="font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="20" height="20" alt="" border="0" style="display:block;" /></td>
+	</tr>
+</table>
+<!-- spacer-->
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+		<tr>
+			<td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+					<tr>
+						<td align="center" style="color:#002b5c; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold;"><a href="https://link.landsend.com/u.d?N4Gt-2xRWaybjpWQbh=143" target="_blank" style="text-decoration: none; color: #002b5c;"><img class="shrinkfull" src="http://media.4at5.net/email_domains/lad/template/extole_bnr_30off75.gif" alt="REFER A FRIEND AND YOU CAN EACH GET $25 OFF $75" border="0" style="display: block;" /></a></td>
+					</tr>
+				</table></td>
+		</tr>
+	</tbody>
+</table>
+
+<!-- spacer -->
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tr>
+		<td align="center" style="font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="20" height="20" alt="" border="0" style="display:block;" /></td>
+	</tr>
+</table>
+<!-- spacer-->
+
+<!-- US SOCIAL_SHARES_REFER_BANNER end-->
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%" class="custserve">
+    <tbody>
+        <tr>
+            <td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600" bgcolor="#dfdfdf">
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td bgcolor="#dfdfdf" style="padding: 10px 0 0 0;" class="mobgutters"><table cellpadding="0" cellspacing="0" border="0" width="100%">
+                                <tr>
+                                    <td align="center" style="color:#000000; font-size: 20px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold; padding: 0 0 12px 0;"> LEGENDARY CUSTOMER SERVICE </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;background-color:#dfdfdf;" height="2" align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="520" bgcolor="#dfdfdf">
+                                            <tr>
+                                                <td style="font-size:1px; mso-line-height-alt:0; mso-margin-top-alt:1px;background-color:#ffffff;" height="2" align="center"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="2" height="2" alt="" border="0" style="display: block;" /></td>
+                                            </tr>
+                                        </table></td>
+                                </tr>
+                                 <tr>
+                                    <td align="center" style="color:#000000; font-size: 14px; line-height: 120%; font-family: Arial, sans-serif; padding: 16px 0 0 0;"><a href="https://link.landsend.com/u.d?Q4Gt-2xRWaybjpXKr=3&s=PAL&sourceCodeCNum=7510&redirect=/customerservice/services/personalization/_0cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-footer-_2-footer_2mono%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color: #000000; text-decoration: none;"><b>MAKE IT PERSONAL</b></a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color:#000000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 0 0 0;"> Adding a monogram makes it special. </td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color:#000000; font-size: 14px; line-height: 120%; font-family: Arial, sans-serif; padding: 16px 0 0 0;"><a href="https://link.landsend.com/u.d?L4Gt-2xRWaybjpXKs=13&s=PAL&sourceCodeCNum=7510&redirect=/co/StoreLocator_0cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-footer-_2-footer_2storelocate%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color: #000000; text-decoration: none;"><b>FREE RETURNS</b></a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color:#000000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 0 0 0;"> At our stores, inlets & full-line U.S. Sears stores. <a href="https://link.landsend.com/u.d?GYGt-2xRWaybjpXKh=23&s=PAL&sourceCodeCNum=7510&redirect=/co/StoreLocator_0cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-footer-_2-footer_2storelocate%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000000;">Find a location near you.</a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color:#000000; font-size: 14px; line-height: 120%; font-family: Arial, sans-serif; padding: 16px 0 0 0;"><a href="https://link.landsend.com/u.d?XYGt-2xRWaybjpXK6C=73&s=PAL&sourceCodeCNum=7510&redirect=/aboutus/values/%3fvalues=guaranteed%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-footer-_2-footer_2guaranteed%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color: #000000; text-decoration: none;"><b>GUARANTEED. PERIOD.<span style="font-size:13px;"><sup>&reg;</sup></span></b></a></td>
+                                </tr>
+                                <tr>
+                                    <td align="center" style="color:#000000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 0 16px 0;"> A guarantee so simple, it's only two words long. </td>
+                                </tr>
+
+                            </table></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                    </tr>
+                </table></td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- CUSTOMER SERVICE MODULE END-->
+
+<!-- CUSTOMER SERVICE MODULE END-->
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+	<tr><td align="center" style="padding: 0 0 2px 0;">
+			<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600" bgcolor="#efefef">
+				<tr><td style="padding: 30px 20px 20px 20px; font-size: 0;">
+						<table cellpadding="0" cellspacing="0" align="left" width="270" border="0" class="navblock">
+							<tr><td align="left" colspan="2" style="color:#000001; font-size: 16px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold; padding: 0 0 5px 0px; border-bottom: 2px solid #ffffff;" class="lnheader">
+									<a href="https://link.landsend.com/u.d?I4Gt-2xRWaybjpXGr=3&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens/%2d/N%2dfxl%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">WOMEN'S SHOPS</a>
+								</td>
+							</tr>
+							<tr><td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 10px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?W4Gt-2xRWaybjpXGs=13&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens%2dswimsuits/%2d/N%2dfxm%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2swimsuits%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SWIMSUITS</a></td>
+								<td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 10px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?X4Gt-2xRWaybjpXGh=23&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens/%2d/N%2dfxlZjqh%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2new_2arrivals%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">NEW ARRIVALS</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?R4Gt-2xRWaybjpXG62=33&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens%2ddresses/%2d/N%2dfy7%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2dresses%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">DRESSES</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?C4Gt-2xRWaybjpXG6z=43&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens/%2d/N%2dfxlZk90%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2tunic%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">TUNIC SHOP</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?TYGt-2xRWaybjpXG68=53&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens%2dknit%2dtops%2dtees/%2d/N%2dfxr%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2knit_2tops%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">KNIT TOPS</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?O4Gt-2xRWaybjpXG65=63&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens/%2d/N%2dfxlZjv3%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2wear_2to_2work%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">WEAR TO WORK</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?Y4Gt-2xRWaybjpXG6C=73&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens%2dshorts/%2d/N%2dfy6%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2shorts%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SHORTS</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?W4Gt-2xRWaybjpXG6P=83&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens%2dshoes/%2d/N%2dfyn%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2sandals%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SHOES &amp; SANDALS</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 12px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?G4Gt-2xRWaybjpXG6I=93&s=PAL&sourceCodeCNum=7510&redirect=/lookstolove/%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2lookstolove%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">BEST OF SUMMER</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 12px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?I4Gt-2xRWaybjpXG6V=103&s=PAL&sourceCodeCNum=7510&redirect=/shop/womens/%2d/N%2dfxlZjl7%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2wms_2sale%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SALE</a></td>
+							</tr>
+						</table>
+						<table cellpadding="0" cellspacing="0" align="right" width="270" border="0" class="navblock">
+							<tr><td align="left" colspan="2" style="color:#29a7dc; font-size: 16px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold; padding: 0 0 5px 0; border-bottom: 2px solid #ffffff;" class="lnheader">
+									<a href="https://link.landsend.com/u.d?Y4Gt-2xRWaybjpXG6e=113&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens/%2d/N%2dfz6%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">MEN'S SHOPS</a>
+								</td>
+							</tr>
+							<tr><td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 10px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?a4Gt-2xRWaybjpXG6b=123&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens%2dpolo%2dshirts/%2d/N%2dfzg%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2polos%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">POLOS</a></td>
+								<td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif;padding: 10px 0 5px 0px;" class="navcol1"><a href="https://link.landsend.com/u.d?a4Gt-2xRWaybjpXG7k=133&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens/%2d/N%2dfz6Zjqh%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2new_2arrivals%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">NEW ARRIVALS</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?f4Gt-2xRWaybjpXG7h=143&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens%2dcasual%2dshirts/%2d/N%2dfzh%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2casual_2shirts%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">CASUAL SHIRTS</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif;padding: 5px 0 5px 0px;" class="navcol1"><a href="https://link.landsend.com/u.d?C4Gt-2xRWaybjpXG7q=153&s=PAL&sourceCodeCNum=7510&redirect=/shop/%2d/N%2dk67%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2summer_2events%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SUMMER EVENTS</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?GYGt-2xRWaybjpXG73=163&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens%2ddress%2dshirts/%2d/N%2dfzl%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2dress_2shirts%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">DRESS SHIRTS</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif;padding: 5px 0 5px 0px;" class="navcol1"><a href="https://link.landsend.com/u.d?N4Gt-2xRWaybjpXG7w=173&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens/%2d/N%2dfz6Zjnr%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2noiron%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">NO IRON SHOP</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?ZYGt-2xRWaybjpXG79=183&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens%2dshorts/%2d/N%2dfzy%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2shorts%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SHORTS</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif;padding: 5px 0 5px 0px;" class="navcol1"><a href="https://link.landsend.com/u.d?L4Gt-2xRWaybjpXG7G=193&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens%2dshoes/%2d/N%2dfzr%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2sandals%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SHOES &amp; SANDALS</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?bYGt-2xRWaybjpXG7D=203&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens%2dswimwear/%2d/N%2dfzz%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2swimswear%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SWIMWEAR</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 12px 0px;" class="salelink"><a href="https://link.landsend.com/u.d?R4Gt-2xRWaybjpXG7M=213&s=PAL&sourceCodeCNum=7510&redirect=/shop/mens/%2d/N%2dfz6Zjl7%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2mns_2sale%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SALE</a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr><td style="padding: 0 20px 20px 20px; font-size: 0;">
+						<table cellpadding="0" cellspacing="0" align="left" width="270" border="0" class="navblock">
+							<tr><td align="left" colspan="2" style="color:#000001; font-size: 16px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold; padding: 0 0 5px 0; border-bottom: 2px solid #ffffff;" class="lnheader"><a href="https://link.landsend.com/u.d?KYGt-2xRWaybjpXG7J=223&s=PAL&sourceCodeCNum=7510&redirect=/shop/kids/%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2kids%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">KIDS' SHOPS</a></td></tr>
+							<tr><td width="50%" valign="top">
+									<table cellpadding="0" cellspacing="0" width="100%" border="0">
+										<tr><td align="left" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 10px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?KYGt-2xRWaybjpXG7S=233&s=PAL&sourceCodeCNum=7510&redirect=/shop/kids/%2d/N%2djqh%3fcm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2kids_2new_2arrivals%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">NEW ARRIVALS</a></td></tr>
+										<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?d4Gt-2xRWaybjpXG7f=243&s=PAL&sourceCodeCNum=7510&redirect=/shop/kids/%2d/N%2dk28%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2kids_2backpacks%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">BACKPACKS</a></td></tr>
+										<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?CYGt-2xRWaybjpXG7Y=253&s=PAL&sourceCodeCNum=7510&redirect=/shop/girls%2dtops/%2d/N%2dg0l%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2girls_2tops%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">GIRLS TOPS</a></td></tr>
+										<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?CYGt-2xRWaybjpXG4l=263&s=PAL&sourceCodeCNum=7510&redirect=/shop/girls%2dpants%2dleggings/%2d/N%2dg0w%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2girls_2pants_2leggings%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">GIRLS PANTS &amp; LEGGINGS</a></td></tr>
+										<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 12px 0;" class="salelink"><a href="https://link.landsend.com/u.d?IYGt-2xRWaybjpXG4u=273&s=PAL&sourceCodeCNum=7510&redirect=/shop/%2d/N%2djrp%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2girls_2knit_2kit%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">GIRLS KNIT KIT</a></td></tr>
+									</table>
+								</td>
+								<td width="50%" valign="top">
+									<table cellpadding="0" cellspacing="0" width="100%" border="0">
+										<tr><td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 10px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?XYGt-2xRWaybjpXG4r=283&s=PAL&sourceCodeCNum=7510&redirect=/shop/boys%2dpants/%2d/N%2dg2d%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2boys_2pants%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">BOYS PANTS</a></td></tr>
+										<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?HYGt-2xRWaybjpXG40=293&s=PAL&sourceCodeCNum=7510&redirect=/shop/boys%2dtops/%2d/N%2dg23%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2boys_2tops%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">BOYS TOPS</a></td></tr>
+										<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?c4Gt-2xRWaybjpXG4x=303&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SCHOOL UNIFORMS</a></td></tr>
+										<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?Z4Gt-2xRWaybjpXG46=313&s=PAL&sourceCodeCNum=7510&redirect=/shop/%2d/N%2djs5%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2sandals%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SHOES &amp; SANDALS</a></td></tr>
+										<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 12px 0;" class="salelink"><a href="https://link.landsend.com/u.d?R4Gt-2xRWaybjpXG4H=323&s=PAL&sourceCodeCNum=7510&redirect=/shop/kids/%2d/N%2djl7%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2sale%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SALE</a></td></tr>
+									</table>
+								</td>
+							</tr>
+						</table>
+						<table cellpadding="0" cellspacing="0" align="right" width="270" border="0" class="navblock">
+							<tr><td align="left" colspan="2" style="color:#000001; font-size: 16px; line-height: 100%; font-family: Arial, sans-serif; font-weight: bold; padding: 0 0 5px 0; border-bottom: 2px solid #ffffff;" class="lnheader"><a href="https://link.landsend.com/u.d?W4Gt-2xRWaybjpXG4A=333&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SCHOOL UNIFORMS</a></td>
+							</tr>
+							<tr><td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 10px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?BYGt-2xRWaybjpXG4N=343&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54Zjml%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2polos%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">POLOS</a></td>
+								<td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif;padding: 10px 0 5px 0px;" class="navcol1"><a href="https://link.landsend.com/u.d?PYGt-2xRWaybjpXG4W=353&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54Zk3a%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2knit_2essentials%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">KNIT ESSENTIALS</a></td>
+							</tr>
+							<tr><td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?J4Gt-2xRWaybjpXG4T=363&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54Zjmi%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2iron_2knee%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">IRON KNEE CHINOS</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif;padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?OYGt-2xRWaybjpXG4c=373&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54Zk39%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2dress_2shirts%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">DRESS SHIRT SHOP</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?XYGt-2xRWaybjpXG4Z=383&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54Zjmj%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2pe_2locker_2room%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">PE LOCKER ROOM</a></td>
+								<td align="left" valign="top" style="color:#ff0000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;"  class="navcol1"><a href="https://link.landsend.com/u.d?JYGt-2xRWaybjpXG5i=393&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54Zkcu%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2spiritwear%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SPIRITWEAR</a></td>
+							</tr>
+							<tr><td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?Z4Gt-2xRWaybjpXG5v=403&s=PAL&sourceCodeCNum=7510&redirect=/shop/kids/%2d/N%2djqh%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2kids_2after_2school%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">AFTER SCHOOL</a></td>
+								<td align="left" valign="top" style="color:#ff0000; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 5px 0;"  class="navcol1"><a href="https://link.landsend.com/u.d?EYGt-2xRWaybjpXG5o=413&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms%2dgirls%2dwomen%2dskirts%2dskorts/%2d/N%2dg5m%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2girls_2skirts_2skorts%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SKIRTS &amp; SKORTS</a></td>
+							</tr>
+							<tr><td align="left" width="50%" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 5px 5px 0;" class="navcol1"><a href="https://link.landsend.com/u.d?A4Gt-2xRWaybjpXG5-=433&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54Zk28%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2backpacks%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">BACKPACKS</a></td>
+								<td align="left" valign="top" style="color:#000001; font-size: 12px; line-height: 120%; font-family: Arial, sans-serif; padding: 5px 0 12px 0;" class="salelink"><a href="https://link.landsend.com/u.d?PYGt-2xRWaybjpXG57=443&s=PAL&sourceCodeCNum=7510&redirect=/shop/school%2duniforms/%2d/N%2dg54Zjl7%3fbrandCode=classic%26cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-lownav-_2-lownav_2uni_2sale%26emid=usnews_2052316_2eonly%26RRID=1606151016108884215691855%26YCID=15691855%26ym=ym_2landsendus|usnews_2052316_2eonly|1088842" target="_blank" style="color:#000001; text-decoration: none;">SALE</a></td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+
+<!-- US_LINKBOX_PROMO_RESPONSIVE BEGIN -->
+<!-- spacer -->
+
+
+
+
+
+
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+    <tbody>
+        <tr>
+            <td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600" bgcolor="#dfdfdf">
+                    <tr>
+                        <td>
+
+                            <table cellpadding="0" cellspacing="0" align="center" bgcolor="#efefef" border="0" width="100%">
+                                <tbody>
+                                    <tr>
+                                        <td align="center"><table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="290">
+                                                <tr>
+                                                    <td align="center" style="padding: 16px 0 16px 0;"><table cellpadding="0" cellspacing="0" align="left" border="0" width="292" id="socialft">
+                                                            <tr>
+
+
+                                                                <td>
+
+
+
+                                                                <a href="https://link.landsend.com/u.d?EYGt-2xRWaybjpXJr=3" target="_blank"><img src="http://media.4at5.net/email_domains/lad/182771/images/soc_inst.jpg" width="24" height="37" alt="Instagram" border="0" style="display:block;" /></a>
+
+
+
+                                                                </td>
+
+
+                                                                <td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+                                                                <td><a href="https://link.landsend.com/u.d?aYGt-2xRWaybjpXJs=13" target="_blank"><img src="http://media.4at5.net/email_domains/lad/182771/images/soc_face.jpg" width="24" height="37" alt="Facebook" border="0" style="display:block;" /></a></td>
+                                                                <td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+                                                                <td><a href="https://link.landsend.com/u.d?f4Gt-2xRWaybjpXJh=23" target="_blank"><img src="http://media.4at5.net/email_domains/lad/182771/images/soc_twit.jpg" width="24" height="37" alt="Twitter" border="0" style="display:block;" /></a></td>
+                                                                <td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+                                                                <td><a href="https://link.landsend.com/u.d?DYGt-2xRWaybjpXJ62=33" target="_blank"><img src="http://media.4at5.net/email_domains/lad/182771/images/soc_pin.jpg" width="24" height="37" alt="Pinterest" border="0" style="display:block;" /></a></td>
+                                                                <td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+                                                                <td><a href="https://link.landsend.com/u.d?R4Gt-2xRWaybjpXJ6z=43" target="_blank"><img src="http://media.4at5.net/email_domains/lad/182771/images/soc_grid.jpg" width="24" height="37" alt="Cart" border="0" style="display:block;" /></a></td>
+                                                                <td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+                                                                <td><a href="https://link.landsend.com/u.d?ZYGt-2xRWaybjpXJ68=53" target="_blank"><img src="http://media.4at5.net/email_domains/lad/182771/images/soc_yt.jpg" width="24" height="37" alt="Youtube" border="0" style="display:block;" /></a></td>
+                                                                <td><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>
+                                                                <td><a href="https://link.landsend.com/u.d?UYGt-2xRWaybjpXJ65=63" target="_blank"><img src="http://media.4at5.net/email_domains/lad/182771/images/soc_plus.jpg" width="24" height="37" alt="Google Plus" border="0" style="display:block;" /></a></td>
+
+                                                                <!--<td class="hide"><img class="hide" src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="17" height="17" alt="" border="0" style="display:block;" /></td>-->
+                                                                <!--<td class="hide"><img class="hide" src="http://media.4at5.net/email_domains/lad/template/social-div.png" width="12" height="37" alt="" border="0" style="display:block;" /></td>-->
+                                                            </tr>
+                                                        </table>
+
+                                                        <!--<table cellpadding="0" cellspacing="0"  border="0" width="88" id="socialblog">
+							<tr><td align="center"><a href="https://link.landsend.com/u.d?a4Gt-2xRWaybjpXJ6C=73" target="_blank"><img src="http://media.4at5.net/email_domains/lad/template/social-blog.png" width="88" height="37" alt="LE Blog" border="0" style="display:block;" /></a></td></tr>
+    					</table>--></td>
+                                                </tr>
+                                            </table></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                            </td>
+                    </tr>
+                </table>
+               </td>
+        </tr>
+    </tbody>
+</table>
+
+
+
+
+<table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
+	<tbody>
+    <tr><td align="center">
+    		<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="600">
+    			<tr><td align="left" style="color: #000000; font-size: 14px; line-height: 120%; font-family: Arial, sans-serif; padding: 0 40px 6px 40px;" class="mobgutters"><br />
+
+                       <span style="color:#0a2240; font-weight:900;">How to receive 40% off all swimwear and related. Plus, 25% off everything else:</span> <br>
+    								Simply click any link in this e-mail and the Promotion Code and PIN will automatically be applied to your order. Or at checkout‚ manually enter the Promotion Code <span style="color:#0a2240; font-weight:900;">PAL</span> and PIN <span style="color:#0a2240; font-weight:900;">7510</span>. <br>
+									<br>
+									Receive 40% off all swimwear and related online or by phone only. Plus, receive 25% off everything else in your order online, in-store or by phone (excludes Canvas by Lands' End, buy more and save pricing, monogramming, gift boxing, gift cards, shipping, taxes, duties, Lands' End Business Outfitters and excluded items as marked). Promotions and products may vary in-store. Prices as marked in-store. Discount will be applied at checkout. This offer has no cash value and is not redeemable for cash. Promotional savings may be deducted from returns. 5-7 business day delivery to most addresses. Offer valid through 11:59 p.m. Central, May 23, 2016. <br>
+									<br>
+									Not valid on previous purchases or when combined with any other promotional offers. <br>
+
+                    <br/> <br/>
+
+
+						This is an e-mail advertisement from Lands&#8217; End, Inc., 1 Lands&#8217; End Lane&#8218; Dodgeville&#8218; WI 53595<br /><br />
+<a style="color:#0a2240;text-decoration:underline;" href="https://link.landsend.com/u.d?P4Gt-2xRWaybjpX4L=3&s=usnews_2052316_2eonly-_2-feature-_2-signup&emid=usnews_2052316_2eonly&RRID=1606151016108884215691855&YCID=15691855&ym=ym_2landsendus|usnews_2052316_2eonly|1088842"><span style="color: #0a2240;">Subscribe</span></a> to our email&nbsp;&nbsp;&nbsp; </br>
+
+<a style="color:#0a2240;" href="https://link.landsend.com/u.d?NYGt-2xRWaybjpX4M=13&s=joel.dombek@dcsg.com&id=105014537&subscription=MODIFY&cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-footer-_2-modify_2preferences&emid=usnews_2052316_2eonly&RRID=1606151016108884215691855&YCID=15691855&ym=ym_2landsendus|usnews_2052316_2eonly|1088842"> <span style="color: #0a2240;">Modify Your Email Preferences</span></a>
+<br>
+
+<a style="color:#0a2240;" href="https://link.landsend.com/u.d?R4Gt-2xRWaybjpX4B=23&s=joel.dombek@dcsg.com&id=105014537&subscription=UNSUBSCRIBE_2REQUEST&cm_2mmc=usnews-_2-usnews_2052316_2eonly-_2-footer-_2-unsubscribe&emid=usnews_2052316_2eonly&RRID=1606151016108884215691855&YCID=15691855&ym=ym_2landsendus|usnews_2052316_2eonly|1088842"> <span style="color: #0a2240;">Unsubscribe</span></a>
+&nbsp;&nbsp;&nbsp; <a style="color:#0a2240;text-decoration:underline;" href="https://link.landsend.com/u.d?IYGt-2xRWaybjpX4a2=33&s=usnews_2052316_2eonly-_2-footer-_2-footer_2privacy&emid=usnews_2052316_2eonly&RRID=1606151016108884215691855&YCID=15691855&ym=ym_2landsendus|usnews_2052316_2eonly|1088842"><span style="color: #0a2240;">Privacy Policy</span></a>
+<br>
+<a style="color:#0a2240;text-decoration:underline;" href="https://link.landsend.com/u.d?LYGt-2xRWaybjpX4az=43&s=usnews_2052316_2eonly-_2-footer-_2-footer_2legal_2policies&emid=usnews_2052316_2eonly&RRID=1606151016108884215691855&YCID=15691855&ym=ym_2landsendus|usnews_2052316_2eonly|1088842"><span style="color: #0a2240;">Terms of Use</span></a>
+<br>
+<a style="color:#0a2240;text-decoration:underline;" href="mailto:talkback@landsend.com"><span style="color: #0a2240;">talkback@landsend.com</span></a>
+
+<img src="http://pxl.landsend-ympxl.com/log.gif?cid=31c74900fc&mid=1088842&uuid=joel.dombek@dcsg.com" width="1" height="1" border="0"/>
+						<br /><br />
+    				</td>
+    			</tr>
+    		</table>
+    	</td>
+    </tr>
+    </tbody>
+</table>
+
+
+<img src="https://link.landsend.com/1x1.dyn?0_kGwRGGCCXPmh4S96PxPeQo3=1" width=1 height=1  width="1" height="1" border="0">
+</body>
+</html>
