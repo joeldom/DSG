@@ -1,0 +1,5 @@
+*.psd
+.cache
+*.codekit
+*.DS_Store
+*.localized
