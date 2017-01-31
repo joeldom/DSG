@@ -14,6 +14,8 @@
 
 		body { width: 100%; margin-right: auto; margin-left: auto; background: #ffffff; }
 		* { -webkit-text-size-adjust: none; }
+		*{-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%;text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}
 		.ExternalClass * { line-height: 100%; } /* reset Hotmails jankyness */
 		table { border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; }
 		/* Outlook link fixes */
@@ -244,12 +246,12 @@
 					}
 					label.left,
 					#galleryIcons td:first-child {
-							padding-left: 10px;
+							/*padding-left: 10px;*/
 
 					}
 					label.right,
 					#galleryIcons td:last-child {
-							padding-right: 10px;
+							/*padding-right: 10px;*/
 
 					}
 					/**Set initial States of labels**/
@@ -807,13 +809,16 @@ display: none !important;
 
 <!--BEGIN CAROUSEL-->
 <tr>
-	<td align="center" valign="top"><table cellspacing="0" cellpadding="0" border="0" width="100%">
-			<tbody><tr>
-				<td align="left" valign="top"><div style="position: relative; width:100%; background-color: #ffffff; margin-left:auto; margin-right:auto;">
+	<td align="center" valign="top">
+		<table cellspacing="0" cellpadding="0" border="0" width="100%">
+			<tr>
+				<td align="left" valign="top">
+					<div style="position: relative; width:100%; background-color: #ffffff; margin-left:auto; margin-right:auto;">
 						<!-- SLIDER COLOR // background-color: #717171;-->
 						<table align="center" border="0" cellpadding="0" cellspacing="0" id="container" width="100%" style="background-color: #fff; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width:100%; max-width: 690px;">
-							<tbody><tr>
-								<td align="center" width="100%" style="border-collapse: collapse; width:100%; max-width: 690px;"><div style="position: relative; width: 100%; max-width: 690px; margin: 0 auto">
+							<tr>
+								<td align="center" width="100%" style="border-collapse: collapse; width:100%; max-width: 690px;">
+									<div style="position: relative; width: 100%; max-width: 690px; margin: 0 auto">
 
 										<!--Webkit Only-->
 										<!--[if !mso]><!-->
@@ -835,54 +840,129 @@ display: none !important;
 											<!--End Icon Inputs-->
 											<table align="center" border="0" cellpadding="0" cellspacing="0" id="gallery" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; position: relative; width:100%; max-width: 690px;">
 												<!--Begin Arrows-->
-												<tbody><tr>
-													<td id="galleryImgs" valign="top" width="100%" style="width:100%; max-width: 690px;"><table class="mobile-hide" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width:100%; max-width: 690px;">
-															<tbody><tr>
-																<td width="7%" align="right" style="padding-bottom: 20px;"><label class="one left" for="leftArrow1" style="display: none;"><img src="../../img/ua/UA_38C_161110_D_l-arrow_v1.png" width="40" border="0" style="width:100%; max-width: 690px;"> </label>
-																	<label class="two left" for="leftArrow2" style="display: none;"><img src="../../img/ua/UA_38C_161110_D_l-arrow_v1.png" width="40" border="0" style="width:100%; max-width: 690px;"> </label>
-																	<label class="three left" for="leftArrow3" style="display: none;"><img src="../../img/ua/UA_38C_161110_D_l-arrow_v1.png" width="40" border="0" style="width:100%; max-width: 690px;"> </label></td>
+												<tr>
+													<td id="galleryImgs" valign="top" width="100%" style="width:100%; max-width: 690px;">
+														<table class="mobile-hide" border="0" cellpadding="0" cellspacing="0" width="100%" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; width:100%; max-width: 690px;">
+															<tr>
+																<td width="7%" align="right" style="padding-bottom: 20px;">
+																	<!-- <label class="one left" for="leftArrow1" style="display: none;">
+																		<img src="../../img/ua/UA_l-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																	<label class="two left" for="leftArrow2" style="display: none;">
+																		<img src="../../img/ua/UA_l-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																	<label class="three left" for="leftArrow3" style="display: none;">
+																		<img src="../../img/ua/UA_l-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label> -->
+
+																	<label class="one left" for="leftArrow1" style="display: none;">
+																		<img src="../../img/l-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																	<label class="two left" for="leftArrow2" style="display: none;">
+																		<img src="../../img/l-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																	<label class="three left" for="leftArrow3" style="display: none;">
+																		<img src="../../img/l-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																</td>
 																<!--End Arrow-->
 																<!--Begin Images-->
-																<td align="center" width="86%" class="bodyImgs" style="position: relative;" valign="middle"><a href="http://click.e.underarmour.com/?qs=6e17a5a1cdece2ff6d75987569f78eab3c948eed703c3dcb45c7015691cb5a1efd82ab8d44aae18dccb71a73e7d4fad1" target="_blank"><img class="one w150" src="../../img/ua/UA_38H_161115_M_01.jpg" width="520" alt="UNDER ARMOUR GIFT GUIDE 2016 – The top gifts for everything he does and everywhere he goes. - EXPLORE" border="0" style=" width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;"><img class="two w160" src="../../img/ua/UA_38H_161115_M_02.jpg" width="520" border="0" style="display: none; width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;">
-																	<img class="three w170" src="../../img/ua/UA_38H_161115_M_03.jpg" width="520" border="0" style="display: none; width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;"></a></td>
+																<td align="center" width="86%" class="bodyImgs" style="position: relative;" valign="middle">
+																	<a href="LINK" target="_blank">
+
+																		<!-- <img class="one" src="../../img/ua/UA_01.jpg" width="520" alt="_ALT_TEXT_" border="0" style=" width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;">
+
+																		<img class="two" src="../../img/ua/UA_02.jpg" width="520" border="0" style="display: none; width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;">
+
+																		<img class="three" src="../../img/ua/UA_03.jpg" width="520" border="0" style="display: none; width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;"> -->
+
+																		<img class="one" src="../../img/slide-1.png" width="520" alt="_ALT_TEXT_" border="0" style=" width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;">
+
+																		<img class="two" src="../../img/slide-2.png" width="520" border="0" style="display: none; width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;">
+
+																		<img class="three" src="../../img/slide-3.png" width="520" border="0" style="display: none; width: 100%; max-width: 690px; padding-top:40px; padding-bottom:40px;">
+
+																	</a>
+																</td>
 																<!--End Images-->
 																<!--Begin Arrows-->
-																<td width="7%" align="left" style="padding-bottom: 20px"><label class="one right" for="rightArrow1" style="display: none;"><img src="../../img/ua/UA_38C_161110_D_r-arrow_v1.png" width="40" border="0" style="width:100%; max-width: 690px;"> </label>
-																	<label class="two right" for="rightArrow2" style="display: none;"><img src="../../img/ua/UA_38C_161110_D_r-arrow_v1.png" width="40" border="0" style="width:100%; max-width: 690px;"> </label>
-																	<label class="three right" for="rightArrow3" style="display: none;"><img src="../../img/ua/UA_38C_161110_D_r-arrow_v1.png" width="40" border="0" style="width:100%; max-width: 690px;"> </label></td>
+																<td width="7%" align="left" style="padding-bottom: 20px">
+																	<!-- <label class="one right" for="rightArrow1" style="display: none;">
+																		<img src="../../img/ua/UA_r-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																	<label class="two right" for="rightArrow2" style="display: none;">
+																		<img src="../../img/ua/UA_r-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																	<label class="three right" for="rightArrow3" style="display: none;">
+																		<img src="../../img/ua/UA_r-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label> -->
+
+																	<label class="one right" for="rightArrow1" style="display: none;">
+																		<img src="../../img/r-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																	<label class="two right" for="rightArrow2" style="display: none;">
+																		<img src="../../img/r-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																	<label class="three right" for="rightArrow3" style="display: none;">
+																		<img src="../../img/r-arrow.png" width="40" border="0" style="width:100%; max-width: 690px;">
+																	</label>
+																</td>
 																<!--End Arrows-->
 															</tr>
-														</tbody></table>
+														</table>
+														<!-- MOBILE IMAGES -->
 														<table class="mobile" border="0" cellpadding="0" cellspacing="0" style="display: none; border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="86%">
 															<!--Begin Images-->
-															<tbody><tr>
-																<td align="center" width="86%" class="bodyImgs" style="position: relative;" valign="middle"><a href="http://click.e.underarmour.com/?qs=6e17a5a1cdece2ff6d75987569f78eab3c948eed703c3dcb45c7015691cb5a1efd82ab8d44aae18dccb71a73e7d4fad1" target="_blank"><img class="one" src="../../img/ua/UA_38H_161115_M_01.jpg" width="520" border="0" style="width: 100%;max-width: 690px;"><img class="two" src="../../img/ua/UA_38H_161115_M_02.jpg" width="520" border="0" style="display: none; width: 100%; max-width: 690px;"><img class="three" src="../../img/ua/UA_38H_161115_M_03.jpg" width="520" border="0" style="display: none; width: 100%; max-width: 690px;"></a></td>
+															<tr>
+																<td align="center" width="86%" class="bodyImgs" style="position: relative;" valign="middle">
+																	<a href="LINK" target="_blank">
+
+																		<!-- <img class="one" src="../../img/ua/UA_01.jpg" width="520" border="0" style="width: 100%;max-width: 690px;">
+
+																		<img class="two" src="../../img/ua/UA_02.jpg" width="520" border="0" style="display: none; width: 100%; max-width: 690px;">
+
+																		<img class="three" src="../../img/ua/UA_03.jpg" width="520" border="0" style="display: none; width: 100%; max-width: 690px;"> -->
+
+																		<img class="one" src="../../img/slide-1.png" width="520" border="0" style="width: 100%;max-width: 690px;">
+
+																		<img class="two" src="../../img/slide-2.png" width="520" border="0" style="display: none; width: 100%; max-width: 690px;">
+
+																		<img class="three" src="../../img/slide-3.png" width="520" border="0" style="display: none; width: 100%; max-width: 690px;">
+
+																	</a>
+																</td>
 															</tr>
 															<!--End Images-->
-														</tbody></table></td>
+														</table>
+													</td>
 												</tr>
-											</tbody></table>
+											</table>
 											<!-- /Gallery !-->
 										</div>
 										<!--<![endif]-->
 										<!-- Non-interactive -->
 										<table border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt;" width="520" align="center" class="desktop-hide" id="desktop-hide">
-											<tbody><tr>
-												<td align="center" width="76%" style="position: relative; font-size: 20px; padding-top:30px"><a href="http://click.e.underarmour.com/?qs=6e17a5a1cdece2ff6d75987569f78eab3c948eed703c3dcb45c7015691cb5a1efd82ab8d44aae18dccb71a73e7d4fad1" target="_blank"><img src="../../img/ua/UA_38H_161115_M_01.jpg" width="520" border="0" style="line-height: 285px; font-size: 350px; color:#00afd8"></a></td>
+											<tr>
+												<td align="center" width="76%" style="position: relative; font-size: 20px; padding-top:30px">
+													<a href="LINK" target="_blank">
+														<img src="../../img/ua/UA_01.jpg" width="520" border="0" style="line-height: 285px; font-size: 350px; color:#00afd8">
+													</a>
+												</td>
 											</tr>
 											<tr>
 												<td height="15" style="font-size:0; line-height:0">&nbsp;</td>
 											</tr>
-										</tbody></table>
+										</table>
 										<!-- // Non-interactive !-->
 										<!-- !-->
-									</div></td>
+									</div>
+								</td>
 							</tr>
-						</tbody></table>
-					</div></td>
+						</table>
+					</div>
+				</td>
 			</tr>
-		</tbody></table>
-
+		</table>
 		<!--END CAROUSEL-->
 
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
@@ -914,7 +994,7 @@ display: none !important;
 <!-- spacer -->
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
 	<tr>
-		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="" border="0" style="display: block;" /></td>
+		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;"><img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="_ALT_TEXT_" border="0" style="display: block;" /></td>
 	</tr>
 </table>
 <!-- /spacer -->
@@ -990,7 +1070,7 @@ display: none !important;
 <table cellpadding="0" cellspacing="0" align="center" bgcolor="#ffffff" border="0" width="100%">
 	<tr>
 		<td align="center" style="font-size:1px; mso-line-height-alt:0;mso-margin-top-alt:1px;">
-			<img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="" border="0" style="display: block;" />
+			<img src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="5" height="2" alt="_ALT_TEXT_" border="0" style="display: block;" />
 		</td>
 	</tr>
 </table>
@@ -1256,7 +1336,7 @@ display: none !important;
 <!-- SOCIAL MEDIA -->
 <tr style=""><td align="center" valign="top" colspan="3"><table style="display: inline-table;" border="0" cellpadding="0" cellspacing="0" width="320" align="center">
 	<tr>
-	 <td><img style="display:block;" name="n01" src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="320" height="22" border="0" id="n01" alt=""></td>
+	 <td><img style="display:block;" src="http://media.4at5.net/email_domains/lad/template/spacer.gif" width="320" height="22" border="0" alt=""></td>
 	</tr>
 	<tr>
 		<td><!-- Social Start -->
