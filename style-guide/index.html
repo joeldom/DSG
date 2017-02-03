@@ -17,7 +17,7 @@
 <!-- =========================================================
   TO DO
   [ ] Fix mobile drop down image not loading from CDN service
-  [ ]
+  []
 
 ===========================================================-->
 
@@ -27,14 +27,133 @@
   <nav class="navbar navbar-fixed-top navbar-light bg-faded">
     <div class="container">
       <a class="navbar-brand" href="#">Style Guide</a>
-      <button class="navbar-toggler hidden-sm-up navbar-right navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button>
+
+      <!-- <button class="navbar-toggler hidden-sm-up navbar-right navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-header" aria-controls="navbar-header" aria-expanded="false" aria-label="Toggle navigation"></button> -->
+
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-header">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
       <div class="collapse navbar-toggleable-xs" id="navbar-header">
         <p class="hidden-md-up"><br><br><br></p>
         <button class="btn btn-outline-success pull-right col-md-3 col-xs-12" data-toggle="modal" data-target="#myModal">Download</button>
       </div>
     </div>
-    <!-- <small>ver 1.1.9 : 10.3.16</small> -->
   </nav>
+  <!-- <nav class="navbar navbar-default navbar-static">
+    <div class="navbar-header">
+		<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+			<span class="sr-only">Toggle navigation</span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="#">Large Dropdown Menu</a>
+	</div> -->
+
+
+	<!-- <div class="collapse navbar-collapse js-navbar-collapse">
+		<ul class="nav navbar-nav">
+			<li class="dropdown dropdown-large">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu dropdown-menu-large row">
+            <li class="col-sm-3"><a href="#getting-started" contenteditable="false">Getting Started</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#big-idea">Big Idea</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#color" contenteditable="false">Color</a>
+              <ul class="nav nav-stacked">
+                  <li><a href="#color-brand">Brand Colors</a></li>
+                  <li><a href="#color-campaign">Campaign Colors</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#typography" contenteditable="false">Typography</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#typography-1">DSG Sans</a></li>
+                <li><a href="#typography-2">DIN</a></li>
+                <li><a href="#typogrpahy-3">Arial</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#buttons" contenteditable="false">Buttons</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#button-text">Button Text</a></li>
+                <li><a href="#button-dimensions">Button Dimensions</a></li>
+                <li><a href="#button-position">Button Postion</a></li>
+                <li><a href="#button-styling">Button Styling</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#usage" contenteditable="false">Usage</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#solid-buttons">Solid Buttons</a></li>
+                <li><a href="#ghost-buttons">Ghost Buttons</a></li>
+                <li><a href="#2up-verbiage">2-Up &amp; Verbiage</a></li>
+                <li><a href="#aspot-example">A-Spot &amp; Louckup Example</a></li>
+                <li><a href="#improper-cta">Improper CTA Usage</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#output" contenteditable="false">Output</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#output-intro">Intro</a></li>
+                <li><a href="#output-slice-tool">Slice Tool</a></li>
+                <li><a href="#output-save-for-web">Save For Web</a></li>
+                <li><a href="#output-file-types">File Types</a></li>
+                <li><a href="#output-gif">.GIF</a></li>
+                <li><a href="#output-png">.PNG</a></li>
+                <li><a href="#output-jpg">.JPG</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#grid" contenteditable="false">Grid</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#grid-scalable">Scalable Design</a></li>
+                <li><a href="#grid-fluid">Fluid Design</a></li>
+                <li><a href="#grid-responsive">Responsive Design</a></li>
+                <li><a href="#grid-wrapup">Which is best?</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#code" contenteditable="false">Code</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#code-code-counts">Code Counts!</a></li>
+                <li><a href="#code-colsplit">Col-Split</a></li>
+                <li><a href="#code-spacer">Spacer</a></li>
+                <li><a href="#code-alttext">ALT Text</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#build" contenteditable="false">Build</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#build-preheader">Pre-Header</a></li>
+                <li><a href="#build-header">Header</a></li>
+                <li><a href="#build-aspot">A-Spot</a></li>
+                <li><a href="#build-panel">Panel</a></li>
+                <li><a href="#build-tile">Tiles</a></li>
+                <li><a href="#build-banner">Banner</a></li>
+                <li><a href="#build-3col">3-Column</a></li>
+                <li><a href="#build-colsplit">Col-Split</a></li>
+                <li><a href="#build-scorecard">ScoreCard</a></li>
+                <li><a href="#build-social">Social Links</a></li>
+                <li><a href="#build-disclaimer">Disclaimer</a></li>
+              </ul>
+            </li>
+            <li class="col-sm-3"><a href="#examples" contenteditable="false">Examples</a>
+              <ul class="nav nav-stacked">
+                <li><a href="#example-cooking">Outdoor Category</a></li>
+                <li><a href="#example-golf">Golf</a></li>
+                <li><a href="#example-flash">Flash Sale</a></li>
+                <li><a href="#example-footwear-1">Footwear</a></li>
+                <li><a href="#example-footwear-2">Footwear</a></li>
+                <li><a href="#example-tabsupport">Tab Support</a></li>
+                <li><a href="#example-taxfree">Tax Free</a></li>
+                <li><a href="#example-fitness">M/W Fitness</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+	</div> -->
+</nav>
   <!-- /navbar -->
 
   <div class="col-md-2 hidden-md" id="body-right">
@@ -135,7 +254,7 @@
           <li><a class="back-to-top" href="#header">
             Back to top</a></li>
           <li>&nbsp;</li>
-          <li><small>ver 1.1.9.5 : 2.7.17</small></li>
+          <li><small>ver 1.1.9 : 12.1.16</small></li>
         </ul>
       </nav>
     </div>
@@ -1179,42 +1298,42 @@
       <h2 id="examples">Category Examples</h2>
       <p>Here are some live build examples of a design execution in a given category. These have been created with many elements working together visually, and are shown to serve as an example of a proven execution with multiple solutions to refference:</p>
       <hr>
-      <h5 id="example-cooking">Outdoor - Promo Category</h5>
+      <h3 id="example-cooking">Outdoor - Promo Category</h3>
       <iframe style="width:100%;min-height:800px;" src="http://img.ed4.net/dcsg/images/2016/11_14_DSG_Outdoor-Flat-Rate/">
         <p>Your browser does not support iframes.</p>
       </iframe>
       <hr>
-      <h5 id="example-golf">Golf</h5>
+      <h3 id="example-golf">Golf</h3>
       <iframe style="width:100%;min-height:800px;" src="http://img.ed4.net/dcsg/images/2016/11_18_nike_Golf/">
         <p>Your browser does not support iframes.</p>
       </iframe>
       <hr>
-      <h5 id="example-flash">Flash Sale</h5>
+      <h3 id="example-flash">Flash Sale</h3>
       <iframe style="width:100%;min-height:800px;" src="http://img.ed4.net/dcsg/images/2016/11_17_FlashSale_main/">
         <p>Your browser does not support iframes.</p>
       </iframe>
       <hr>
-      <h5 id="example-footwear-1">Footwear</h5>
+      <h3 id="example-footwear-1">Footwear</h3>
       <iframe style="width:100%;min-height:800px;" src="http://img.ed4.net/dcsg/images/2016/11_18_NewnessFootwear/">
         <p>Your browser does not support iframes.</p>
       </iframe>
       <hr>
-      <h5 id="example-footwear-2">Footwear</h5>
+      <h3 id="example-footwear-2">Footwear</h3>
       <iframe style="width:100%;min-height:800px;" src="http://img.ed4.net/dcsg/images/2016/11_04_Nike_Shield_Pack/">
         <p>Your browser does not support iframes.</p>
       </iframe>
       <hr>
-      <h5 id="example-tabsupport">Tab Support</h5>
+      <h3 id="example-tabsupport">Tab Support</h3>
       <iframe style="width:100%;min-height:800px;" src="http://img.ed4.net/dcsg/images/2016/10_30_TabSupport/main/">
         <p>Your browser does not support iframes.</p>
       </iframe>
       <hr>
-      <h5 id="example-taxfree">Tax Free</h5>
+      <h3 id="example-taxfree">Tax Free</h3>
       <iframe style="width:100%;min-height:800px;" src="http://img.ed4.net/dcsg/images/2016/2016_Tax_Free/">
         <p>Your browser does not support iframes.</p>
       </iframe>
       <hr>
-      <h5 id="example-fitness">M/W Fitness</h5>
+      <h3 id="example-fitness">M/W Fitness</h3>
       <iframe style="width:100%;min-height:800px;" src="http://img.ed4.net/dcsg/images/2016//12_03_DSG_UA-Threadborne/">
         <p>Your browser does not support iframes.</p>
       </iframe>
@@ -1223,9 +1342,6 @@
       http://img.ed4.net/dcsg/images/2016/11_02_99_and_Under/
       http://img.ed4.net/dcsg/images/2016/10_21_PFSFW/
       http://img.ed4.net/dcsg/images/2016//12_03_DSG_UA-Threadborne/
-      http://img.ed4.net/dcsg/images/2017/02_01_DSG_Yeti_Hopper/
-      http://img.ed4.net/dcsg/images/2017/01_17_DSG_Snow_Sports_Outerwear/
-      http://img.ed4.net/dcsg/images/2017/01_17_DSG_Bikes/
       -->
 
 
