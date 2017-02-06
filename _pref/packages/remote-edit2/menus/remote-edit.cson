@@ -1,0 +1,28 @@
+# See https://atom.io/docs/latest/creating-a-package#menus for more details
+'menu': [
+  {
+    'label': 'Packages'
+    'submenu': [
+      'label': 'Remote Edit'
+      'submenu': [
+        { 'label': 'Show Open Files', 'command': 'remote-edit:show-open-files' }
+        { 'label': 'Browse Hosts', 'command': 'remote-edit:browse' }
+        { 'label': 'Add New Host (sftp)', 'command': 'remote-edit:new-host-sftp' }
+        { 'label': 'Add New Host (ftp)', 'command': 'remote-edit:new-host-ftp' }
+        { 'label': 'Toggle files view', 'command': 'remote-edit:toggle-files-view' }
+    ]
+    ]
+  }
+]
+
+'context-menu':
+   '.remote-edit-tree-view': [
+     {'label': 'Toggle files view', 'command': 'remote-edit:toggle-files-view'}
+     {'type': 'separator'}
+     {'label': 'Reload current folder', 'command': 'remote-edit:reload-folder'}
+     {'type': 'separator'}
+     {'label': 'Create folder', 'command': 'remote-edit:create-folder'}
+     {'label': 'Create file', 'command': 'remote-edit:create-file'}
+     {'label': 'Rename', 'command': 'remote-edit:rename-folder-file'}
+     {'label': 'Remove folder/file', 'command': 'remote-edit:remove-folder-file'}
+  ]
