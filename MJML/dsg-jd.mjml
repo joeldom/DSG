@@ -79,11 +79,27 @@
       	font-weight: normal;
       	font-style: normal;
       }
+      @media (max-width:480px) {
+        .hide {
+          display: none;
+        }
+        .show {
+          display: visible;
+        }
+      }
+      @media (max-width:480px) {
+        #mobile {
+          text-align: center;
+        }
+      }
     </mj-style>
     <mj-style inline="inline">
         .link-nostyle {
           color: inherit;
           text-decoration: none
+        }
+        .resize300{
+          width:300px;
         }
     </mj-style>
 
@@ -141,7 +157,7 @@
         </mj-column>
       </mj-section>
 
-      <!-- <mj-section background-color="#f1f1f1" full-width="full-width" padding-bottom="10" padding-top="10">
+      <!-- <mj-section css-class="hide" background-color="#f1f1f1" full-width="full-width" padding-bottom="10" padding-top="10">
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="nav-item" align="center" link-color="#006554" padding-bottom="0" padding-top="0">
             <a href="https://mjml.io" style="text-decoration: none; color: inherit;">Shop by sport</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="https://mjml.io" style="text-decoration: none; color: inherit;">Footwear</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
@@ -150,27 +166,19 @@
             <a
               href="https://mjml.io" style="text-decoration: none; color: inherit;">Accessories</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
             <a
-              href="https://mjml.io" style="text-decoration: none; color: inherit;">Fan Shop</a>
-              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
-            <a
-              href="https://mjml.io" style="text-decoration: none; color: inherit;">Featured</a>
-              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
-            <a
               href="https://mjml.io" style="text-decoration: none; color: red;">Clearance</a>
           </mj-text>
         </mj-column>
       </mj-section> -->
       <!--/NAV -->
 
-      <mj-navbar background-color="#f1f1f1" padding-bottom="0" padding-top="0">
+      <mj-navbar css-class="hide" background-color="#f1f1f1" padding-bottom="0" padding-top="0">
         <mj-column width="100%">
           <mj-inline-links base-url="https://mjml.io" hamburger="hamburger" ico-color="#999">
             <mj-link mj-class="nav-item" href="/gettings-started-onboard" color="#006554">Shop by sport</mj-link>
             <mj-link mj-class="nav-item" href="/try-it-live" color="#006554">Footwear</mj-link>
             <mj-link mj-class="nav-item" href="/templates" color="#006554">Apparel</mj-link>
             <mj-link mj-class="nav-item" href="/components" color="#006554">Accessories</mj-link>
-            <!-- <mj-link mj-class="nav-item" href="/components" color="#006554">Fan Shop</mj-link>
-            <mj-link mj-class="nav-item" href="/components" color="#006554">Featured</mj-link> -->
             <mj-link mj-class="nav-item" href="/components" color="red">Clearance</mj-link>
           </mj-inline-links>
         </mj-column>
@@ -223,7 +231,7 @@
         <mj-column vertical-align="top" width="33.33333333333333%">
 
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
-            Higher rates
+            Live Text
           </mj-text>
           <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
@@ -235,7 +243,7 @@
         <mj-column vertical-align="top" width="33.33333333333333%">
 
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
-            Higher rates
+            Lightweight
           </mj-text>
           <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
@@ -247,7 +255,7 @@
         <mj-column vertical-align="top" width="33.33333333333333%">
 
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
-            Higher rates
+            Brand Fonts
           </mj-text>
           <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
@@ -259,7 +267,7 @@
         <mj-column vertical-align="top" width="50%">
 
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
-            Higher rates
+            Mobile First
           </mj-text>
           <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
@@ -271,7 +279,7 @@
         <mj-column vertical-align="top" width="50%">
 
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
-            Higher rates
+            Retina Ready
           </mj-text>
           <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
@@ -279,6 +287,19 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim and more.
           </mj-text>
         </mj-column>
+
+        <mj-column vertical-align="top" width="100%">
+
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
+            Background Images
+          </mj-text>
+          <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
+          </mj-divider>
+          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus, mi vulputate interdum luctus, sapien lacus cursus tortor, in sodales tortor massa id dui. Phasellus vel sodales lorem. Donec sed nulla ut quam auctor dapibus. Nunc eu turpis orci. Duis erat turpis, viverra at turpis aliquam, interdum semper odio. Pellentesque non velit sit amet mi mollis accumsan. Vestibulum at est at quam posuere elementum. Nullam sagittis lacus quis sagittis lacinia. Vestibulum consectetur vitae velit et porttitor. Donec in hendrerit massa. Aenean imperdiet lacus ipsum. Aenean sed porta neque, ut condimentum dui. Morbi pharetra egestas nibh, in sagittis sapien.
+          </mj-text>
+        </mj-column>
+
 
       </mj-section>
 
@@ -305,8 +326,11 @@
           </mj-image>
         </mj-column>
         <mj-column width="50%" vertical-align="middle">
+          <mj-text mj-class="subhead" font-size="18" color="#006554">
+            Subhead descriptor
+          </mj-text>
           <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="25">
-            <span style="font-weight: bold; font-size: 14px; color: #45474e">Great newsletter for the best company out there</span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
           <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="https://mjml.io" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
@@ -321,8 +345,11 @@
           </mj-image>
         </mj-column>
         <mj-column width="50%" vertical-align="middle">
+          <mj-text mj-class="subhead" font-size="18" color="#006554">
+            Subhead descriptor
+          </mj-text>
           <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="25">
-            <span style="font-weight: bold; font-size: 14px; color: #45474e">Great newsletter for the best company out there</span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
           <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="https://mjml.io" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
@@ -337,8 +364,11 @@
           </mj-image>
         </mj-column>
         <mj-column width="50%" vertical-align="middle">
+          <mj-text mj-class="subhead" font-size="18" color="#006554">
+            Subhead descriptor
+          </mj-text>
           <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="25">
-            <span style="font-weight: bold; font-size: 14px; color: #45474e">Great newsletter for the best company out there</span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
           <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="https://mjml.io" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
@@ -366,12 +396,24 @@
 
       <!-- 2x2 GRID -->
       <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width" padding="0">
-        <mj-column width="50%" vertical-align="middle" padding="0">
-          <mj-image width="300" src="http://placehold.it/350x350" alt="" padding="0">
-        </mj-column>
-        <mj-column width="50%" vertical-align="middle" padding="0">
-          <mj-image width="300" src="http://placehold.it/350x350" alt="" padding="0">
-        </mj-column>
+        <mj-group width="100%">
+          <mj-column width="50%" vertical-align="middle" padding="0">
+            <mj-image css-class="resize300" width="300" src="http://placehold.it/350x350" alt="" padding="0">
+          </mj-column>
+          <mj-column width="50%" vertical-align="middle" padding="0">
+            <mj-image css-class="resize300" width="300" src="http://placehold.it/350x350" alt="" padding="0">
+          </mj-column>
+        </mj-group>
+
+        <mj-group width="100%">
+          <mj-column width="50%" vertical-align="middle" padding="0">
+            <mj-image css-class="resize300" width="300" src="http://placehold.it/350x350" alt="" padding="0">
+          </mj-column>
+          <mj-column width="50%" vertical-align="middle" padding="0">
+            <mj-image css-class="resize300" width="300" src="http://placehold.it/350x350" alt="" padding="0">
+          </mj-column>
+        </mj-group>
+
       </mj-section>
       <!--/2x2 GRID -->
 
