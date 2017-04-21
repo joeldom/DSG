@@ -1,0 +1,390 @@
+<mjml>
+  <mj-head>
+    <mj-title>DICK'S Sporting Goods</mj-title>
+    <mj-style>
+      @font-face {
+      	font-family: 'DINPro-Light';
+      	src: url('http://assets.dsg.com/dsg/fonts/din/DINPro-Light.eot');
+      	src: url('http://assets.dsg.com/dsg/fonts/din/DINPro-Light.eot?#iefix') format('embedded-opentype'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Light.woff2') format('woff2'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Light.woff') format('woff'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Light.ttf') format('truetype'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Light.svg#DINPro-Light') format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+      @font-face {
+      	font-family: 'DINPro-Medium';
+      	src: url('http://assets.dsg.com/dsg/fonts/din/DINPro-Medium.eot');
+      	src: url('http://assets.dsg.com/dsg/fonts/din/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Medium.woff2') format('woff2'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Medium.woff') format('woff'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Medium.ttf') format('truetype'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Medium.svg#DINPro-Medium') format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+      @font-face {
+      	font-family: 'DINPro-Black';
+      	src: url('http://assets.dsg.com/dsg/fonts/din/DINPro-Black.eot');
+      	src: url('http://assets.dsg.com/dsg/fonts/din/DINPro-Black.eot?#iefix') format('embedded-opentype'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Black.woff2') format('woff2'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Black.woff') format('woff'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Black.ttf') format('truetype'),
+      	url('http://assets.dsg.com/dsg/fonts/din/DINPro-Black.svg#DINPro-Black') format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+      @font-face {
+      	font-family: 'DSG Sans-Medium';
+      	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Medium-webfont.eot');
+      	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Medium-webfont.woff2') format('woff2'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Medium-webfont.woff') format('woff'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Medium-webfont.ttf') format('truetype'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Medium-webfont.svg#dsg_sansmedium') format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+      @font-face {
+      	font-family: 'DSG Sans-Bold';
+      	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Bold-webfont.eot');
+      	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Bold-webfont.woff2') format('woff2'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Bold-webfont.woff') format('woff'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Bold-webfont.ttf') format('truetype'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Bold-webfont.svg#dsg_sansmedium') format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+      @font-face {
+      	font-family: 'DSG Sans-Black';
+      	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Black.eot');
+      	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Black.eot?#iefix') format('embedded-opentype'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Black.woff2') format('woff2'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Black.woff') format('woff'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Black.ttf') format('truetype'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Black.svg#dsg_sansblack') format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+      @font-face {
+      	font-family: 'DSG Sans-Ultra';
+      	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Ultra-webfont.eot');
+      	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Ultra-webfont.eot?#iefix') format('embedded-opentype'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Ultra-webfont.woff2') format('woff2'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Ultra-webfont.woff') format('woff'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Ultra-webfont.ttf') format('truetype'),
+      	url('http://assets.dsg.com/dsg/fonts/DSGSans-Ultra-webfont.svg#dsg_sansultra') format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </mj-style>
+    <mj-style inline="inline">
+        .link-nostyle {
+          color: inherit;
+          text-decoration: none
+        }
+    </mj-style>
+
+
+    <mj-attributes>
+      <mj-class name="headline" font-size="80px" line-height=".8em" color="#212121" font-family="DSG Sans-Ultra,Helvetica,Arial" text-align="center" text-transform="uppercase" white-space="wrap" white-space="pre"/>
+      <mj-class name="subhead" font-size="30px" line-height="1em" color="#212121" font-family="DINPro-Medium, Helvetica, Arial, sans-serif" text-align="center" text-transform="uppercase" />
+      <mj-class name="nav-item" font-size="14px" line-height="2em" color="#006554" font-family="DINPro-Medium,Helvetica,Arial" text-align="center" text-transform="uppercase" />
+     </mj-attributes>
+  </mj-head>
+
+  <mj-body>
+
+    <mj-container background-color="#f1f1f1">
+      <mj-section locked="true" full-width="full-width">
+        <mj-column width="66.66666666666666%" vertical-align="middle">
+          <mj-text align="left" font-size="14" locked="true" editable="true" padding-bottom="0" padding-top="0">
+            <span style="font-size: 11px">[[HEADLINE]]</span>
+          </mj-text>
+        </mj-column>
+        <mj-column width="33.33333333333333%" vertical-align="middle">
+          <mj-text align="right" font-size="14" locked="true" editable="false" padding-bottom="0" padding-top="0">
+            <span style="font-size: 11px"><a href="https://mjml.io" style="text-decoration: none; color: inherit;">[[PERMALINK_LABEL]]</a></span>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+
+      <!-- NAV -->
+      <!-- <mj-section background-color="#ffffff" full-width="full-width">
+        <mj-column width="25%" vertical-align="middle">
+          <mj-image src="http://joeldom.github.io/DSG/img/logo-black-2.png" alt="OnePage" padding-bottom="0" padding-top="10">
+
+          </mj-image>
+        </mj-column>
+        <mj-column width="75%" vertical-align="middle">
+          <mj-text align="center" link-color="#999" padding-bottom="0" padding-top="10">
+            <a href="https://mjml.io" mj-class="nav-item" style="text-decoration: none; color: inherit;">Home</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="https://mjml.io" style="text-decoration: none; color: inherit;">Features</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" mj-class="nav-item" style="text-decoration: none; color: inherit;">Portfolio</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" mj-class="nav-item" style="text-decoration: none; color: inherit;">Other</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" mj-class="nav-item" style="text-decoration: none; color: inherit;">Other</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" mj-class="nav-item"style="text-decoration: none; color: inherit;">Other</a>
+          </mj-text>
+        </mj-column>
+      </mj-section> -->
+
+      <mj-section background-color="#ffffff" full-width="full-width">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-image width="120" src="http://joeldom.github.io/DSG/img/logo-black-2.png" alt="OnePage" padding-bottom="0" padding-top="10">
+          </mj-image>
+        </mj-column>
+      </mj-section>
+
+      <!-- <mj-section background-color="#f1f1f1" full-width="full-width" padding-bottom="10" padding-top="10">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text mj-class="nav-item" align="center" link-color="#006554" padding-bottom="0" padding-top="0">
+            <a href="https://mjml.io" style="text-decoration: none; color: inherit;">Shop by sport</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<a href="https://mjml.io" style="text-decoration: none; color: inherit;">Footwear</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" style="text-decoration: none; color: inherit;">Apparel</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" style="text-decoration: none; color: inherit;">Accessories</a>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" style="text-decoration: none; color: inherit;">Fan Shop</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" style="text-decoration: none; color: inherit;">Featured</a>
+              &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+            <a
+              href="https://mjml.io" style="text-decoration: none; color: red;">Clearance</a>
+          </mj-text>
+        </mj-column>
+      </mj-section> -->
+      <!--/NAV -->
+
+      <mj-navbar background-color="#f1f1f1" padding-bottom="0" padding-top="0">
+        <mj-column width="100%">
+          <mj-inline-links base-url="https://mjml.io" hamburger="hamburger" ico-color="#999">
+            <mj-link mj-class="nav-item" href="/gettings-started-onboard" color="#006554">Shop by sport</mj-link>
+            <mj-link mj-class="nav-item" href="/try-it-live" color="#006554">Footwear</mj-link>
+            <mj-link mj-class="nav-item" href="/templates" color="#006554">Apparel</mj-link>
+            <mj-link mj-class="nav-item" href="/components" color="#006554">Accessories</mj-link>
+            <!-- <mj-link mj-class="nav-item" href="/components" color="#006554">Fan Shop</mj-link>
+            <mj-link mj-class="nav-item" href="/components" color="#006554">Featured</mj-link> -->
+            <mj-link mj-class="nav-item" href="/components" color="red">Clearance</mj-link>
+          </mj-inline-links>
+        </mj-column>
+      </mj-navbar>
+
+      <!-- <mj-section>
+        <mj-group>
+        <mj-column width="50%" vertical-align="middle">
+            <mj-text color="#999">
+              ONE
+            </mj-text>
+          </mj-column>
+        <mj-column width="50%" vertical-align="middle">
+            <mj-text color="#999">
+              TWO
+            </mj-text>
+          </mj-column>
+        </mj-group>
+        <mj-group>
+        <mj-column width="50%" vertical-align="middle">
+            <mj-text color="#999">
+              ONE
+            </mj-text>
+          </mj-column>
+        <mj-column width="50%" vertical-align="middle">
+            <mj-text color="#999">
+              TWO
+            </mj-text>
+          </mj-column>
+        </mj-group>
+      </mj-section> -->
+
+      <mj-section background-url="http://img.ed4.net/dcsg/images/_temp/dev/img/everegreen-lake.jpg" vertical-align="middle" background-size="cover" background-position="200, 800" full-width="full-width" background-repeat="no-repeat">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text mj-class="headline" align="center" font-size="80" color="#fff" padding-top="50">
+            More than an email template
+          </mj-text>
+          <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
+          </mj-divider>
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#fff" padding-bottom="10" padding-top="20">
+            Only in DSG framework
+          </mj-text>
+          <mj-button align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="https://mjml.io" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
+            LEARN MORE
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-color="#ffffff" vertical-align="top" full-width="full-width">
+        <mj-column vertical-align="top" width="33.33333333333333%">
+
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
+            Higher rates
+          </mj-text>
+          <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
+          </mj-divider>
+          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim.
+          </mj-text>
+        </mj-column>
+
+        <mj-column vertical-align="top" width="33.33333333333333%">
+
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
+            Higher rates
+          </mj-text>
+          <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
+          </mj-divider>
+          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim.
+          </mj-text>
+        </mj-column>
+
+        <mj-column vertical-align="top" width="33.33333333333333%">
+
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
+            Higher rates
+          </mj-text>
+          <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
+          </mj-divider>
+          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim.
+          </mj-text>
+        </mj-column>
+
+        <mj-column vertical-align="top" width="50%">
+
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
+            Higher rates
+          </mj-text>
+          <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
+          </mj-divider>
+          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim.
+          </mj-text>
+        </mj-column>
+
+        <mj-column vertical-align="top" width="50%">
+
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
+            Higher rates
+          </mj-text>
+          <mj-divider border-color="#212121" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
+          </mj-divider>
+          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim and more.
+          </mj-text>
+        </mj-column>
+
+      </mj-section>
+
+      <mj-section background-color="#00483F" vertical-align="middle" full-width="full-width">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text mj-class="headline" align="center" color="#FFF" padding-bottom="10" padding-top="25">
+            Why use a framework?
+          </mj-text>
+          <mj-divider border-color="#fff" border-style="solid" border-width="1px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
+
+          </mj-divider>
+          <mj-text mj-class="subhead" align="center" color="#fff" padding-bottom="25" padding-top="20">
+            Lorem ipsum
+          </mj-text>
+          <mj-text align="center" color="#fff" padding-bottom="25" padding-top="20" font-size="18" font-family="DINPro-Light, Helvetica, Arial, sans-serif">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width">
+        <mj-column width="50%" vertical-align="middle">
+          <mj-image src="http://placehold.it/350x350" alt="" padding-bottom="20" padding-top="20">
+          </mj-image>
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle">
+          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="25">
+            <span style="font-weight: bold; font-size: 14px; color: #45474e">Great newsletter for the best company out there</span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </mj-text>
+          <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="https://mjml.io" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width">
+        <mj-column width="50%" vertical-align="middle">
+          <mj-image src="http://placehold.it/350x350" alt="" padding-bottom="20" padding-top="20">
+
+          </mj-image>
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle">
+          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="25">
+            <span style="font-weight: bold; font-size: 14px; color: #45474e">Great newsletter for the best company out there</span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </mj-text>
+          <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="https://mjml.io" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width">
+        <mj-column width="50%" vertical-align="middle">
+          <mj-image src="http://placehold.it/350x350" alt="" padding-bottom="20" padding-top="20">
+
+          </mj-image>
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle">
+          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="25">
+            <span style="font-weight: bold; font-size: 14px; color: #45474e">Great newsletter for the best company out there</span><br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </mj-text>
+          <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="https://mjml.io" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <!-- 2x2 GRID -->
+      <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width" padding="0">
+        <mj-column width="50%" vertical-align="middle" padding="0">
+          <mj-image src="http://placehold.it/350x350" alt="" padding="0">
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle" padding="0">
+          <mj-image src="http://placehold.it/350x350" alt="" padding="0">
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle" padding="0">
+          <mj-image src="http://placehold.it/350x350" alt="" padding="0">
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle" padding="0">
+          <mj-image src="http://placehold.it/350x350" alt="" padding="0">
+        </mj-column>
+      </mj-section>
+      <!--/2x2 GRID -->
+
+      <!-- 2x2 GRID -->
+      <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width" padding="0">
+        <mj-column width="50%" vertical-align="middle" padding="0">
+          <mj-image width="300" src="http://placehold.it/350x350" alt="" padding="0">
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle" padding="0">
+          <mj-image width="300" src="http://placehold.it/350x350" alt="" padding="0">
+        </mj-column>
+      </mj-section>
+      <!--/2x2 GRID -->
+
+      <mj-section background-color="#f1f1f1" locked="true" full-width="full-width">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text align="center" font-size="14" locked="true" editable="false" padding-bottom="0" padding-top="0">
+            <p style="font-size: 11px">[[DELIVERY_INFO]]</p>
+          </mj-text>
+          <mj-text align="center" font-size="14" locked="true" editable="true" padding-bottom="0" padding-top="0">
+            <p style="font-size: 11px">[[POSTAL_ADDRESS]]</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+  </mj-body>
+</mjml>
