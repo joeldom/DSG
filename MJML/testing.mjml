@@ -771,6 +771,25 @@
         </mj-group>
       </mj-section>
 
+      <mj-section vertical-align="middle" background-color="#fff" full-width="600" padding="10px 25px;">
+        <mj-group background-color="#fff">
+          <mj-column width="60%" vertical-align="middle" >
+            <mj-text mj-class="subhead" font-size="18" color="#006554" padding="0">
+              Long Character Product Name 4
+            </mj-text>
+            <mj-text align="left" color="#9da3a3" font-size="14" padding="0">
+              <span style="color:black;">Men's &amp; Women's Brand</span><br>
+              $49.99 Reg. 99.99
+            </mj-text>
+          </mj-column>
+          <mj-column width="40%" vertical-align="middle" padding="0">
+            <mj-button align="right" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
+              SHOP NOW
+            </mj-button>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
       <!--SOCIAL-->
       <mj-section padding="10px 0 0 0">
         <mj-group>
