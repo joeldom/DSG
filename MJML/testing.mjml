@@ -92,6 +92,101 @@
           text-align: center;
         }
       }
+      /*BEGIN HAM MENU STYLES*/
+  		*[class].logo {
+  			position:absolute;
+  			top:0;
+  			left:0;
+  		}
+  		*[class].menu {
+  			background-image: url('http://joeldom.github.io/DSG/img/logo-black-2.png') !important;
+  			background-repeat: no-repeat;
+  			background-color: #F1F1F1;
+  			background-size: 140px 80px;
+  			background-position: center;
+  			width:100%;
+  			height:80px;
+  			margin:10px auto;
+  			padding: 0 ;
+  		}
+  		*[class].menu ul {
+  			max-height: 0;
+  			overflow: hidden;
+  			transition: max-height 0.25s linear;
+  			margin: 0;
+  			padding: 0;
+  			text-align: right;
+  		}
+  		*[class].menu li {
+  			visibility: hidden;
+  			display: block;
+  			border: none;
+  			text-align: right;
+  			background-color:#f1f1f1;
+  			border-bottom:1px solid #c7c7c7;
+  			border-left:1px solid #c7c7c7;
+  		}
+  		*[class].menu li a img.right{float: right;padding: 0px 10px 0 195px}
+  		*[class].menu li { float:right;}
+  		*[class].menu li:first-child { margin-top:90px !important;border-top:1px solid #c7c7c7;}
+  		*[class].menu *[class].navbar-handle {
+  			display: block;
+  			background-image: url('http://joeldom.github.io/DSG/img/z_menu-grey.png') !important;
+  			background-size: 26px 25px !important;
+  		}
+  		#navbar-checkbox:checked + *[class].menu ul {
+  			max-height: 525px;
+  			width: 100%
+  		}
+  		#navbar-checkbox:checked + *[class].menu li {
+  			visibility: visible;
+  			width: 100%;
+  			text-align: right;
+  		}
+  		#navbar-checkbox:checked + *[class].menu *[class].navbar-handle,
+  		#navbar-checkbox:checked + *[class].menu *[class].navbar-handle:after,
+  		#navbar-checkbox:checked + *[class].menu *[class].navbar-handle:before {
+  			background-image: url('http://joeldom.github.io/DSG/img/z_x-grey.png') !important; background-size: 26px 25px !important;
+  		}
+  		*[class].navbar-checkbox {
+  			display: none;
+  		}
+  		*[class].navbar-handle {
+  			display: none;
+  			cursor: pointer;
+  			padding: 0;
+  			height: 25px;
+  			width: 26px;
+  			border-top: 0;
+  		}
+  		*[class].navbar-handle:before,
+  		*[class].navbar-handle:after {
+  			position: absolute;
+  			content: ' ';
+  		}
+  		*[class].menu {
+  			position: relative;
+  		}
+  		*[class].menu *[class].navbar-handle {
+  			position: absolute;
+  			top: 28px;
+  			right: 15px;
+  			z-index: 10;
+  		}
+  		/*END HAM MENU STYLES*/
+
+      @media (max-width:480px) {
+        .hide {
+          display: none;
+        }
+        .show {
+          display: visible;
+        }
+        .hidelg{
+          display: visible;
+        }
+      }
+      a{color:#006554;}
     </mj-style>
     <mj-style inline="inline">
       .link-nostyle {
@@ -105,7 +200,10 @@
         .hide {
           display: none;
         }
-        .show {
+        .show{
+          display: visible;
+        }
+        .hidelg{
           display: visible;
         }
       }
@@ -123,8 +221,10 @@
         font-family="DSG Sans-Ultra,Helvetica,Arial"
         text-align="center"
         text-transform="uppercase"
-        white-space="wrap"
-        white-space="pre"
+        word-break="keep-all"
+        word-wrap="normal"
+        white-space="nowrap"
+        display="block"
       />
       <mj-class
         name="subhead"
@@ -159,6 +259,24 @@
         name="hide"
         display="none"
         height="0"
+      />
+      <mj-class
+        name="cta-solid-sm"
+        background-color="#00483F"
+        height="24" color="#fff" border-radius="1px" font-size="14" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="2em" text-transform="uppercase"
+      />
+      <mj-class
+        name="cta-ghost-sm"
+        height="24" font-size="14" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
+      />
+      <mj-class
+        name="cta-solid-lg"
+        background-color="#00483F"
+        height="32" color="#fff" border-radius="1px" font-size="18" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="2em" text-transform="uppercase"
+      />
+      <mj-class
+        name="cta-ghost-lg"
+        height="32" font-size="18" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
       />
     </mj-attributes>
   </mj-head>
@@ -200,10 +318,255 @@
         </mj-column>
       </mj-navbar>
 
+      <!-- <mj-section background-color="#ffffff" full-width="full-width">
+        <mj-text>
+          <table cellpadding="0" cellspacing="0" align="center" bgcolor="#F1F1F1" border="0" width="690" class="wrapper" height="94">
+  					<tr><td class="hide" align="center">
+  							<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+  								<tr>
+  									<td class="width280" align="center" style="font-family: arial, sans-serif; font-size: 14px; font-weight: bold; color: #005644; padding: 15px 0 10px 15px;">
+  										<a href="LINK" style="text-decoration: none; color: #002b5c; width:280px; display:inline-block;">
+  											<img src="http://joeldom.github.io/DSG/img/logo-black-2.png" width="140" height="80" alt="ALT_TEXT" border="0" style="font-family: arial, sans-serif; font-size: 11px; font-weight: bold; color: #002b5c; display: block;" />
+  										</a>
+  									</td>
+  								</tr>
+  							</table>
+  						</td>
+  					</tr>
+            <tr class="hidelg">
+              <td class="hidelg">
+                <table cellpadding="0" cellspacing="0" align="center">
+                  <tr>
+                    <td align="center" height="80" valign="top" bgcolor="#F1F1F1">
+                      <form><input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
+                        <div class="menu">
+          								<ul>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_02.png" width="129" height="50" style="display:block; border:0;" id="n05" alt="TEAM SPORTS >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_03.png" width="96" height="50" style="display:block; border:0;" id="n06" alt="EXERCISE >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_04.png" width="106" height="50" style="display:block; border:0;" id="n07" alt="FOOTWEAR >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_05.png" width="91" height="50" style="display:block; border:0;" id="n08" alt="APPAREL >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_06.png" width="60" height="50" style="display:block; border:0;" id="n09" alt="GOLF >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_07.png" width="105" height="50" style="display:block; border:0;" id="n10" alt="OUTDOORS >">
+        											</a>
+        										</li>
+        										<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_08.png" width="98" height="50" style="display:block; border:0;" id="n11" alt="FAN SHOP >">
+        											</a>
+        										</li>
+        										<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_09.png" width="115" height="50" style="display:block; border:0;" id="n12" alt="CLEARANCE >">
+        											</a>
+        										</li>
+          								</ul>
+                          <label for="navbar-checkbox" class="navbar-handle"></label>
+                        </div>
+                        <input type="hidden" name="__HIDDEN_FIELD_NAMES__" value="__HIDDEN_FIELD_NAMES__"><input type="hidden" name="charset_" value="UTF-8">
+                      </form>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+  				</table>
+          <table class="hide" cellpadding="0" cellspacing="0" align="center" bgcolor="#f5f5f5" border="0" width="100%">
+        		<tr>
+        			<td align="center">
+        				<table cellpadding="0" cellspacing="0" align="center" bgcolor="#f5f5f5" border="0" width="690" class="wrapper" height="44">
+        					<tr class="hide">
+        						 <td class="hide">
+        							 <table class="resize320" style="display: inline-table;padding:0;" align="left" border="0" cellpadding="0" cellspacing="0" width="690">
+        									<tr>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/05b.png" width="160" height="44" alt="SHOP BY SPORT">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/06b.png" width="99" height="44" alt="FOOTWEAR">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/07b.png" width="86" height="44" alt="APPAREL">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/08b.png" width="122" height="44" alt="ACCESSORIES">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/09b.png" width="92" height="44" alt="FAN SHOP">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/10b.png" width="131" height="44" alt="CLEARANCE">
+        	                    </a>
+        	                  </td>
+        	                </tr>
+        						 </table>
+        					 </td>
+        				 </tr>
+        				</table>
+        			</td>
+        		</tr>
+          </table>
+        </mj-text>
+      </mj-section> -->
+      <!-- <mj-section>
+        <mj-raw>
+          <table cellpadding="0" cellspacing="0" align="center" bgcolor="#F1F1F1" border="0" width="690" class="wrapper" height="94">
+  					<tr><td class="hide" align="center">
+  							<table class="wrapper" cellpadding="0" cellspacing="0" align="center" border="0" width="690">
+  								<tr>
+  									<td class="width280" align="center" style="font-family: arial, sans-serif; font-size: 14px; font-weight: bold; color: #005644; padding: 15px 0 10px 15px;">
+  										<a href="LINK" style="text-decoration: none; color: #002b5c; width:280px; display:inline-block;">
+  											<img src="http://joeldom.github.io/DSG/img/logo-black-2.png" width="140" height="80" alt="ALT_TEXT" border="0" style="font-family: arial, sans-serif; font-size: 11px; font-weight: bold; color: #002b5c; display: block;" />
+  										</a>
+  									</td>
+  								</tr>
+  							</table>
+  						</td>
+  					</tr>
+            <tr class="hidelg">
+              <td class="hidelg">
+                <table cellpadding="0" cellspacing="0" align="center">
+                  <tr>
+                    <td align="center" height="80" valign="top" bgcolor="#F1F1F1">
+                      <form><input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
+                        <div class="menu">
+          								<ul>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_02.png" width="129" height="50" style="display:block; border:0;" id="n05" alt="TEAM SPORTS >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_03.png" width="96" height="50" style="display:block; border:0;" id="n06" alt="EXERCISE >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_04.png" width="106" height="50" style="display:block; border:0;" id="n07" alt="FOOTWEAR >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_05.png" width="91" height="50" style="display:block; border:0;" id="n08" alt="APPAREL >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_06.png" width="60" height="50" style="display:block; border:0;" id="n09" alt="GOLF >">
+        											</a>
+        										</li>
+          									<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_07.png" width="105" height="50" style="display:block; border:0;" id="n10" alt="OUTDOORS >">
+        											</a>
+        										</li>
+        										<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_08.png" width="98" height="50" style="display:block; border:0;" id="n11" alt="FAN SHOP >">
+        											</a>
+        										</li>
+        										<li>
+        											<a href="#">
+        												<img class="right" src="http://joeldom.github.io/DSG/img/nav_09.png" width="115" height="50" style="display:block; border:0;" id="n12" alt="CLEARANCE >">
+        											</a>
+        										</li>
+          								</ul>
+                          <label for="navbar-checkbox" class="navbar-handle"></label>
+                        </div>
+                        <input type="hidden" name="__HIDDEN_FIELD_NAMES__" value="__HIDDEN_FIELD_NAMES__"><input type="hidden" name="charset_" value="UTF-8">
+                      </form>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+  				</table>
+          <table class="hide" cellpadding="0" cellspacing="0" align="center" bgcolor="#f5f5f5" border="0" width="100%">
+        		<tr>
+        			<td align="center">
+        				<table cellpadding="0" cellspacing="0" align="center" bgcolor="#f5f5f5" border="0" width="690" class="wrapper" height="44">
+        					<tr class="hide">
+        						 <td class="hide">
+        							 <table class="resize320" style="display: inline-table;padding:0;" align="left" border="0" cellpadding="0" cellspacing="0" width="690">
+        									<tr>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/05b.png" width="160" height="44" alt="SHOP BY SPORT">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/06b.png" width="99" height="44" alt="FOOTWEAR">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/07b.png" width="86" height="44" alt="APPAREL">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/08b.png" width="122" height="44" alt="ACCESSORIES">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/09b.png" width="92" height="44" alt="FAN SHOP">
+        	                    </a>
+        	                  </td>
+        	                  <td>
+        	                    <a href="LINK" target="_blank">
+        	                      <img style="display:block;border:0;" src="http://img.ed4.net/dcsg/images/_temp/img/10b.png" width="131" height="44" alt="CLEARANCE">
+        	                    </a>
+        	                  </td>
+        	                </tr>
+        						 </table>
+        					 </td>
+        				 </tr>
+        				</table>
+        			</td>
+        		</tr>
+          </table>
+        </mj-raw>
+      </mj-section> -->
+
       <mj-section background-url="http://img.ed4.net/dcsg/images/_temp/dev/img/everegreen-lake.jpg" vertical-align="middle" background-size="cover" background-position="200, 800" full-width="full-width" background-repeat="no-repeat">
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="headline" align="center" font-size="80" color="#fff" padding-top="50">
-            More than an email template
+            <p style="word-break:keep-all;word-wrap:normal;">More than an email template</p>
           </mj-text>
           <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
           </mj-divider>
@@ -217,8 +580,8 @@
       </mj-section>
 
       <mj-section background-color="#ffffff" vertical-align="top" full-width="full-width">
-        <mj-column vertical-align="top" width="33.33333333333333%">
 
+        <mj-column vertical-align="top" width="33.33333333333333%">
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
             Live Text
           </mj-text>
@@ -230,7 +593,6 @@
         </mj-column>
 
         <mj-column vertical-align="top" width="33.33333333333333%">
-
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
             Lightweight
           </mj-text>
@@ -242,7 +604,6 @@
         </mj-column>
 
         <mj-column vertical-align="top" width="33.33333333333333%">
-
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
             Brand Fonts
           </mj-text>
@@ -254,7 +615,6 @@
         </mj-column>
 
         <mj-column vertical-align="top" width="50%">
-
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
             Mobile First
           </mj-text>
@@ -266,7 +626,6 @@
         </mj-column>
 
         <mj-column vertical-align="top" width="50%">
-
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
             Retina Ready
           </mj-text>
@@ -301,7 +660,7 @@
           </mj-text>
           <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
           </mj-divider>
-          <mj-text mj-class="subhead" align="center" color="#fff" padding-bottom="25" padding-top="20">
+          <mj-text mj-class="subhead" align="center" color="#fff">
             MJML <span style="font-size:.65em;vertical-align:top;">&rarr;</span> FTW!
           </mj-text>
           <mj-text align="center" color="#ffffff" font-size="14" padding-bottom="25" padding-top="25" align="center">
@@ -311,7 +670,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section vertical-align="middle" background-color="#aaa" full-width="full-width">
+      <mj-section vertical-align="middle" background-color="#555" full-width="full-width">
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="headline" align="center" color="#fff" padding-bottom="10" padding-top="25">
             Modular is <br>just better!
@@ -326,32 +685,32 @@
             aliqua. Ut enim ad minim veniam.
           </mj-text>
       </mj-section>
-      <mj-section vertical-align="middle" background-color="#aaa" full-width="full-width" padding="0">
+      <mj-section vertical-align="middle" background-color="#555" full-width="full-width" padding="0">
         <mj-column width="50%" vertical-align="middle">
-          <mj-button href="http://link.com/" height="24" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="white" vertical-align="middle" border-radius="1px">
+          <mj-button align="right" href="http://link.com/" mj-class="cta-solid-lg">
             LEARN MORE
           </mj-button>
         </mj-column>
         <mj-column width="50%" vertical-align="middle">
-          <mj-button href="http://link.com/" height="24" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="white" background-color="none" border="2px solid #FFF" vertical-align="middle" border-radius="1px">
+          <mj-button align="left" href="http://link.com/" mj-class="cta-ghost-lg" color="white" border="2px solid #FFF">
             LEARN MORE
           </mj-button>
         </mj-column>
       </mj-section>
-      <mj-section vertical-align="middle" background-color="#aaa" full-width="full-width" padding="0 0 20px 0">
+      <mj-section vertical-align="middle" background-color="#555" full-width="full-width" padding="0 0 20px 0">
         <mj-column width="50%" vertical-align="middle">
-          <mj-button align="right" href="http://link.com/" height="24" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="white" vertical-align="middle" border-radius="1px">
+          <mj-button align="right" href="http://link.com/" mj-class="cta-solid-sm">
             LEARN MORE
           </mj-button>
         </mj-column>
         <mj-column width="50%" vertical-align="middle">
-          <mj-button align="left" href="http://link.com/" height="24" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="white" background-color="none" border="2px solid #FFF" vertical-align="middle" border-radius="1px">
+          <mj-button align="left" href="http://link.com/" mj-class="cta-ghost-sm" color="white" border="2px solid #FFF">
             LEARN MORE
           </mj-button>
         </mj-column>
       </mj-section>
 
-      <mj-section>
+      <mj-section vertical-align="middle" background-color="#aaa" full-width="full-width">
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="headline" align="center" color="#000" padding-bottom="10" padding-top="25">
             Extensible is build to last!
@@ -364,6 +723,56 @@
           <mj-text align="center" color="#000" font-size="14" padding-bottom="25" padding-top="25" align="center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
+
+            <!-- <pre style="padding:20px;background-color:#333;color:white;width:100%;overflow:scroll;text-align:left;height:400px;box-sizing:border-box;max-width:600px;">
+
+            </pre> -->
+            <!-- <pre style="height:200px;overflow:scroll;text-align:left;background-color:#212121;color:white;padding:0px;max-width:600px;width:auto;display:block;box-sizing:border-box;">
+var mjml = require('mjml')
+
+console.log(mjml.mjml2html({
+  tagName: 'mjml',
+  attributes: {},
+  children: [{
+    tagName: 'mj-body',
+    attributes: {},
+    children: [{
+      tagName: 'mj-container',
+      attributes: {},
+      children: [{
+        tagName: 'mj-section',
+        attributes: {},
+        children: [{
+          tagName: 'mj-column',
+          attributes: {},
+          children: [{
+              tagName: 'mj-image',
+              attributes: {
+              'width': '100px',
+              'src': '/assets/img/logo-small.png'
+              }
+            },
+            {
+              tagName: 'mj-divider',
+              attributes: {
+                'border-color' : '#F46E43'
+              }
+            },
+            {
+            tagName: 'mj-text',
+            attributes: {
+              'font-size': '20px',
+              'color': '#F45E43',
+              'font-family': 'Helvetica'
+            },
+            content: 'Hello World'
+          }]
+        }]
+      }]
+    }]
+  }]
+}))
+</pre> -->
           </mj-text>
         </mj-column>
         <mj-group width="100%">
@@ -764,30 +1173,241 @@
             </mj-text>
           </mj-column>
           <mj-column width="40%" vertical-align="middle" padding="0">
-            <mj-button align="right" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
+            <mj-button align="right" height="32" background-color="#00483F" color="#fff" border-radius="1px" font-size="18" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
               SHOP NOW
             </mj-button>
           </mj-column>
         </mj-group>
       </mj-section>
 
+      <mj-section>
+        <mj-column width="50%" vertical-align="middle" padding="0">
+          <mj-text align="center">
+            Small Button
+          </mj-text>
+          <mj-button align="center" href="http://link.com/" mj-class="cta-solid-sm" padding="0">
+            SHOP NOW
+          </mj-button>
+          <mj-button align="center" href="http://link.com/" mj-class="cta-ghost-sm" padding="10 0 0 0">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle" padding="0">
+          <mj-text align="center">
+            Large Button
+          </mj-text>
+          <mj-button align="center" href="http://link.com/" mj-class="cta-solid-lg" padding="0">
+            SHOP NOW
+          </mj-button>
+          <mj-button align="center" href="http://link.com/" mj-class="cta-ghost-lg" padding="10 0 0 0">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column width="100%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-ghost-sm">
+            SHOP ALL FOOTWEAR
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-ghost-sm">
+            SHOP Men's
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-ghost-sm">
+            SHOP Women's
+          </mj-button>
+        </mj-column>
+        <mj-column width="100%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-ghost-sm">
+            CTA GHOST SMALL
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column width="100%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-ghost-lg">
+            SHOP ALL FOOTWEAR
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-ghost-lg">
+            SHOP Men's
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-ghost-lg">
+            SHOP Women's
+          </mj-button>
+        </mj-column>
+        <mj-column width="100%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-ghost-lg">
+            CTA GHOST SMALL
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column width="100%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-sm">
+            SHOP ALL FOOTWEAR
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-sm">
+            SHOP Men's
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-sm">
+            SHOP Women's
+          </mj-button>
+        </mj-column>
+        <mj-column width="100%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-sm">
+            CTA Solid SMALL
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section>
+        <mj-column width="100%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-lg">
+            SHOP ALL FOOTWEAR
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-lg">
+            SHOP Men's
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-lg">
+            SHOP Women's
+          </mj-button>
+        </mj-column>
+        <mj-column width="100%">
+          <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-lg">
+            CTA SOLID Large
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section background-url="http://img.ed4.net/dcsg/images/_temp/dev/img/everegreen-lake.jpg" vertical-align="middle" background-size="cover" background-position="200, 800" full-width="600" background-repeat="no-repeat" padding="0px 20px 0px 20px">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-button mj-class="cta-solid-sm" align="center" background-color="#fff" color="#212121" href="http://link.com" padding-bottom="0" padding-top="0" font-family="DSG Sans-Ultra, Arial, sans-serif" font-size="22">
+            PRO TIPS
+          </mj-button>
+          <mj-text mj-class="headline" align="center" font-size="80" color="#fff" padding-top="50">
+            <p style="word-break:keep-all;word-wrap:normal;">How to Find the Right Size Bike.</p>
+          </mj-text>
+          <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
+          </mj-divider>
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#fff" padding-bottom="0" padding-top="10">
+            Getting the best performance out of your bike starts with making sure it’s the right size.
+          </mj-text>
+          <mj-button mj-class="cta-solid-sm" align="center" background-color="#fff" color="#999" href="http://link.com" padding-bottom="40" padding-top="40">
+            Read MORE
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section vertical-align="middle" background-color="none" full-width="600" padding="10px 25px;">
+        <br/>
+      </mj-section>
+
+      <mj-section background-url="http://img.ed4.net/dcsg/images/_temp/dev/img/everegreen-lake.jpg" vertical-align="middle" background-size="cover" background-position="200, 800" full-width="600" background-repeat="no-repeat" padding="0px 20px 0px 20px">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-button mj-class="cta-solid-sm" align="center" background-color="#fff" color="#212121" href="http://link.com" padding-bottom="0" padding-top="0" font-family="DSG Sans-Ultra, Arial, sans-serif" font-size="22">
+            PRO TIPS
+          </mj-button>
+          <mj-text mj-class="headline" align="left" font-size="60" color="#fff" padding="20px">
+            <!-- How to Find the Right Size Bike. -->
+            <p style="word-break:keep-all;word-wrap:normal;">How to Find the Right Size Bike.</p>
+          </mj-text>
+        </mj-column>
+      </mj-section>
       <mj-section vertical-align="middle" background-color="#fff" full-width="600" padding="10px 25px;">
         <mj-group background-color="#fff">
-          <mj-column width="60%" vertical-align="middle" >
-            <mj-text mj-class="subhead" font-size="18" color="#006554" padding="0">
-              Long Character Product Name 4
+          <mj-column width="100%" vertical-align="middle" >
+            <mj-text mj-class="subhead" font-size="18" color="#006554" padding="10 0 0 0">
+              Getting the best performance out of your bike starts with making sure it’s the right size.
             </mj-text>
-            <mj-text align="left" color="#9da3a3" font-size="14" padding="0">
-              <span style="color:black;">Men's &amp; Women's Brand</span><br>
-              $49.99 Reg. 99.99
+            <mj-text align="left" color="#9da3a3" font-family="Arial, sans-serif" font-size="14" padding-left="0" padding-right="0">
+              Lorem ipsum dolor sit amet, <a href="LINK">consectetur adipiscing elit</a>. Donec faucibus, mi vulputate interdum luctus, sapien lacus cursus tortor, in sodales tortor massa id dui. Phasellus vel <a href="LINK">sodales lorem</a>. Donec sed nulla ut quam auctor dapibus. Nunc eu turpis orci. Duis erat turpis, viverra at turpis aliquam, interdum semper odio.
             </mj-text>
           </mj-column>
-          <mj-column width="40%" vertical-align="middle" padding="0">
-            <mj-button align="right" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
-              SHOP NOW
+          <mj-column width="100%" vertical-align="middle" padding="0">
+            <mj-button align="center" mj-class="cta-solid-sm" padding-right="0">
+              Learn more
             </mj-button>
           </mj-column>
         </mj-group>
+      </mj-section>
+
+      <mj-section vertical-align="middle" background-color="none" full-width="600" padding="10px 25px;">
+        <br/>
+      </mj-section>
+
+      /* MORE THAN AN EMAIL TEMPLATE */
+font-family: "DSG Sans";
+font-style: normal;
+font-weight: 800;
+font-size: 96px;
+line-height: 78%;
+color: #FFFFFF;
+opacity: 1.00;
+
+
+      <mj-section background-url="http://img.ed4.net/dcsg/images/_temp/dev/img/everegreen-lake.jpg" vertical-align="middle" background-size="cover" background-position="200, 800" full-width="600" background-repeat="no-repeat" padding="0px 20px 0px 20px" border-top="8px solid #fff">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-button mj-class="cta-solid-sm" align="center" background-color="#fff" color="#212121" href="http://link.com" padding-bottom="0" padding-top="0" font-family="DSG Sans-Ultra, Arial, sans-serif" font-size="22">
+            PRO TIPS
+          </mj-button>
+          <mj-text mj-class="headline" align="left" font-size="60" color="#fff" padding="20px">
+            How to Find the Right Size Bike.
+          </mj-text>
+        </mj-column>
+      </mj-section>
+      <mj-section vertical-align="middle" background-color="#fff" full-width="600" padding="10px 25px;">
+        <mj-group background-color="#fff">
+          <mj-column width="100%" vertical-align="middle" >
+            <mj-text mj-class="subhead" font-size="18" color="#006554" padding="15px 0">
+              Getting the best performance out of your bike starts with making sure it’s the right size.
+            </mj-text>
+            <!-- <mj-text align="left" color="#9da3a3" font-family="Arial, sans-serif" font-size="14" padding-left="0" padding-right="0">
+              Lorem ipsum dolor sit amet, <a href="LINK">consectetur adipiscing elit</a>. Donec faucibus, mi vulputate interdum luctus, sapien lacus cursus tortor, in sodales tortor massa id dui.
+            </mj-text> -->
+          </mj-column>
+          <!-- <mj-column width="100%" vertical-align="middle" padding="0">
+            <mj-button align="center" mj-class="cta-solid-sm" padding-right="0">
+              read more
+            </mj-button>
+          </mj-column> -->
+        </mj-group>
+      </mj-section>
+
+      <mj-section vertical-align="middle" background-color="none" full-width="600" padding="10px 25px;">
+        <br/>
+      </mj-section>
+
+      <mj-section background-url="http://img.ed4.net/dcsg/images/_temp/dev/img/everegreen-lake.jpg" vertical-align="middle" background-size="cover" background-position="200, 800" full-width="600" background-repeat="no-repeat" padding="0px 20px 0px 20px" border-top="8px solid #fff">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-button mj-class="cta-solid-sm" align="center" background-color="#fff" color="#212121" href="http://link.com" padding-bottom="0" padding-top="0" font-family="DSG Sans-Ultra, Arial, sans-serif" font-size="22">
+            PRO TIPS
+          </mj-button>
+          <mj-text mj-class="headline" align="left" font-size="60" color="#fff" padding="20px">
+            How to Find the Right Size Bike.
+          </mj-text>
+          <mj-text mj-class="subhead" font-size="18" color="#fff" padding="0 20px 20px 20px">
+            Getting the best performance out of your bike starts with making sure it’s the right size.
+          </mj-text>
+          <mj-link mj-class="link-chevron" href="/product" color="#fff">Learn more &gt;</mj-link>
+        </mj-column>
       </mj-section>
 
       <!--SOCIAL-->
@@ -816,13 +1436,7 @@
           </mj-column> -->
         </mj-group>
 
-
       </mj-section>
-
-      <mj-section>
-
-      </mj-section>
-
 
 
       <!--/SOCIAL-->
@@ -835,6 +1449,25 @@
               * Legal Here &dagger; &amp; Disclaimer &Dagger;<br />
               *Online Only. Offer only valid on items marked with the FREE SHIPPING Savings Alert message. Applies only for standard economy shipping and only up to a XX shipping credit shown in the cart. <strong>Excludes PING and YETI.</strong> Discount does not apply to taxes or similar charges. Entire order must be shipped to a single address. Cannot be combined with any other offer nor is this valid on previous purchases. Only applies to orders to be shipped to a valid address in the United States, excluding Alaska and Hawaii. Not available for shipments to APO/FPO addresses or P.O. boxes. Customer responsible for all shipping costs for returned merchandise other than footwear or apparel. Offer not valid on canceled or out of stock merchandise. This offer only applies to the individual items; other items in your cart that are not eligible will still incur a shipping charge. This promotional offer may be modified or terminated at any time without notice.
             </p><!--/DISCLAIMERS-->
+          </mj-text>
+        </mj-column>
+      </mj-section>
+    </mj-container>
+    <mj-container background-color="#212121">
+      <mj-section>
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text mj-class="headline" align="center" color="#000" padding-bottom="10" padding-top="25">
+            Right tools for the job
+          </mj-text>
+          <mj-divider border-color="#000" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
+          </mj-divider>
+          <mj-text mj-class="subhead" color="#000" align="center">
+            ATOM, SUBLIME, GULP...
+          </mj-text>
+          <mj-text align="center" color="#000" font-size="14" padding-bottom="25" padding-top="25" align="center">
+            In order to provide you with the best experience with MJML and help you use it more efficiently, we’ve developed some tools to integrate it seamlessly in your development workflow:
+            <a href="https://github.com/mjmlio/mjml-component-boilerplate">mjml-component-boilerplate</a><br>
+            <a href="https://medium.com/mjml-making-responsive-email-easy/tutorial-creating-your-own-mjml-component-d3a236ab7093">Creating a component</a>
           </mj-text>
         </mj-column>
       </mj-section>
