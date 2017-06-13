@@ -285,16 +285,18 @@
 
     <mj-container background-color="#f1f1f1">
       <mj-section mj-class="hide" css-class="hide" locked="true" full-width="full-width" padding="2px 0">
-        <mj-column vertical-align="middle">
-          <mj-text align="left" font-size="14" locked="true" editable="true" padding-bottom="0" padding-top="0" color="#b3b3b3">
-            <span style="font-size: 11px">SSL FPO COPY</span>
-          </mj-text>
-        </mj-column>
-        <mj-column vertical-align="middle">
-          <mj-text align="right" font-size="14" locked="true" editable="false" padding-bottom="0" padding-top="0">
-            <span style="font-size: 11px"><a href="http://link.com" style="text-decoration: none; color: #b3b3b3;">Web Version Link</a></span>
-          </mj-text>
-        </mj-column>
+        <mj-group>
+          <mj-column width="50%" vertical-align="middle">
+            <mj-text font-family="Arial, sans-serif" align="left" font-size="14" locked="true" editable="true" padding-bottom="0" padding-top="0" color="#b3b3b3">
+              <span style="font-size: 11px">SSL FPO COPY</span>
+            </mj-text>
+          </mj-column>
+          <mj-column width="50%" vertical-align="middle">
+            <mj-text font-family="Arial, sans-serif" align="right" font-size="14" locked="true" editable="false" padding-bottom="0" padding-top="0">
+              <span style="font-size: 11px"><a href="http://link.com" style="text-decoration: none; color: #b3b3b3;">Web Version Link</a></span>
+            </mj-text>
+          </mj-column>
+        </mj-group>
       </mj-section>
 
       <!-- NAV -->
@@ -587,7 +589,7 @@
           </mj-text>
           <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
-          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim.
           </mj-text>
         </mj-column>
@@ -598,7 +600,7 @@
           </mj-text>
           <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
-          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim.
           </mj-text>
         </mj-column>
@@ -609,18 +611,21 @@
           </mj-text>
           <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
-          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim.
           </mj-text>
         </mj-column>
 
+      </mj-section>
+
+      <mj-section background-color="#ffffff" vertical-align="top" full-width="full-width">
         <mj-column vertical-align="top" width="50%">
           <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
             Mobile First
           </mj-text>
           <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
-          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim.
           </mj-text>
         </mj-column>
@@ -631,10 +636,26 @@
           </mj-text>
           <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
-          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
             <!-- CONTENT -->
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend sagittis nunc, et fermentum est ullamcorper dignissim and more.
             <!-- CONTENT -->
+          </mj-text>
+        </mj-column>
+
+      </mj-section>
+
+      <mj-section background-color="#ffffff" vertical-align="top" full-width="full-width">
+
+        <mj-column vertical-align="top" width="100%">
+
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
+            Proper Grid
+          </mj-text>
+          <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
+          </mj-divider>
+          <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus, mi vulputate interdum luctus, sapien lacus cursus tortor, in sodales tortor massa id dui. Phasellus vel sodales lorem. Donec sed nulla ut quam auctor dapibus. Nunc eu turpis orci. Duis erat turpis, viverra at turpis aliquam, interdum semper odio.
           </mj-text>
         </mj-column>
 
@@ -645,11 +666,10 @@
           </mj-text>
           <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider>
-          <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec faucibus, mi vulputate interdum luctus, sapien lacus cursus tortor, in sodales tortor massa id dui. Phasellus vel sodales lorem. Donec sed nulla ut quam auctor dapibus. Nunc eu turpis orci. Duis erat turpis, viverra at turpis aliquam, interdum semper odio. Pellentesque non velit sit amet mi mollis accumsan. Vestibulum at est at quam posuere elementum. Nullam sagittis lacus quis sagittis lacinia. Vestibulum consectetur vitae velit et porttitor. Donec in hendrerit massa. Aenean imperdiet lacus ipsum. Aenean sed porta neque, ut condimentum dui. Morbi pharetra egestas nibh, in sagittis sapien.
           </mj-text>
         </mj-column>
-
 
       </mj-section>
 
@@ -663,7 +683,7 @@
           <mj-text mj-class="subhead" align="center" color="#fff">
             MJML <span style="font-size:.65em;vertical-align:top;">&rarr;</span> FTW!
           </mj-text>
-          <mj-text align="center" color="#ffffff" font-size="14" padding-bottom="25" padding-top="25" align="center">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#ffffff" font-size="14" padding-bottom="25" padding-top="25" align="center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
             do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
           </mj-text>
@@ -680,7 +700,7 @@
           <mj-text mj-class="subhead" color="#fff" align="center">
             Building Blocks
           </mj-text>
-          <mj-text align="center" color="#ffffff" font-size="14" padding-bottom="25" padding-top="25" align="center">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#ffffff" font-size="14" padding-bottom="25" padding-top="25" align="center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
@@ -720,59 +740,9 @@
           <mj-text mj-class="subhead" color="#000" align="center">
             Custom Components
           </mj-text>
-          <mj-text align="center" color="#000" font-size="14" padding-bottom="25" padding-top="25" align="center">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#000" font-size="14" padding-bottom="25" padding-top="25" align="center">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
-
-            <!-- <pre style="padding:20px;background-color:#333;color:white;width:100%;overflow:scroll;text-align:left;height:400px;box-sizing:border-box;max-width:600px;">
-
-            </pre> -->
-            <!-- <pre style="height:200px;overflow:scroll;text-align:left;background-color:#212121;color:white;padding:0px;max-width:600px;width:auto;display:block;box-sizing:border-box;">
-var mjml = require('mjml')
-
-console.log(mjml.mjml2html({
-  tagName: 'mjml',
-  attributes: {},
-  children: [{
-    tagName: 'mj-body',
-    attributes: {},
-    children: [{
-      tagName: 'mj-container',
-      attributes: {},
-      children: [{
-        tagName: 'mj-section',
-        attributes: {},
-        children: [{
-          tagName: 'mj-column',
-          attributes: {},
-          children: [{
-              tagName: 'mj-image',
-              attributes: {
-              'width': '100px',
-              'src': '/assets/img/logo-small.png'
-              }
-            },
-            {
-              tagName: 'mj-divider',
-              attributes: {
-                'border-color' : '#F46E43'
-              }
-            },
-            {
-            tagName: 'mj-text',
-            attributes: {
-              'font-size': '20px',
-              'color': '#F45E43',
-              'font-family': 'Helvetica'
-            },
-            content: 'Hello World'
-          }]
-        }]
-      }]
-    }]
-  }]
-}))
-</pre> -->
           </mj-text>
         </mj-column>
         <mj-group width="100%">
@@ -827,7 +797,7 @@ console.log(mjml.mjml2html({
           <mj-text mj-class="subhead" color="#000" align="center">
             ATOM, SUBLIME, GULP...
           </mj-text>
-          <mj-text align="center" color="#000" font-size="14" padding-bottom="25" padding-top="25" align="center">
+          <mj-text font-family="Arial, sans-serif" align="center" color="#000" font-size="14" padding-bottom="25" padding-top="25" align="center">
             In order to provide you with the best experience with MJML and help you use it more efficiently, we’ve developed some tools to integrate it seamlessly in your development workflow:
             <a href="https://github.com/mjmlio/mjml-component-boilerplate">mjml-component-boilerplate</a><br>
             <a href="https://medium.com/mjml-making-responsive-email-easy/tutorial-creating-your-own-mjml-component-d3a236ab7093">Creating a component</a>
@@ -844,7 +814,7 @@ console.log(mjml.mjml2html({
           <mj-text mj-class="subhead" font-size="18" color="#006554">
             Subhead descriptor 1
           </mj-text>
-          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+          <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
@@ -864,7 +834,7 @@ console.log(mjml.mjml2html({
           <mj-text mj-class="subhead" font-size="18" color="#006554">
             Subhead descriptor 2
           </mj-text>
-          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+          <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
@@ -884,7 +854,7 @@ console.log(mjml.mjml2html({
           <mj-text mj-class="subhead" font-size="18" color="#006554">
             Subhead descriptor 3
           </mj-text>
-          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+          <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
@@ -977,7 +947,7 @@ console.log(mjml.mjml2html({
             <mj-text mj-class="subhead" font-size="18" color="#006554">
               Product Name 1
             </mj-text>
-            <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+            <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam.
             </mj-text>
@@ -991,7 +961,7 @@ console.log(mjml.mjml2html({
             <mj-text mj-class="subhead" font-size="18" color="#006554">
               Product Name 2
             </mj-text>
-            <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+            <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam.
             </mj-text>
@@ -1022,7 +992,7 @@ console.log(mjml.mjml2html({
             <mj-text mj-class="subhead" font-size="18" color="#006554">
               Product Name 3
             </mj-text>
-            <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+            <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
               Men's &amp; Women's Brand<br>
               $49.99 Reg. 99.99
             </mj-text>
@@ -1036,7 +1006,7 @@ console.log(mjml.mjml2html({
             <mj-text mj-class="subhead" font-size="18" color="#006554">
               Product Name 4
             </mj-text>
-            <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+            <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
               Men's &amp; Women's Brand<br>
               $49.99 Reg. 99.99
             </mj-text>
@@ -1056,7 +1026,7 @@ console.log(mjml.mjml2html({
             <mj-text align="center" mj-class="subhead" font-size="18" color="#006554">
               Product Name 5
             </mj-text>
-            <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+            <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
               Men's &amp; Women's Brand<br>
               $49.99 Reg. 99.99
             </mj-text>
@@ -1070,7 +1040,7 @@ console.log(mjml.mjml2html({
             <mj-text align="center" mj-class="subhead" font-size="18" color="#006554">
               Product Name 6
             </mj-text>
-            <mj-text align="center" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
+            <mj-text font-family="Arial, sans-serif" align="center" color="#9da3a3" font-size="14" padding-bottom="25" padding-top="10">
               Men's &amp; Women's Brand<br>
               $49.99 Reg. 99.99
             </mj-text>
@@ -1144,7 +1114,7 @@ console.log(mjml.mjml2html({
             <mj-text mj-class="subhead" font-size="18" color="#006554" padding="0">
               Long Character Product Name 2
             </mj-text>
-            <mj-text align="left" color="#9da3a3" font-size="14" padding="0">
+            <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding="0">
               <span style="color:black;">Men's &amp; Women's Brand</span><br>
               $49.99 Reg. 99.99
             </mj-text>
@@ -1167,7 +1137,7 @@ console.log(mjml.mjml2html({
             <mj-text mj-class="subhead" font-size="18" color="#006554" padding="0">
               Long Character Product Name 3
             </mj-text>
-            <mj-text align="left" color="#9da3a3" font-size="14" padding="0">
+            <mj-text font-family="Arial, sans-serif" align="left" color="#9da3a3" font-size="14" padding="0">
               <span style="color:black;">Men's &amp; Women's Brand</span><br>
               $49.99 Reg. 99.99
             </mj-text>
@@ -1180,7 +1150,6 @@ console.log(mjml.mjml2html({
         </mj-group>
       </mj-section>
 
-<<<<<<< HEAD
       <mj-section>
         <mj-column width="50%" vertical-align="middle" padding="0">
           <mj-text align="center">
@@ -1353,15 +1322,6 @@ console.log(mjml.mjml2html({
       <mj-section vertical-align="middle" background-color="none" full-width="600" padding="10px 25px;">
         <br/>
       </mj-section>
-
-      /* MORE THAN AN EMAIL TEMPLATE */
-font-family: "DSG Sans";
-font-style: normal;
-font-weight: 800;
-font-size: 96px;
-line-height: 78%;
-color: #FFFFFF;
-opacity: 1.00;
 
 
       <mj-section background-url="http://img.ed4.net/dcsg/images/_temp/dev/img/everegreen-lake.jpg" vertical-align="middle" background-size="cover" background-position="200, 800" full-width="600" background-repeat="no-repeat" padding="0px 20px 0px 20px" border-top="8px solid #fff">
