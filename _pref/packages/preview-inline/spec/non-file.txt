@@ -1,1 +1,0 @@
-\Phi = H_{tr}(T_{i} - T_{e}) - gA_{sol} I_{sol} + H_{ve}W_s(T_{i} - T_{e})
