@@ -311,14 +311,13 @@
 
         <mj-column vertical-align="top" width="100%" background-color="#fff">
 
-          <!-- <mj-text mj-class="subhead" align="center" font-size="18" color="#006554">
-            <br>
-            REINTRODUCE OURSELVES...
-          </mj-text> -->
+          <mj-text mj-class="subhead" align="center" font-size="18" line-height="1.5em" color="#006554" padding="60 40 30">
+            After <u>7 years</u> as the Store Support Center, we’d like to reintroduce ourselves…
+          </mj-text>
           <!-- <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-bottom="10" padding-top="10">
           </mj-divider> -->
-          <mj-text align="left" color="#9da3a3" font-size="14" padding-bottom="30" padding-top="40">
-            <p>After <u>7 years</u> as the Store Support Center, we’d like to reintroduce ourselves…</p>
+          <mj-text align="left" color="#9da3a3" font-size="14" padding="0 30 50">
+            <!-- <p>After <u>7 years</u> as the Store Support Center, we’d like to reintroduce ourselves…</p> -->
 
             <p>Tomorrow, July 1, the Store Support Center (SSC) will officially change its name to the Customer Support Center (CSC).</p>
 
@@ -335,7 +334,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section vertical-align="middle" background-color="" full-width="full-width" padding="0">
+      <!-- <mj-section vertical-align="middle" background-color="" full-width="full-width" padding="0">
 
         <mj-group background-color="#fff">
           <mj-column vertical-align="middle" >
@@ -347,7 +346,7 @@
           </mj-column>
         </mj-group>
 
-      </mj-section>
+      </mj-section> -->
 
 
       <!--SOCIAL-->
