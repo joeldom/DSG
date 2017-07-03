@@ -68,6 +68,9 @@
       	font-weight: normal;
       	font-style: normal;
       }
+      .cta-fancy:hover{
+        box-shadow: 20px 20px black;
+      }
       @font-face {
       	font-family: 'DSG Sans-Ultra';
       	src: url('http://assets.dsg.com/dsg/fonts/DSGSans-Ultra-webfont.eot');
@@ -573,7 +576,7 @@
           <mj-text mj-class="subhead" align="center" font-size="18" color="#fff" padding-bottom="10" padding-top="20">
             Only in DSG framework
           </mj-text>
-          <mj-button align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
+          <mj-button mj-class="cta-fancy" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
             LEARN MORE
           </mj-button>
         </mj-column>
@@ -727,7 +730,7 @@
             <!-- <pre style="padding:20px;background-color:#333;color:white;width:100%;overflow:scroll;text-align:left;height:400px;box-sizing:border-box;max-width:600px;">
 
             </pre> -->
-            <!-- <pre style="height:200px;overflow:scroll;text-align:left;background-color:#212121;color:white;padding:0px;max-width:600px;width:auto;display:block;box-sizing:border-box;">
+            <pre style="height:200px;overflow:scroll;text-align:left;background-color:#212121;color:white;padding:0px;max-width:600px;width:auto;display:block;box-sizing:border-box;">
 var mjml = require('mjml')
 
 console.log(mjml.mjml2html({
@@ -772,7 +775,7 @@ console.log(mjml.mjml2html({
     }]
   }]
 }))
-</pre> -->
+</pre>
           </mj-text>
         </mj-column>
         <mj-group width="100%">
@@ -1180,7 +1183,6 @@ console.log(mjml.mjml2html({
         </mj-group>
       </mj-section>
 
-<<<<<<< HEAD
       <mj-section>
         <mj-column width="50%" vertical-align="middle" padding="0">
           <mj-text align="center">
@@ -1354,16 +1356,6 @@ console.log(mjml.mjml2html({
         <br/>
       </mj-section>
 
-      /* MORE THAN AN EMAIL TEMPLATE */
-font-family: "DSG Sans";
-font-style: normal;
-font-weight: 800;
-font-size: 96px;
-line-height: 78%;
-color: #FFFFFF;
-opacity: 1.00;
-
-
       <mj-section background-url="http://img.ed4.net/dcsg/images/_temp/dev/img/everegreen-lake.jpg" vertical-align="middle" background-size="cover" background-position="200, 800" full-width="600" background-repeat="no-repeat" padding="0px 20px 0px 20px" border-top="8px solid #fff">
         <mj-column width="100%" vertical-align="middle">
           <mj-button mj-class="cta-solid-sm" align="center" background-color="#fff" color="#212121" href="http://link.com" padding-bottom="0" padding-top="0" font-family="DSG Sans-Ultra, Arial, sans-serif" font-size="22">
@@ -1411,8 +1403,6 @@ opacity: 1.00;
         </mj-column>
       </mj-section>
 
-=======
->>>>>>> origin/gh-pages
       <!--SOCIAL-->
       <mj-section padding="10px 0 0 0">
         <mj-group>
