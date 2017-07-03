@@ -273,12 +273,30 @@
         height="24" font-size="14" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
       />
       <mj-class
+        name="nav-bottom"
+        height="18"
+        font-size="14"
+        font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif"
+        color="#aaa"
+        background-color="none"
+        vertical-align="middle"
+        border-radius="1px"
+        border-top="1px solid #aaa"
+        text-transform="uppercase"
+        text-align="left"
+        align="left"
+      />
+      <mj-class
         name="cta-solid-lg"
         background-color="#00483F"
         height="32" color="#fff" border-radius="1px" font-size="18" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="2em" text-transform="uppercase"
       />
       <mj-class
         name="cta-ghost-lg"
+        height="32" font-size="18" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
+      />
+      <mj-class
+        name="cta-fancy"
         height="32" font-size="18" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
       />
     </mj-attributes>
@@ -1297,6 +1315,45 @@ console.log(mjml.mjml2html({
           <mj-button width="100%" href="http://link.com/" mj-class="cta-solid-lg">
             CTA SOLID Large
           </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section padding-left="20" padding-right="20" text-align="left">
+        <mj-column width="50%" padding="0">
+          <mj-button width="100%" href="http://link.com/" mj-class="nav-bottom" padding="3">
+            SHOP Men's
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%" padding="0">
+          <mj-button width="100%" href="http://link.com/" mj-class="nav-bottom" padding="3">
+            SHOP Women's
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%" padding="0">
+          <mj-button width="100%" href="http://link.com/" mj-class="nav-bottom" padding="3">
+            SHOP Men's
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%" padding="0">
+          <mj-button width="100%" href="http://link.com/" mj-class="nav-bottom" padding="3">
+            SHOP Women's
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%" padding="0" border-bottom="1px solid #aaa" align="left">
+          <mj-button width="100%" href="http://link.com/" mj-class="nav-bottom" padding="3" border-bottom="1px solid #aaa" align="left">
+            SHOP Men's
+          </mj-button>
+          <mj-text align="left" font-size="14" color="#aaa" padding-top="10">
+            <p style="word-break:keep-all;word-wrap:normal;">Link</p>
+          </mj-text>
+        </mj-column>
+        <mj-column width="50%" padding="0" border-bottom="1px solid #aaa">
+          <mj-button width="100%" href="http://link.com/" mj-class="nav-bottom" padding="3" border-bottom="1px solid #aaa">
+            SHOP Women's
+          </mj-button>
+          <mj-text align="left" font-size="14" color="#aaa" padding-top="10">
+            <p style="word-break:keep-all;word-wrap:normal;">Link</p>
+          </mj-text>
         </mj-column>
       </mj-section>
 
