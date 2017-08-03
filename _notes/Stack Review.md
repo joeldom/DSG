@@ -2,8 +2,10 @@
 
 ##Pain Points
 ###Process
-1. Mechents & Planning deciding what goes into the emails instead of the products and promotions coming to us to write and devlop a "story" for.
-2. Shifting the focus off of top products or ones that have seen the email and ecom exposure being a copy & paste option for every sending we have and 
+1. Merchents & Planning deciding what goes into the emails instead of the products and promotions coming to us to write and develop a "story" and messaging for.
+2. Shifting the focus off of top products or ones that have seen the email and ecom exposure being a copy & paste option for every sending we have.
+3. CRM changing and modifying code outside of creating content objects and adding links is causing code segmentation making debugging impossible.
+4. ESP features being requested on a per project schedule instead of as their own task to only be included once completly vetted (F&S flash sale timer held up 3-4 times because of this)
 
 ###Education / Interest
 1. Team members & leadership not having the industry knowlwedge of what can be done with the top marketing trends that we have acces to build.
@@ -22,6 +24,16 @@
 
 ##Improvments
 
+##### Current
+? → ? → Concept/Lab → Planning → Design → ? → Production → Release
+
+vs
+
+Dev → Testing → Concept/Lab → Design → Production → QA 
+
+or the **ideal**
+
+Concept/Lab → Dev → Testing → Planning → Design/Prod :> QA → Sched/Queue → Release → Metrics/Analysis → Iterate → Repeat
 
 ###Tech
 * Atom IDE: being able to push app settings to team members who aren't privey on going into the Mac system to adjust things themselves.
