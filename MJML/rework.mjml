@@ -426,7 +426,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section background-url="/Users/dksc102725/Documents/repo/DSG/MJML/img/retina-3.jpg" vertical-align="middle" background-size="cover" full-width="full-width" background-repeat="no-repeat">
+      <mj-section background-url="http://joeldom.github.io/DSG/MJML/img/retina-3.jpg" vertical-align="middle" background-size="cover" full-width="full-width" background-repeat="no-repeat">
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="headline" align="center" font-size="80" color="#fff" padding-top="50">
             <p style="word-break:keep-all;word-wrap:normal;"><span style="font-size:60px;line-height:1.25em;">👁</span><br>RETINA READY!</p>
@@ -486,7 +486,7 @@
         </mj-column>
       </mj-section>
 
-      <mj-section background-url="/Users/dksc102725/Documents/repo/DSG/MJML/img/retina-2.jpg" vertical-align="middle" background-size="cover" full-width="full-width" background-repeat="no-repeat">
+      <mj-section background-url="http://joeldom.github.io/DSG/MJML/img/retina-2.jpg" vertical-align="middle" background-size="cover" full-width="full-width" background-repeat="no-repeat">
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="headline" align="center" font-size="80" color="#fff" padding-top="50">
             <p style="word-break:keep-all;word-wrap:normal;"><span style="font-size:60px;line-height:1.25em;">👁</span><br>RETINA READY!</p>
