@@ -1233,7 +1233,7 @@ console.log(mjml.mjml2html({
         </mj-text>
         <mj-group width="100%">
           <mj-column width="33.3333%" vertical-align="middle">
-            <mj-image css-class="resize300" width="200" src="http://placehold.it/420x480" alt="" padding="0">
+            <mj-image css-class="resize300" width="200" src="https://s7d2.scene7.com/is/image/dkscdn/FTW_2221_LeftNav_Footwear_ReleaseCalendar_t" alt="" padding="0">
           </mj-column>
           <mj-column width="33.3333%" vertical-align="middle">
             <mj-image css-class="resize300" width="200" src="http://placehold.it/420x480" alt="" padding="0">
