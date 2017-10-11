@@ -83,6 +83,7 @@
       	font-weight: normal;
       	font-style: normal;
       }
+      @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i');
       @media (max-width:480px) {
         .hide {
           display: none;
@@ -233,7 +234,7 @@
       <mj-class
         name="headline-2"
         line-height=".8em"
-        font-family="DINPro-Light, Helvetica, Arial, sans-serif"
+        font-family="Roboto, Helvetica, Arial, sans-serif"
         text-align="center"
         text-transform="uppercase"
         word-break="keep-all"
@@ -241,13 +242,14 @@
         white-space="nowrap"
         display="block"
         letter-spacing=".095em"
+        font-weight="300"
       />
       <mj-class
         name="subhead"
         font-size="30px"
         line-height="1em"
         color="#212121"
-        font-family="DINPro-Medium, Helvetica, Arial, sans-serif"
+        font-family="Roboto, Helvetica, Arial, sans-serif"
         text-align="center"
         text-transform="uppercase"
       />
@@ -265,7 +267,7 @@
         font-size="18px"
         line-height="1em"
         color="#006554"
-        font-family="DINPro-Medium, Helvetica, Arial, sans-serif"
+        font-family="Roboto, Helvetica, Arial, sans-serif"
         text-align="center"
         text-transform="uppercase"
         padding="10px 0 15px"
@@ -276,9 +278,10 @@
         font-size="14px"
         line-height="1.5em"
         color="#006554"
-        font-family="DINPro-Medium,Helvetica,Arial"
+        font-family="Roboto,Helvetica,Arial"
         text-align="center"
         text-transform="uppercase"
+        letter-spacing="5px"
       />
       <mj-class
         name="hide"
@@ -292,22 +295,22 @@
       <mj-class
         name="cta-solid-sm"
         background-color="#00483F"
-        height="24" color="#fff" border-radius="1px" font-size="14" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="2em" text-transform="uppercase"
+        height="24" color="#fff" border-radius="1px" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="2em" text-transform="uppercase"
       />
       <mj-class
         name="cta-pro-tips"
         background-color="#FFF"
-        height="24" color="#212121" border-radius="1px" font-size="14" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="1.5em" text-transform="uppercase"
+        height="18" color="#212121" border-radius="1px" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="1.25em" text-transform="uppercase"
       />
       <mj-class
         name="cta-ghost-sm"
-        height="24" font-size="14" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
+        height="24" font-size="14" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
       />
       <mj-class
         name="nav-bottom"
         height="18"
         font-size="14"
-        font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif"
+        font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif"
         color="#aaa"
         background-color="none"
         vertical-align="middle"
@@ -320,15 +323,15 @@
       <mj-class
         name="cta-solid-lg"
         background-color="#00483F"
-        height="32" color="#fff" border-radius="1px" font-size="18" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="2em" text-transform="uppercase"
+        height="32" color="#fff" border-radius="1px" font-size="18" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" line-height="2em" text-transform="uppercase" letter-spacing="3em"
       />
       <mj-class
         name="cta-ghost-lg"
-        height="32" font-size="18" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
+        height="32" font-size="18" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
       />
       <mj-class
         name="cta-fancy"
-        height="32" font-size="18" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
+        height="32" font-size="18" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" color="#aaa" background-color="none" border="2px solid #aaa" vertical-align="middle" border-radius="1px" text-transform="uppercase"
       />
       <mj-class
         name="left"
@@ -369,8 +372,12 @@
         </mj-column>
       </mj-section>
       <!--/BRAND -->
-      <mj-divider border-color="#eee" border-style="solid" border-width="1px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
-      </mj-divider>
+
+      <mj-section background-color="#eee" vertical-align="middle" full-width="full-width" padding="0">
+        <mj-column>
+          <mj-spacer height="1px" />
+        </mj-column>
+      </mj-section>
 
       <mj-navbar mj-class="nav" css-class="hide" background-color="#ffffff" padding-bottom="0" padding-top="0" full-width="full-width">
         <mj-column width="100%" >
@@ -384,6 +391,12 @@
         </mj-column>
       </mj-navbar>
 
+      <mj-section background-color="#eee" vertical-align="middle" full-width="full-width" padding="0">
+        <mj-column>
+          <mj-spacer height="1px" />
+        </mj-column>
+      </mj-section>
+
 
       <mj-section vertical-align="middle" background-color="#d32f2f" full-width="640" padding="0">
         <mj-column width="100%" vertical-align="middle" >
@@ -392,7 +405,7 @@
             </mj-text>
         </mj-column>
       </mj-section>
-      <mj-section background-url="http://joeldom.github.io/DSG/MJML/img/retina-3.jpg" vertical-align="middle" background-size="cover" full-width="640" background-repeat="no-repeat" padding="40px 20px 40px 20px">
+      <mj-section background-url="http://joeldom.github.io/DSG/MJML/img/retina-3.jpg" vertical-align="middle" background-size="cover" background-repeat="no-repeat" padding="40px 20px 40px 20px">
         <mj-column width="100%" vertical-align="middle">
           <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
           </mj-divider>
@@ -448,7 +461,7 @@
 
       <mj-section background-url="http://joeldom.github.io/DSG/MJML/img/retina-3.jpg" vertical-align="middle" background-size="cover" full-width="640" background-repeat="no-repeat" padding="0px 20px 0px 20px" border-top="8px solid #fff">
         <mj-column width="100%" vertical-align="middle">
-          <mj-button mj-class="cta-pro-tips" align="center" background-color="#fff" color="#212121" href="http://link.com" padding-bottom="0" padding-top="0" font-family="DSG Sans-Ultra, Arial, sans-serif" font-size="22">
+          <mj-button mj-class="cta-pro-tips" height="18" align="center" background-color="#fff" color="#212121" href="http://link.com" padding-bottom="0" padding-top="0" padding-left="0" padding-right="0" font-family="DSG Sans-Ultra, Arial, sans-serif" font-size="22">
             PRO TIPS
           </mj-button>
           <mj-text mj-class="headline" align="center" font-size="60" color="#fff" padding="20px">
@@ -485,7 +498,7 @@
           <mj-text mj-class="subhead" align="center" font-size="18" color="#fff" padding-bottom="10" padding-top="20">
             DSG framework <br/>
           </mj-text>
-          <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
+          <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
             LEARN MORE
           </mj-button>
         </mj-column>
@@ -522,7 +535,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
             do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.
           </mj-text>
-          <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
+          <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
             LEARN MORE
           </mj-button>
         </mj-column>
@@ -542,7 +555,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
-          <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
+          <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
             LEARN MORE
           </mj-button>
         </mj-column>
@@ -602,7 +615,7 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
           </mj-text>
-          <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
+          <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
             LEARN MORE
           </mj-button>
         </mj-column>
@@ -622,7 +635,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam.
             </mj-text>
-            <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
+            <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
               SHOP NOW
             </mj-button>
           </mj-column>
@@ -636,7 +649,7 @@
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
               aliqua. Ut enim ad minim veniam.
             </mj-text>
-            <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
+            <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
               SHOP NOW
             </mj-button>
           </mj-column>
@@ -675,7 +688,7 @@
             </mj-text>
           </mj-column>
           <mj-column width="40%" vertical-align="middle">
-            <mj-button align="right" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
+            <mj-button align="right" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
               SHOP NOW
             </mj-button>
           </mj-column>
@@ -698,7 +711,7 @@
             </mj-text>
           </mj-column>
           <mj-column width="40%" vertical-align="middle">
-            <mj-button align="right" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
+            <mj-button align="right" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
               SHOP NOW
             </mj-button>
           </mj-column>
@@ -721,7 +734,7 @@
             </mj-text>
           </mj-column>
           <mj-column width="40%" vertical-align="middle">
-            <mj-button align="right" height="32" background-color="#00483F" color="#fff" border-radius="1px" font-size="18" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
+            <mj-button align="right" height="32" background-color="#00483F" color="#fff" border-radius="1px" font-size="18" href="http://link.com" font-family="Roboto, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
               SHOP NOW
             </mj-button>
           </mj-column>
@@ -907,9 +920,10 @@
           </mj-column>
         </mj-group>
       </mj-section> -->
+      <mj-spacer height="20px" />
 
       <!--SOCIAL-->
-      <mj-section padding="10px 0 0 0">
+      <mj-section background-color="#212121" full-width="full-width" padding="10px 0 0 0">
         <mj-group>
           <mj-column>
             &nbps;
@@ -936,17 +950,30 @@
       </mj-section>
       <!--/SOCIAL-->
 
-      <mj-section background-color="#f1f1f1" full-width="full-width">
+      <!-- <mj-section background-color="#f1f1f1" full-width="full-width">
 
         <mj-column width="100%" vertical-align="middle">
           <mj-text color="#aaa" font-family="Arial, sans-serif" font-size="9" line-height="1.75em">
-            <p><!--DISCLAIMERS-->
+            <p>
               * Legal Here &dagger; &amp; Disclaimer &Dagger;<br />
               *Online Only. Offer only valid on items marked with the FREE SHIPPING Savings Alert message. Applies only for standard economy shipping and only up to a XX shipping credit shown in the cart. <strong>Excludes PING and YETI.</strong> Discount does not apply to taxes or similar charges. Entire order must be shipped to a single address. Cannot be combined with any other offer nor is this valid on previous purchases. Only applies to orders to be shipped to a valid address in the United States, excluding Alaska and Hawaii. Not available for shipments to APO/FPO addresses or P.O. boxes. Customer responsible for all shipping costs for returned merchandise other than footwear or apparel. Offer not valid on canceled or out of stock merchandise. This offer only applies to the individual items; other items in your cart that are not eligible will still incur a shipping charge. This promotional offer may be modified or terminated at any time without notice.
-            </p><!--/DISCLAIMERS-->
+            </p>
+          </mj-text>
+        </mj-column>
+      </mj-section> -->
+
+      <!-- BRAND -->
+      <mj-section background-color="#212121" full-width="full-width">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text color="#aaa" font-family="Arial, sans-serif" font-size="9" line-height="1.75em">
+            <p>
+              * Legal Here &dagger; &amp; Disclaimer &Dagger;<br />
+              *Online Only. Offer only valid on items marked with the FREE SHIPPING Savings Alert message. Applies only for standard economy shipping and only up to a XX shipping credit shown in the cart. <strong>Excludes PING and YETI.</strong> Discount does not apply to taxes or similar charges. Entire order must be shipped to a single address. Cannot be combined with any other offer nor is this valid on previous purchases. Only applies to orders to be shipped to a valid address in the United States, excluding Alaska and Hawaii. Not available for shipments to APO/FPO addresses or P.O. boxes. Customer responsible for all shipping costs for returned merchandise other than footwear or apparel. Offer not valid on canceled or out of stock merchandise. This offer only applies to the individual items; other items in your cart that are not eligible will still incur a shipping charge. This promotional offer may be modified or terminated at any time without notice.
+            </p>
           </mj-text>
         </mj-column>
       </mj-section>
+      <!--/BRAND -->
 
 
     </mj-container>
