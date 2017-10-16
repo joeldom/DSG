@@ -281,7 +281,7 @@
         font-family="Roboto,Helvetica,Arial"
         text-align="center"
         text-transform="uppercase"
-        letter-spacing="5px"
+        letter-spacing="1em"
       />
       <mj-class
         name="hide"
@@ -382,10 +382,10 @@
       <mj-navbar mj-class="nav" css-class="hide" background-color="#ffffff" padding-bottom="0" padding-top="0" full-width="full-width">
         <mj-column width="100%" >
           <mj-inline-links base-url="http://link.com" hamburger="hamburger" ico-color="#999">
-            <mj-link mj-class="nav-item" href="/gettings-started-onboard" color="#006554">Shop by sport</mj-link>
-            <mj-link mj-class="nav-item" href="/try-it-live" color="#006554">Footwear</mj-link>
-            <mj-link mj-class="nav-item" href="/templates" color="#006554">Apparel</mj-link>
-            <mj-link mj-class="nav-item" href="/components" color="#006554">Accessories</mj-link>
+            <mj-link mj-class="nav-item" href="/gettings-started-onboard">Shop by sport</mj-link>
+            <mj-link mj-class="nav-item" href="/try-it-live">Footwear</mj-link>
+            <mj-link mj-class="nav-item" href="/templates">Apparel</mj-link>
+            <mj-link mj-class="nav-item" href="/components">Accessories</mj-link>
             <mj-link mj-class="nav-item" href="/components" color="red">Clearance</mj-link>
           </mj-inline-links>
         </mj-column>
@@ -417,7 +417,7 @@
           <!-- <mj-text mj-class="subhead" align="center" font-size="18" color="#fff" padding-bottom="0" padding-top="10">
             Subhead description for main creative section and can be shown across several lines.
           </mj-text> -->
-          <mj-button mj-class="cta-solid-sm" align="center" background-color="#fff" color="#999" href="http://link.com" padding-bottom="40" padding-top="40">
+          <mj-button mj-class="cta-solid-sm" align="center" background-color="#fff" color="#888" href="http://link.com" padding-bottom="40" padding-top="40">
             Buy online, pick up in-store
           </mj-button>
         </mj-column>

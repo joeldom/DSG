@@ -284,15 +284,15 @@
   <mj-body>
 
     <mj-container background-color="#f1f1f1">
-      <mj-section mj-class="hide" css-class="hide" locked="true" full-width="full-width" padding="2px 0">
+      <mj-section mj-class="hide" css-class="hide" full-width="full-width" padding="2px 0">
         <mj-group>
           <mj-column width="50%" vertical-align="middle">
-            <mj-text font-family="Arial, sans-serif" align="left" font-size="14" locked="true" editable="true" padding-bottom="0" padding-top="0" color="#b3b3b3">
+            <mj-text font-family="Arial, sans-serif" align="left" font-size="14" editable="true" padding-bottom="0" padding-top="0" color="#b3b3b3">
               <span style="font-size: 11px">SSL FPO COPY</span>
             </mj-text>
           </mj-column>
           <mj-column width="50%" vertical-align="middle">
-            <mj-text font-family="Arial, sans-serif" align="right" font-size="14" locked="true" editable="false" padding-bottom="0" padding-top="0">
+            <mj-text font-family="Arial, sans-serif" align="right" font-size="14" editable="false" padding-bottom="0" padding-top="0">
               <span style="font-size: 11px"><a href="http://link.com" style="text-decoration: none; color: #b3b3b3;">Web Version Link</a></span>
             </mj-text>
           </mj-column>
@@ -1403,7 +1403,7 @@
 
       <!--/SOCIAL-->
 
-      <mj-section background-color="#f1f1f1" locked="true" full-width="full-width" padding="0">
+      <mj-section background-color="#f1f1f1" full-width="full-width" padding="0">
 
         <mj-column width="100%" vertical-align="middle">
           <mj-text color="#aaa" font-family="Arial, sans-serif" font-size="9" line-height="1.75em">
