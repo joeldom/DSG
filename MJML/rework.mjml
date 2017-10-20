@@ -83,6 +83,8 @@
       	font-weight: normal;
       	font-style: normal;
       }
+      <!--FIND & REPLACE ="DINPro ~with~  ="Roboto, DINPro -->
+      @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,500i,700,700i');
       @media (max-width:480px) {
         .hide {
           display: none;
@@ -90,11 +92,15 @@
         .show {
           display: visible;
         }
+        .scale-1{
+          font-size: 60px !important;
+        }
       }
       @media (max-width:480px) {
         #mobile {
           text-align: center;
         }
+
       }
       /*BEGIN HAM MENU STYLES*/
   		*[class].logo {
@@ -103,7 +109,7 @@
   			left:0;
   		}
   		*[class].menu {
-  			background-image: url('http://joeldom.github.io/DSG/img/logo-black-2.png') !important;
+  			background-image: url('http://joeldom.github.io/DSG/img/logo-blk-2.png') !important;
   			background-repeat: no-repeat;
   			background-color: #F1F1F1;
   			background-size: 140px 80px;
@@ -240,6 +246,16 @@
         text-transform="uppercase"
       />
       <mj-class
+        name="price-lg"
+        font-size="72px"
+        line-height="1em"
+        color="#212121"
+        font-family="DSG Sans-Black,Helvetica,Arial"
+        text-align="left"
+        text-transform="uppercase"
+        vertical-align="top"
+      />
+      <mj-class
         name="link-chevron"
         font-size="18px"
         line-height="1em"
@@ -335,7 +351,7 @@
       <!-- BRAND -->
       <mj-section background-color="#ffffff" full-width="full-width">
         <mj-column width="100%" vertical-align="middle">
-          <mj-image width="120" src="http://joeldom.github.io/DSG/img/logo-black-2.png" alt="" padding-bottom="0" padding-top="10">
+          <mj-image width="120" src="http://joeldom.github.io/DSG/img/logo-blk-2.png" alt="" padding-bottom="0" padding-top="10">
           </mj-image>
         </mj-column>
       </mj-section>
@@ -349,7 +365,7 @@
             <mj-link mj-class="nav-item" href="/try-it-live" color="#006554">Footwear</mj-link>
             <mj-link mj-class="nav-item" href="/templates" color="#006554">Apparel</mj-link>
             <mj-link mj-class="nav-item" href="/components" color="#006554">Accessories</mj-link>
-            <mj-link mj-class="nav-item" href="/components" color="red">Clearance</mj-link>
+            <mj-link mj-class="nav-item" href="/components" color="#9d2105">Clearance</mj-link>
           </mj-inline-links>
         </mj-column>
       </mj-navbar>
@@ -405,11 +421,15 @@
         </mj-column>
       </mj-section> -->
 
-      <mj-section background-color="#00483F" vertical-align="middle" full-width="full-width">
+      <mj-section background-color="#00483F" vertical-align="middle" full-width="none">
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="headline" align="center" color="#FFF" padding-bottom="10" padding-top="25">
-            <!-- LOOK INTO WORD WRAP FRO LONG HEADLINE WORD IN LIVE TEXT -->
-            <p style="word-wrap:break-word;">Why use a framework?</p>
+            <!--
+              LOOK INTO WORD WRAP FRO LONG HEADLINE WORD IN LIVE TEXT
+              This is causing the breaking out of the frame on mobile
+              and causing the pane to push out beyond the pane
+            -->
+            <p style="word-wrap:break-word;">Why use a <span css-class="scale-1">framework?</span></p>
           </mj-text>
           <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
           </mj-divider>
@@ -437,8 +457,7 @@
             Multi-Screen &amp; device support
           </mj-text>
           <mj-text font-family="Arial, sans-serif" align="center" color="#FFFFFF" font-size="14" padding-bottom="15" padding-top="0">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-            aliqua. Ut enim ad minim veniam.
+            Customers are shopping on more and more devices each year. With as many devices, there is almost as many different screen sizes in both dimension as well as pixel density.
           </mj-text>
           <mj-button mj-class="cta-solid-lg" align="center" height="24" background-color="#fff" color="#999" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="40">
             LEARN MORE
@@ -624,6 +643,81 @@ console.log(mjml.mjml2html({
         </mj-column>
       </mj-section>
 
+      <mj-section background-url="https://s7d2.scene7.com/is/image/dksfed/DSGHP_17OctWk3_OuterwearFleece?fmt=gif" vertical-align="middle" background-size="cover" full-width="full-width" background-repeat="no-repeat">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text mj-class="headline" align="center" font-size="80" color="#fff" padding-top="50">
+            <!-- <p style="word-break:keep-all;word-wrap:normal;"><span style="font-size:60px;line-height:1.25em;">🛒</span><br>ECOM ALIGNMENT!</p><p>&nbsp;</p> -->
+          </mj-text>
+          <!-- <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
+          </mj-divider> -->
+          <!-- <mj-text mj-class="subhead" align="center" font-size="18" color="#fff" padding-bottom="10" padding-top="20">
+            Multi-Screen &amp; device support
+          </mj-text> -->
+          <!-- <mj-text font-family="Arial, sans-serif" align="center" color="#FFFFFF" font-size="14" padding-bottom="15" padding-top="0">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </mj-text> -->
+          <mj-button mj-class="cta-solid-lg" align="center" background-color="#fff" color="#092a1a" border-radius="1px" href="http://link.com" padding-bottom="45" padding-top="350">
+            LEARN MORE
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section vertical-align="middle" background-color="#c9c3c6" full-width="full-width">
+        <mj-column width="100%" vertical-align="middle">
+          <mj-text mj-class="headline" align="center" color="#092a1a" padding-bottom="10" padding-top="25">
+            <span style="font-size:60px;line-height:1.25em;">🛒</span><br>ECOM ALIGNMENT!
+          </mj-text>
+          <mj-divider border-color="#092a1a" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
+          </mj-divider>
+          <mj-text mj-class="subhead" color="#092a1a" align="center">
+            True Omni-channel execution
+          </mj-text>
+          <mj-text font-family="Arial, sans-serif" align="center" color="#092a1a" font-size="14" padding-bottom="15" padding-top="0">
+            Assets shared through <strong>Scene7</strong> or product information One:One as the customer would see it on their journey from inbox to cart.
+          </mj-text>
+      </mj-section>
+      <mj-section vertical-align="middle" background-color="#c9c3c6" full-width="full-width" padding="0 0 40px 0">
+        <mj-column width="25%" vertical-align="middle">
+          <mj-button css-class="right" href="http://link.com/" mj-class="cta-solid-sm" width="130px" background-color="#092a1a">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+        <mj-column width="25%" vertical-align="middle">
+          <mj-button css-class="left" href="http://link.com/" mj-class="cta-ghost-sm" color="#092a1a" border="2px solid #092a1a" width="130px">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+        <mj-column width="25%" vertical-align="middle">
+          <mj-button css-class="right" href="http://link.com/" mj-class="cta-solid-sm" width="130px" background-color="#092a1a">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+        <mj-column width="25%" vertical-align="middle">
+          <mj-button css-class="left" href="http://link.com/" mj-class="cta-ghost-sm" color="#092a1a" border="2px solid #092a1a" width="130px">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+      </mj-section>
+      <mj-section vertical-align="middle" background-color="#c9c3c6" full-width="full-width" padding="0 0 40px 0">
+        <mj-column width="50%" vertical-align="middle">
+          <mj-button href="http://link.com/" mj-class="cta-solid-lg" background-color="#092a1a">
+            SHOP NOW
+          </mj-button>
+          <mj-button href="http://link.com/" mj-class="cta-solid-lg" background-color="#092a1a">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle">
+          <mj-button href="http://link.com/" mj-class="cta-ghost-lg" color="#092a1a" border="2px solid #092a1a">
+            SHOP NOW
+          </mj-button>
+          <mj-button href="http://link.com/" mj-class="cta-ghost-lg" color="#092a1a" border="2px solid #092a1a">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
       <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width">
         <mj-text align="center" color="#bbb">
           1x1 Image : Info
@@ -645,7 +739,6 @@ console.log(mjml.mjml2html({
           </mj-button>
         </mj-column>
       </mj-section>
-
 
       <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width">
         <mj-column width="50%" vertical-align="middle">
@@ -669,7 +762,6 @@ console.log(mjml.mjml2html({
       <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width">
         <mj-column width="50%" vertical-align="middle">
           <mj-image src="http://placehold.it/640x640" alt="" padding-bottom="20" padding-top="20">
-
           </mj-image>
         </mj-column>
         <mj-column width="50%" vertical-align="middle">
@@ -679,6 +771,27 @@ console.log(mjml.mjml2html({
           <mj-text font-family="Arial, sans-serif" align="left" color="#999" font-size="14" padding-bottom="15" padding-top="0">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
             aliqua. Ut enim ad minim veniam.
+          </mj-text>
+          <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
+            SHOP NOW
+          </mj-button>
+        </mj-column>
+      </mj-section>
+
+      <mj-section vertical-align="middle" background-color="#ffffff" full-width="full-width">
+        <mj-text align="center" color="#bbb">
+          1x1 Image : Branded Info
+        </mj-text>
+        <mj-column width="50%" vertical-align="middle">
+          <mj-image src="http://placehold.it/640x640" alt="" padding-bottom="20" padding-top="20">
+          </mj-image>
+        </mj-column>
+        <mj-column width="50%" vertical-align="middle">
+          <mj-text mj-class="price-lg" color="#9d2105" vertical-align="top">
+            <span style="font-size:36px;vertical-align:top;line-height:1.25em;">$</span>59<span style="font-size:36px;vertical-align:top;line-height:1.25em;">98</span>
+          </mj-text>
+          <mj-text font-family="Arial, sans-serif" align="left" color="#999" font-size="14" padding-bottom="15" padding-top="0">
+            Was 69.99
           </mj-text>
           <mj-button align="left" height="24" background-color="#00483F" color="#fff" border-radius="1px" font-size="14" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10">
             SHOP NOW
@@ -737,13 +850,91 @@ console.log(mjml.mjml2html({
           </mj-column>
         </mj-group>
 
+        <mj-text align="center" color="#bbb">
+          3x1 GRID
+        </mj-text>
+        <mj-group width="100%">
+          <mj-column width="33.3333%" vertical-align="middle">
+            <mj-image css-class="resize300" width="426" src="http://placehold.it/426x426" alt="" padding="0">
+          </mj-column>
+          <mj-column width="33.3333%" vertical-align="middle">
+            <mj-image css-class="resize300" width="426" src="http://placehold.it/426x426" alt="" padding="0">
+          </mj-column>
+          <mj-column width="33.3333%" vertical-align="middle">
+            <mj-image css-class="resize300" width="426" src="http://placehold.it/426x426" alt="" padding="0">
+          </mj-column>
+        </mj-group>
+
+        <mj-text align="center" color="#bbb">
+          4x1 GRID
+        </mj-text>
+        <mj-group width="100%">
+          <mj-column width="25%" vertical-align="middle">
+            <mj-image css-class="resize300" width="320" src="http://placehold.it/320x320" alt="" padding="0">
+          </mj-column>
+          <mj-column width="25%" vertical-align="middle">
+            <mj-image css-class="resize300" width="320" src="http://placehold.it/320x320" alt="" padding="0">
+          </mj-column>
+          <mj-column width="25%" vertical-align="middle">
+            <mj-image css-class="resize300" width="320" src="http://placehold.it/320x320" alt="" padding="0">
+          </mj-column>
+          <mj-column width="25%" vertical-align="middle">
+            <mj-image css-class="resize300" width="320" src="http://placehold.it/320x320" alt="" padding="0">
+          </mj-column>
+        </mj-group>
+
+        <mj-text align="center" color="#bbb">
+          5x1 GRID
+        </mj-text>
+        <mj-group width="100%">
+          <mj-column width="20%" vertical-align="middle">
+            <mj-image css-class="resize300" width="256" src="http://placehold.it/256x256" alt="" padding="0">
+          </mj-column>
+          <mj-column width="20%" vertical-align="middle">
+            <mj-image css-class="resize300" width="256" src="http://placehold.it/256x256" alt="" padding="0">
+          </mj-column>
+          <mj-column width="20%" vertical-align="middle">
+            <mj-image css-class="resize300" width="256" src="http://placehold.it/256x256" alt="" padding="0">
+          </mj-column>
+          <mj-column width="20%" vertical-align="middle">
+            <mj-image css-class="resize300" width="256" src="http://placehold.it/256x256" alt="" padding="0">
+          </mj-column>
+          <mj-column width="20%" vertical-align="middle">
+            <mj-image css-class="resize300" width="256" src="http://placehold.it/256x256" alt="" padding="0">
+          </mj-column>
+        </mj-group>
+
+        <mj-text align="center" color="#bbb">
+          6x1 GRID
+        </mj-text>
+        <mj-group width="100%">
+          <mj-column width="16.6667%" vertical-align="middle">
+            <mj-image css-class="resize300" width="213" src="http://placehold.it/213x213" alt="" padding="0">
+          </mj-column>
+          <mj-column width="16.6667%" vertical-align="middle">
+            <mj-image css-class="resize300" width="213" src="http://placehold.it/213x213" alt="" padding="0">
+          </mj-column>
+          <mj-column width="16.6667%" vertical-align="middle">
+            <mj-image css-class="resize300" width="213" src="http://placehold.it/213x213" alt="" padding="0">
+          </mj-column>
+          <mj-column width="16.6667%" vertical-align="middle">
+            <mj-image css-class="resize300" width="213" src="http://placehold.it/213x213" alt="" padding="0">
+          </mj-column>
+          <mj-column width="16.6667%" vertical-align="middle">
+            <mj-image css-class="resize300" width="213" src="http://placehold.it/213x213" alt="" padding="0">
+          </mj-column>
+          <mj-column width="16.6667%" vertical-align="middle">
+            <mj-image css-class="resize300" width="213" src="http://placehold.it/213x213" alt="" padding="0">
+          </mj-column>
+        </mj-group>
+
         <!-- <mj-column width="100%">
           <mj-divider border-color="#aaa" border-style="solid" border-width="1px" padding-left="0" padding-right="0" padding-bottom="10" padding-top="10">
           </mj-divider>
         </mj-column> -->
 
         <mj-text align="center" color="#bbb">
-          full-width
+          FULL-WIDTH
         </mj-text>
 
         <mj-column width="100%" vertical-align="middle">
@@ -795,7 +986,7 @@ console.log(mjml.mjml2html({
       </mj-section>
 
       <mj-section vertical-align="middle" background-color="" full-width="full-width" padding="0">
-        <mj-column background-color="#fff">
+        <mj-column background-color="#f1f1f1">
           <mj-divider border-color="#f1f1f1" border-style="solid" border-width="2px" padding-left="0" padding-right="0" padding-bottom="10" padding-top="10">
           </mj-divider>
           <mj-text align="center" color="#bbb">
@@ -890,7 +1081,7 @@ console.log(mjml.mjml2html({
       </mj-section>
 
       <mj-section vertical-align="middle" background-color="" full-width="full-width" padding="0">
-        <mj-column background-color="#fff">
+        <mj-column background-color="#f1f1f1">
           <mj-divider border-color="#f1f1f1" border-style="solid" border-width="2px" padding-left="0" padding-right="0" padding-bottom="10" padding-top="10">
           </mj-divider>
           <mj-text align="center" color="#bbb">
@@ -924,6 +1115,10 @@ console.log(mjml.mjml2html({
           </mj-column>
         </mj-group>
       </mj-section>
+
+      <mj-spacer height="20px" />
+
+
       <mj-section vertical-align="middle" background-color="" full-width="full-width" padding="0">
         <mj-column>
           <mj-image src="http://placehold.it/1280x640" alt="" padding="0"/>
@@ -947,6 +1142,10 @@ console.log(mjml.mjml2html({
           </mj-column>
         </mj-group>
       </mj-section>
+
+      <mj-spacer height="20px" />
+
+
       <mj-section vertical-align="middle" background-color="" full-width="full-width" padding="0">
         <mj-column>
           <mj-image src="http://placehold.it/1280x640" alt="" padding="0"/>
@@ -960,7 +1159,33 @@ console.log(mjml.mjml2html({
             </mj-text>
             <mj-text font-family="Arial, sans-serif" align="left" color="#999" font-size="14" padding="0">
               <span style="color:black;">Men's &amp; Women's Brand</span><br>
-              <span style="font-size:12px;">$49.99 Reg. 99.99</span>
+              <span style="font-size:12px;"><span style="color:red;">$49.99</span> Reg. 99.99</span>
+            </mj-text>
+          </mj-column>
+          <mj-column width="40%" vertical-align="middle">
+            <mj-button align="right" height="32" background-color="#00483F" color="#fff" border-radius="1px" font-size="18" href="http://link.com" font-family="DINPro-Medium, Helvetica, Arial, sans-serif, Helvetica, Arial, sans-serif" padding-bottom="45" padding-top="10" padding-right="0" padding-left="0" line-height="2em">
+              SHOP NOW
+            </mj-button>
+          </mj-column>
+        </mj-group>
+      </mj-section>
+
+      <mj-spacer height="20px" />
+
+      <mj-section vertical-align="middle" background-color="" full-width="full-width" padding="0">
+        <mj-column>
+          <mj-image src="http://placehold.it/1280x900" alt="" padding="0"/>
+        </mj-column>
+      </mj-section>
+      <mj-section vertical-align="middle" background-color="#fff" full-width="640" padding="10px 25px;">
+        <mj-group background-color="#fff">
+          <mj-column width="60%" vertical-align="middle" >
+            <mj-text mj-class="subhead" font-size="18" color="#006554" padding="0">
+              Long Character Product Name 4
+            </mj-text>
+            <mj-text font-family="Arial, sans-serif" align="left" color="#999" font-size="14" padding="0">
+              <span style="color:black;">Men's &amp; Women's Brand</span><br>
+              <span style="font-size:12px;"><span style="color:red;">$49.99</span> Reg. 99.99</span>
             </mj-text>
           </mj-column>
           <mj-column width="40%" vertical-align="middle">
@@ -1248,6 +1473,34 @@ console.log(mjml.mjml2html({
 
       <!--SOCIAL-->
       <mj-section padding="10px 0 0 0">
+        <mj-group>
+          <mj-column>
+            &nbps;
+          </mj-column>
+          <mj-column>
+            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/facebook-social.png" />
+          </mj-column>
+          <mj-column>
+            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/twitter-social.png" />
+          </mj-column>
+          <mj-column>
+            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/pinterest-social.png" />
+          </mj-column>
+          <mj-column>
+            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/instagram-social.png" />
+          </mj-column>
+          <mj-column>
+            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/youtube1-social.png" />
+          </mj-column>
+          <mj-column>
+            &nbps;
+          </mj-column>
+        </mj-group>
+      </mj-section>
+      <!--/SOCIAL-->
+
+      <!--SOCIAL-->
+      <mj-section background-color="#212121" full-width="full-width" padding="10px 0">
         <mj-group>
           <mj-column>
             &nbps;

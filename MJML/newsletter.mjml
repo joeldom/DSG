@@ -387,7 +387,7 @@
         </mj-group> -->
 
         <mj-column width="100%" vertical-align="middle">
-          <mj-image width="110" src="http://joeldom.github.io/DSG/img/logo-black-2.png" alt="" padding-bottom="0" padding-top="10">
+          <mj-image width="110" src="dsg_dev.gif" alt="" padding-bottom="0" padding-top="10">
           </mj-image>
         </mj-column>
 
@@ -413,7 +413,7 @@
           <mj-text mj-class="longform" align="left" font-size="16" color="#333">
             <p>Silicon Valley can be a bit of a battlefield, with startup after startup warring over ever-narrower slices of your time, your attention, and your wallet. Facebook just reinforced why no one can rest on their laurels, either. The social media giant quietly entered a new AI bot into the annual StarCraft video game competition, but was routed by bots belonging to individual, hobbyist coders. Awkward. Still, you've got to reserve sympathy for the startups that never even make it to the front lines. In our latest Snapchat edition, <a href="#">WIRED remembers some of the looniest</a>, most poorly-conceived startups the Valley has seen, like the widely-mocked Juicero—doomed purveyors of $400 internet-connected juicers.</p>
             <p>We've got updates on some winners today, too. Astrobiologist <a href="#">Abigail Allwood</a> invented a tool that will comb the surface of Mars with an X-ray beam the width of a hair, hunting for even the most minuscule sign of life. MIT engineers developed tech that can see around corners. It might also be time for humans to surrender to victorious self-driving cars: VC firm Madrona Venture Group proposes ceding the entire stretch of the I-5 freeway between Seattle and Vancouver to autonomous vehicles by 2040. And who else is a winner today? You. Because we've also got news about the beginning of Star Wars: The Last Jedi.</p>
-            <span style="border-bottom:6px solid #ddd;padding:0 0 30px 0;display: block;">&nbsp;</span>
+            <span style="border-bottom:3px solid #ddd;padding:0 0 30px 0;display: block;">&nbsp;</span>
           </mj-text>
         </mj-column>
         <mj-column width="100%" vertical-align="middle">
