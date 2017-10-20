@@ -385,7 +385,9 @@
             &nbsp;
           </mj-column>
         </mj-group> -->
-
+        <!-- http://joeldom.github.io/DSG/img/dsg_dev.gif
+        http://joeldom.github.io/DSG/img/logo-blk-2.png
+          -->
         <mj-column width="100%" vertical-align="middle">
           <mj-image width="110" src="http://joeldom.github.io/DSG/img/logo-blk-2.png" alt="" padding-bottom="0" padding-top="10">
           </mj-image>
