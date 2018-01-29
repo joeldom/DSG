@@ -104,13 +104,13 @@
   			left:0;
   		}
   		*[class].menu {
-  			background-image: url('http://joeldom.github.io/DSG/img/logo-black-2.png') !important;
+  			background-image: url('http://joeldom.github.io/DSG/img/logo-blk-2.png') !important;
   			background-repeat: no-repeat;
-  			background-color: #F1F1F1;
-  			background-size: 140px 80px;
+  			background-color: #FFFFFF;
+  			background-size: 123px 70px;
   			background-position: center;
   			width:100%;
-  			height:80px;
+  			height:70px;
   			margin:10px auto;
   			padding: 0 ;
   		}
@@ -127,7 +127,7 @@
   			display: block;
   			border: none;
   			text-align: right;
-  			background-color:#f1f1f1;
+  			background-color: #FFFFFF;
   			border-bottom:1px solid #c7c7c7;
   			border-left:1px solid #c7c7c7;
   		}
@@ -366,9 +366,79 @@
 
       <!-- BRAND -->
       <mj-section background-color="#ffffff" full-width="full-width">
-        <mj-column width="100%" vertical-align="middle">
-          <mj-image width="120" src="http://joeldom.github.io/DSG/img/logo-black-2.png" alt="" padding-bottom="0" padding-top="10">
+        <!-- <mj-column width="100%" vertical-align="middle">
+          <mj-image width="120" src="http://joeldom.github.io/DSG/img/logo-blk-2.png" alt="" padding-bottom="0" padding-top="10">
           </mj-image>
+        </mj-column> -->
+        <mj-column>
+          <mj-raw>
+            <!-- HERE -->
+            <tr class="hidelg">
+              <td class="hidelg">
+                <table cellpadding="0" cellspacing="0" align="center">
+                  <tr>
+                    <td align="center" height="80" valign="top" bgcolor="#FFFFFF">
+                      <form>
+                        <input type="checkbox" id="navbar-checkbox" class="navbar-checkbox">
+                          <div class="menu">
+            								<ul>
+            									<li>
+          											<!-- <a href="#">
+          												<img class="right" src="../../img/nav_02.png" width="129" height="50" style="display:block; border:0;" id="n05" alt="TEAM SPORTS >">
+          											</a> -->
+                                <a href="http://link.com/gettings-started-onboard" style="display:inline-block;text-decoration:none;text-transform:uppercase;color:#006554;font-family:Roboto,Helvetica,Arial;font-size:14px;font-weight:400;line-height:1.5em;padding:15px 18px">Shop by sport</a>
+          										</li>
+            									<li>
+          											<!-- <a href="#">
+          												<img class="right" src="../../img/nav_03.png" width="96" height="50" style="display:block; border:0;" id="n06" alt="EXERCISE >">
+          											</a> -->
+                                <a href="http://link.com/try-it-live" style="display:inline-block;text-decoration:none;text-transform:uppercase;color:#006554;font-family:Roboto,Helvetica,Arial;font-size:14px;font-weight:400;line-height:1.5em;padding:15px 18px">Footwear</a>
+          										</li>
+            									<li>
+          											<!-- <a href="#">
+          												<img class="right" src="../../img/nav_04.png" width="106" height="50" style="display:block; border:0;" id="n07" alt="FOOTWEAR >">
+          											</a> -->
+                                <a href="http://link.com/templates" style="display:inline-block;text-decoration:none;text-transform:uppercase;color:#006554;font-family:Roboto,Helvetica,Arial;font-size:14px;font-weight:400;line-height:1.5em;padding:15px 18px">Apparel</a>
+          										</li>
+            									<li>
+          											<!-- <a href="#">
+          												<img class="right" src="../../img/nav_05.png" width="91" height="50" style="display:block; border:0;" id="n08" alt="APPAREL >">
+          											</a> -->
+                                <a href="http://link.com/components" style="display:inline-block;text-decoration:none;text-transform:uppercase;color:#006554;font-family:Roboto,Helvetica,Arial;font-size:14px;font-weight:400;line-height:1.5em;padding:15px 18px">Accessories</a>
+          										</li>
+            									<li>
+          											<!-- <a href="#">
+          												<img class="right" src="../../img/nav_06.png" width="60" height="50" style="display:block; border:0;" id="n09" alt="GOLF >">
+          											</a> -->
+                                <a href="http://link.com/components" style="display:inline-block;text-decoration:none;text-transform:uppercase;color:red;font-family:Roboto,Helvetica,Arial;font-size:14px;font-weight:400;line-height:1.5em;padding:15px 10px">Clearance</a>
+          										</li>
+            									<!-- <li>
+          											<a href="#">
+          												<img class="right" src="../../img/nav_07.png" width="105" height="50" style="display:block; border:0;" alt="OUTDOORS >">
+          											</a>
+          										</li>
+          										<li>
+          											<a href="#">
+          												<img class="right" src="../../img/nav_08.png" width="98" height="50" style="display:block; border:0;" alt="FAN SHOP >">
+          											</a>
+          										</li> -->
+          										<!-- <li>
+          											<a href="#">
+          												<img class="right" src="../../img/nav_09.png" width="115" height="50" style="display:block; border:0;color: red;" alt="CLEARANCE >">
+          											</a>
+          										</li> -->
+            								</ul>
+                            <label for="navbar-checkbox" class="navbar-handle"></label>
+                          </div>
+                          <input type="hidden" name="__HIDDEN_FIELD_NAMES__" value="__HIDDEN_FIELD_NAMES__"><input type="hidden" name="charset_" value="UTF-8">
+                        </form>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            <!-- HERE -->
+          </mj-raw>
         </mj-column>
       </mj-section>
       <!--/BRAND -->
@@ -400,7 +470,7 @@
 
       <mj-section vertical-align="middle" background-color="#d32f2f" full-width="640" padding="0">
         <mj-column width="100%" vertical-align="middle" >
-            <mj-text mj-class="headline-2" align="center" font-size="18" color="#fff">
+            <mj-text mj-class="headline-2" align="center" font-size="18" color="#fff" line-height="1.25em">
               <p style="word-break:keep-all;word-wrap:normal;">SEVERE WEATHER WARNING IN YOUR AREA!</p>
             </mj-text>
         </mj-column>
@@ -410,7 +480,7 @@
           <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
           </mj-divider>
           <mj-text mj-class="headline" align="center" font-size="80" color="#fff">
-            <p style="word-break:keep-all;word-wrap:normal;">Multiple line Headline to address event that is not promotional.</p>
+            <p style="word-break:keep-all;word-wrap:normal;">Multiple line Headline to address event that is not a promo.</p>
           </mj-text>
           <mj-divider border-color="#fff" border-style="solid" border-width="2px" padding-left="100" padding-right="100" padding-bottom="20" padding-top="20">
           </mj-divider>
@@ -925,28 +995,65 @@
       <!--SOCIAL-->
       <mj-section background-color="#212121" full-width="full-width" padding="10px 0 0 0">
         <mj-group>
+
           <mj-column>
-            &nbps;
+            <mj-image src="http://img.ed4.net/dcsg/images/_temp/17/facebook-social.png" />
           </mj-column>
           <mj-column>
-            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/facebook-social.png" />
+            <mj-image src="http://img.ed4.net/dcsg/images/_temp/17/twitter-social.png" />
           </mj-column>
           <mj-column>
-            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/twitter-social.png" />
+            <mj-image src="http://img.ed4.net/dcsg/images/_temp/17/pinterest-social.png" />
           </mj-column>
           <mj-column>
-            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/pinterest-social.png" />
+            <mj-image src="http://img.ed4.net/dcsg/images/_temp/17/instagram-social.png" />
           </mj-column>
           <mj-column>
-            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/instagram-social.png" />
+            <mj-image src="http://img.ed4.net/dcsg/images/_temp/17/youtube1-social.png" />
           </mj-column>
-          <mj-column>
-            <mj-image width="30" src="http://img.ed4.net/dcsg/images/_temp/17/youtube1-social.png" />
-          </mj-column>
-          <mj-column>
-            &nbps;
-          </mj-column>
+
         </mj-group>
+      </mj-section>
+
+      <mj-section background-color="#212121" full-width="full-width" padding="10px 0 0 0">
+        <mj-column>
+          <mj-raw>
+            <!--SOCIAL-->
+            <tr><td>
+            <table align="center" width="690" border="0" cellpadding="0" cellspacing="0">
+              <tr>
+                <td align="center" valign="top" colspan="3">
+                  <table style="display:inline-table;" border="0" cellpadding="0" cellspacing="0" width="320" align="center">
+                    <tr>
+                      <td>
+                        <table style="display:inline-table;" align="center" border="0" cellpadding="0" cellspacing="0" width="320">
+                          <tr>
+                            <td align="center" valign="top"><a href="[@trackurl LinkID='b2dbde12a31140c1a649f1546bb3c69a' LinkName='Social_Facebook' LinkTag='Social_Facebook' LinkDesc='Social_Facebook' Tracked='ON' Encode='ON' AppendSuffix='ON' Render='ON' LinkType='REDIRECT']http://www.facebook.com/dickssportinggoods[/@trackurl]" target="_blank">
+                              <img style="display:block;border:0;" src="http://images.harmony.epsilon.com/ContentHandler/images?id=ac3fe1a4-403b-433c-a3e0-578787eef36e" width="30" height="30" border="0" alt="FACEBOOK"></a></td>
+
+                            <td align="center" valign="top"><a href="[@trackurl LinkID='6bb3de6686ea4e1c94811d72ff31b030' LinkName='Social_Twitter' LinkTag='Social_Twitter' LinkDesc='Social_Twitter' Tracked='ON' Encode='ON' AppendSuffix='ON' Render='ON' LinkType='REDIRECT']http://www.twitter.com/dicks[/@trackurl]" target="_blank">
+                              <img style="display:block;border:0;" src="http://images.harmony.epsilon.com/ContentHandler/images?id=749d265c-a06f-4eac-9161-73d3d7b441f4" width="30" height="30" border="0" alt="TWITTER"></a></td>
+
+                            <td align="center" valign="top"><a href="[@trackurl LinkID='923be00268fc4ab38fe07663b3a6da57' LinkName='Social_Pinterest' LinkTag='Social_Pinterest' LinkDesc='Social_Pinterest' Tracked='ON' Encode='ON' AppendSuffix='ON' Render='ON' LinkType='REDIRECT']http://www.pinterest.com/dkssports[/@trackurl]" target="_blank">
+                              <img style="display:block;border:0;" src="http://images.harmony.epsilon.com/ContentHandler/images?id=64a9d27b-7935-4031-b6e7-95399a7ab7c1" width="30" height="30" border="0" alt="PINTERIST"></a></td>
+
+                            <td align="center" valign="top"><a href="[@trackurl LinkID='190bdab689df447c8992858f839673c6' LinkName='Social_Instagram' LinkTag='Social_Instagram' LinkDesc='Social_Instagram' Tracked='ON' Encode='ON' AppendSuffix='ON' Render='ON' LinkType='REDIRECT']http://www.instagram.com/dickssportinggoods[/@trackurl]" target="_blank">
+                              <img style="display:block;border:0;" src="http://images.harmony.epsilon.com/ContentHandler/images?id=b46fbfa5-5d52-41e4-bd45-193ce838fabe" width="30" height="30" border="0" alt="INSTAGRAM"></a></td>
+
+                            <td align="center" valign="top"><a href="[@trackurl LinkID='e22d0a3948814dca85a529ddf70056bf' LinkName='Social_YouTube' LinkTag='Social_YouTube' LinkDesc='Social_YouTube' Tracked='ON' Encode='ON' AppendSuffix='ON' Render='ON' LinkType='REDIRECT']http://www.youtube.com/user/DicksSportingGoods[/@trackurl]" target="_blank">
+                              <img style="display:block;border:0;" src="http://images.harmony.epsilon.com/ContentHandler/images?id=fb7ea562-05e8-4fbf-8bc1-753af5b77ce4" width="30" height="30" border="0" alt="YOUTUBE"></a></td>
+                          </tr>
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+            </td></tr>
+            <!--/SOCIAL-->
+          </mj-raw>
+        </mj-column>
       </mj-section>
       <!--/SOCIAL-->
 

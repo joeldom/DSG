@@ -421,7 +421,7 @@
         </mj-column>
       </mj-section> -->
 
-      <mj-section background-color="#00483F" vertical-align="middle" full-width="none">
+      <mj-section background-color="#00483F" vertical-align="middle" full-width="full-width">
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="headline" align="center" color="#FFF" padding-bottom="10" padding-top="25">
             <!--
@@ -1526,7 +1526,24 @@ console.log(mjml.mjml2html({
         </mj-group>
       </mj-section>
       <!--/SOCIAL-->
-
+      <mj-section background-color="#212121" full-width="full-width">
+        <mj-column>
+          <mj-image src="http://placehold.it/640x320" />
+        </mj-column>
+        <mj-column>
+          <mj-text mj-class="subhead" align="center" font-size="18" color="#fff" padding="10 0 0 0">
+            Visit the nearest Dick's Sporting Goods located at:<br/>
+          </mj-text>
+          <mj-text align="center" color="#999" font-family="Arial, sans-serif" font-size="14" padding-left="0" padding-right="0">
+            345 Court St. Coriopolis Pa 15220
+          </mj-text>
+          <!-- <mj-text font-family="Arial, sans-serif" align="left" color="#999" font-size="14" padding="0">
+            <br/>
+            <span style="color:#999;">Men's &amp; Women's Brand</span><br>
+            <span style="font-size:12px;"><span style="color:red;">$49.99</span> <s>99.99</s></span>
+          </mj-text> -->
+        </mj-column>
+      </mj-section>
       <mj-section background-color="#f1f1f1" full-width="full-width">
 
         <mj-column width="100%" vertical-align="middle">

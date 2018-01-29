@@ -302,7 +302,7 @@
       <!-- NAV -->
       <mj-section background-color="#ffffff" full-width="full-width">
         <mj-column width="100%" vertical-align="middle">
-          <mj-image width="120" src="http://joeldom.github.io/DSG/img/logo-black-2.png" alt="" padding-bottom="0" padding-top="10">
+          <mj-image width="120" src="http://joeldom.github.io/DSG/img/logo-blk-2.png" alt="" padding-bottom="0" padding-top="10">
           </mj-image>
         </mj-column>
       </mj-section>

@@ -389,7 +389,7 @@
         http://joeldom.github.io/DSG/img/logo-blk-2.png
           -->
         <mj-column width="100%" vertical-align="middle">
-          <mj-image width="110" src="http://joeldom.github.io/DSG/img/logo-blk-2.png" alt="" padding-bottom="0" padding-top="10">
+          <mj-image width="150" src="http://joeldom.github.io/DSG/img/dsg-dev.gif" alt="" padding-bottom="0" padding-top="10">
           </mj-image>
         </mj-column>
 
@@ -408,7 +408,7 @@
         </mj-column>
         <mj-column width="100%" vertical-align="middle">
           <mj-text mj-class="hl-longform" align="left" font-size="32" color="#333">
-            <span style="font-size:14px; padding:0;">Category Name</span>
+            <span style="font-size:14px; padding:0; border-bottom: 3px solid #ddd;">Category Name</span>
             <span style="border-bottom:6px solid #ddd;padding:0 0 30px 0;display: block;">Here is the top level headling for a longform section.</span>
             <!-- <span>Author Name</span> -->
           </mj-text>
